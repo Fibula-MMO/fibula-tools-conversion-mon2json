@@ -5,7 +5,7 @@
 		<ApplicationIcon />
 		<StartupObject></StartupObject>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Copyright>2022</Copyright>
 		<Authors>Jose L. Nunez de Caceres et al.</Authors>
 		<Company>The Fibula Project</Company>
@@ -13,12 +13,10 @@
 		<PackageProjectUrl>https://fibula-mmo.github.io/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Fibula-MMO/fibula-tools-conversion-mon2json</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
-		<Version>0.1.0-pre</Version>
-		<NeutralLanguage>en</NeutralLanguage>
-		<Description>A tool that converts monster files from the Cip format to Fibula's JSON format.</Description>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DebugType>full</DebugType>
+		<OutputPath>..\..\bin\</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>

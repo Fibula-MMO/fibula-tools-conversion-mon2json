@@ -2,9 +2,27 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DebugType>full</DebugType>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Fibula.Plugins.MonsterLoaders.CipMonFiles</PackageId>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Copyright>2020</Copyright>
+		<Authors>Jose L. Nunez de Caceres et al.</Authors>
+		<Company>The Fibula Project</Company>
+		<Product>Fibula MMO</Product>
+		<PackageProjectUrl>https://fibula-mmo.github.io/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Fibula-MMO/fibula-tools-conversion-mon2json</RepositoryUrl>
+		<RepositoryType>GitHub</RepositoryType>
+		<Version>1.0.0-pre</Version>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Description>A tool that converts monster files from the Cip format to Fibula's JSON format.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,6 +31,10 @@
 
 	<ItemGroup>
 		<AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE" Link="LICENSE" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>

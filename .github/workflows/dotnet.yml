@@ -35,14 +35,5 @@ jobs:
     - name: Test
       run: dotnet test src
 
-    - name: Publish Fibula.Utilities.Common Package
-      run: dotnet nuget push "src/Fibula.Utilities.Common/bin/Release/*.nupkg" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish Fibula.Utilities.Pathfinding Package
-      run: dotnet nuget push "src/Fibula.Utilities.Pathfinding/bin/Release/*.nupkg" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish Fibula.Utilities.Validation Package
-      run: dotnet nuget push "src/Fibula.Utilities.Validation/bin/Release/*.nupkg" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}            
-
-    - name: Publish Fibula.Utilities.Testing Package
-      run: dotnet nuget push "src/Fibula.Utilities.Testing/bin/Release/*.nupkg" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}            
+    - name: Publish Fibula.Tools.Mon2Json Package
+      run: dotnet nuget push "src/Fibula.Tools.Mon2Json/bin/Release/*.nupkg" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}         
