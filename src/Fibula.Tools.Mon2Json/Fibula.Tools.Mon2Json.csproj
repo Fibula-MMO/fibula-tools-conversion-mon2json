@@ -10,7 +10,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<PackageId>Fibula.Plugins.MonsterLoaders.CipMonFiles</PackageId>
+		<PackageId>Fibula.Tools.Mon2Json</PackageId>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Copyright>2020</Copyright>
@@ -20,7 +20,7 @@
 		<PackageProjectUrl>https://fibula-mmo.github.io/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Fibula-MMO/fibula-tools-conversion-mon2json</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
-		<Version>1.0.0-pre</Version>
+		<Version>0.1.0-pre</Version>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Description>A tool that converts monster files from the Cip format to Fibula's JSON format.</Description>
 	</PropertyGroup>

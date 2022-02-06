@@ -16,7 +16,6 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DebugType>full</DebugType>
-		<OutputPath>..\..\bin\</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
