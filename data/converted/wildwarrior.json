@@ -1,0 +1,148 @@
+{
+  "article": "a",
+  "name": "wild warrior",
+  "blood": "blood",
+  "experienceYield": 60,
+  "look": {
+    "type": "outfit",
+    "id": 131,
+    "head": 38,
+    "body": 38,
+    "legs": 38,
+    "feet": 38
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 135,
+    "baseSpeed": 55,
+    "carryStrength": 900
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 16,
+    "baseDefensePower": 18,
+    "baseArmor": 9,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 46,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.058,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 40,
+            "variation": 20,
+            "duration": 2000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3274",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3359",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3411",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.17
+    },
+    {
+      "id": "3352",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "2991",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.4
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.15
+    },
+    {
+      "id": "3353",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3559",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3286",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3279",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    }
+  ],
+  "phrases": [
+    "An enemy!",
+    "Gimme your money!"
+  ]
+}

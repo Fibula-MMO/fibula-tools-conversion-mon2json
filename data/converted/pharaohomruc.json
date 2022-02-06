@@ -1,0 +1,267 @@
+{
+  "article": "",
+  "name": "Omruc",
+  "blood": "bones",
+  "experienceYield": 2950,
+  "look": {
+    "type": "race",
+    "id": 90
+  },
+  "corpse": "4197",
+  "stats": {
+    "hitpoints": 4300,
+    "baseSpeed": 115,
+    "carryStrength": 900
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 65,
+    "baseDefensePower": 65,
+    "baseArmor": 60,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 75,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.07
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 20.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 150,
+            "variation": 50
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 20000,
+            "targetLook": {
+              "type": "invisible"
+            }
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.05,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 150,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "RingsGreen",
+        "projectileEffect": "PoisonArrow",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 350,
+            "variation": 150,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageMagicMissile",
+        "projectileEffect": "BurstArrow",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 250,
+            "variation": 200,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageMagicMissile",
+        "projectileEffect": "Arrow",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 300,
+            "variation": 100,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -100,
+            "variation": 10,
+            "duration": 50000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 72",
+            "maximumCount": 4
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3447",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.2
+    },
+    {
+      "id": "3079",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3449",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.4
+    },
+    {
+      "id": "3239",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 1.0
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 80,
+      "chance": 0.7
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 85,
+      "chance": 0.5
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 95,
+      "chance": 0.35
+    },
+    {
+      "id": "3448",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.6
+    },
+    {
+      "id": "3450",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.1
+    },
+    {
+      "id": "3585",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.8
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.1
+    },
+    {
+      "id": "3049",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3037",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    }
+  ],
+  "phrases": [
+    "Psssst, I am over chhhere.",
+    "Now chhhou shhhee me ... Now chhhou don't.",
+    "Chhhhou are marked ashhh my prey.",
+    "Catchhhh me if chhhou can.",
+    "Bullshhheye.",
+    "Die!"
+  ]
+}

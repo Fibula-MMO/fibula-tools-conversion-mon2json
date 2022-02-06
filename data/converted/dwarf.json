@@ -1,0 +1,116 @@
+{
+  "article": "a",
+  "name": "dwarf",
+  "blood": "blood",
+  "experienceYield": 45,
+  "look": {
+    "type": "race",
+    "id": 69
+  },
+  "corpse": "4141",
+  "stats": {
+    "hitpoints": 90,
+    "baseSpeed": 45,
+    "carryStrength": 800
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 14,
+    "baseDefensePower": 14,
+    "baseArmor": 8,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 23,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3274",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3430",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3097",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 8,
+      "chance": 0.45
+    },
+    {
+      "id": "3276",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.25
+    },
+    {
+      "id": "3559",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3505",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3456",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3378",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3723",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    }
+  ],
+  "phrases": [
+    "Hail Durin!"
+  ]
+}

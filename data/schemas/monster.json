@@ -1,0 +1,1334 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/monster_schema#",
+    "title": "A schema for all monster definitions.",
+    "type":
+    [
+        "object"
+    ],
+    "definitions":
+    {
+        "interval":
+        {
+            "type": "number",
+            "description": "Represents an interval of time, in milliseconds.",
+            "minimum": 500,
+            "multipleOf": 100,
+            "default": 1000
+        },
+        "chance_p2":
+        {
+            "type": "number",
+            "description": "Represents a chance (probability) of something happening with a precision of 2 zeros.",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "multipleOf": 0.01
+        },
+        "chance_p3":
+        {
+            "type": "number",
+            "description": "Represents a chance (probability) of something happening with a precision of 3 zeros.",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "multipleOf": 0.001
+        },
+        "percent":
+        {
+            "type": "number",
+            "description": "Represents a percentual of something with a precision of 2 zeros.",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "multipleOf": 0.01
+        },
+        "enum_flags":
+        {
+            "enum":
+            [
+                "CannotBePushed",
+                "CanPushItems",
+                "CanPushCreatures",
+                "CanSeeInvisible",
+                "CannotBeTargetted",
+                "KeepsDistance"
+            ]
+        },
+        "enum_bloodTypes":
+        {
+            "enum":
+            [
+                "blood",
+                "slime",
+                "fire",
+                "bones"
+            ]
+        },
+        "enum_animatedEffect":
+        {
+            "enum":
+            [
+                "XBlood",
+                "RingsBlue",
+                "Puff",
+                "SparkYellow",
+                "DamageExplosion",
+                "DamageMagicMissile",
+                "AreaFlame",
+                "RingsYellow",
+                "RingsGreen",
+                "XGray",
+                "BubbleBlue",
+                "DamageEnergy",
+                "GlitterBlue",
+                "GlitterRed",
+                "GlitterGreen",
+                "Flame",
+                "Poison",
+                "BubbleBlack",
+                "SoundGreen",
+                "SoundRed",
+                "DamageVenomMissile",
+                "SoundYellow",
+                "SoundPurple",
+                "SoundBlue",
+                "SoundWhite",
+                "None"
+            ]
+        },
+        "enum_projectileEffects":
+        {
+            "enum":
+            [
+                "Spear",
+                "Bolt",
+                "PowerBolt",
+                "Arrow",
+                "PoisonArrow",
+                "BurstArrow",
+                "ThrowingStar",
+                "ThrowingKnife",
+                "SmallStone",
+                "LargeRock",
+                "Snowball",
+                "OrangeOrb",
+                "BlueOrb",
+                "BlackOrb",
+                "GreenOrb",
+                "None"
+            ]
+        },
+        "enum_damageKinds":
+        {
+            "enum":
+            [
+                "Physical",
+                "Poison",
+                "Fire",
+                "Energy",
+                "PoisonCondition",
+                "FireCondition",
+                "EnergyCondition",
+                "LifeDrain",
+                "ManaDrain"
+            ]
+        },
+        "enum_magicFieldKinds":
+        {
+            "enum":
+            [
+                "Fire",
+                "Poison",
+                "Energy"
+            ]
+        },
+        "look_invisible":
+        {
+            "required":
+            [
+                "type"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "invisible"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "look_item":
+        {
+            "required":
+            [
+                "type",
+                "id"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "item"
+                    ]
+                },
+                "id":
+                {
+                    "description": "The id of the item.",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "look_monsterRace":
+        {
+            "required":
+            [
+                "type",
+                "id"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "race"
+                    ]
+                },
+                "id":
+                {
+                    "description": "The identifier for the type that this monster has.",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "look_humanOutfit":
+        {
+            "required":
+            [
+                "type",
+                "id",
+                "head",
+                "body",
+                "legs",
+                "feet"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "outfit"
+                    ]
+                },
+                "id":
+                {
+                    "description": "The identifier for the type that this monster has.",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "head":
+                {
+                    "type": "integer",
+                    "description": "The look for the head.",
+                    "minimum": 0
+                },
+                "body":
+                {
+                    "type": "integer",
+                    "description": "The look for the body.",
+                    "minimum": 0
+                },
+                "legs":
+                {
+                    "type": "integer",
+                    "description": "The look for the legs.",
+                    "minimum": 0
+                },
+                "feet":
+                {
+                    "type": "integer",
+                    "description": "The look for the feet.",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "look":
+        {
+            "oneOf":
+            [
+                {
+                    "$ref": "#/definitions/look_invisible"
+                },
+                {
+                    "$ref": "#/definitions/look_item"
+                },
+                {
+                    "$ref": "#/definitions/look_monsterRace"
+                },
+                {
+                    "$ref": "#/definitions/look_humanOutfit"
+                }
+            ]
+        },
+        "stats":
+        {
+            "type": "object",
+            "description": "The creature stats for this monster.",
+            "required":
+            [
+                "hitpoints",
+                "baseSpeed",
+                "carryStrength"
+            ],
+            "properties":
+            {
+                "hitpoints":
+                {
+                    "type": "integer",
+                    "description": "The number of hitpoints that this monster has.",
+                    "minimum": 1
+                },
+                "baseSpeed":
+                {
+                    "type": "integer",
+                    "description": "The base speed that this monster has.",
+                    "minimum": 0
+                },
+                "carryStrength":
+                {
+                    "type": "integer",
+                    "description": "The strength to carry stuff that this monster has.",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "combat":
+        {
+            "type": "object",
+            "required":
+            [
+                "distance",
+                "skills",
+                "strategy"
+            ],
+            "properties":
+            {
+                "abilities":
+                {
+                    "type": "array",
+                    "description": "The abilities of the monster.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability"
+                    }
+                },
+                "baseAttackPower":
+                {
+                    "type": "integer",
+                    "description": "The base attack power of this monster.",
+                    "minimum": 0,
+                    "default": 0
+                },
+                "baseDefensePower":
+                {
+                    "type": "integer",
+                    "description": "The base defense power of this monster.",
+                    "minimum": 0,
+                    "default": 0
+                },
+                "baseArmor":
+                {
+                    "type": "integer",
+                    "description": "The base armor of this monster.",
+                    "minimum": 0,
+                    "default": 0
+                },
+                "distance":
+                {
+                    "type": "integer",
+                    "description": "The distance that this monster fights at.",
+                    "minimum": 1,
+                    "maximum": 5
+                },
+                "immunities":
+                {
+                    "type": "array",
+                    "description": "The immunities of the monster.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/immunity"
+                    }
+                },
+                "skills":{
+                    "type": "array",
+                    "description": "The skills of the monster.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/skill"
+                    }
+                },
+                "strategy":
+                {
+                    "description": "The combat strategy for the monster.",
+                    "$ref": "#/definitions/strategy"
+                }
+            },
+            "additionalProperties": false
+        },
+        "skill":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "level",
+                "targetCount",
+                "factor"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "description": "The type of skill.",
+                    "enum":
+                    [
+                        "fist",
+                        "axe",
+                        "club",
+                        "sword",
+                        "shield",
+                        "ranged"   
+                    ]
+                },
+                "level":
+                {
+                    "type": "integer",
+                    "description": "The skill level.",
+                    "minimum": 0
+                },
+                "targetCount":
+                {
+                    "type": "integer",
+                    "description": "The target count for advancing this skill.",
+                    "minimum": 0
+                },
+                "factor":
+                {
+                    "type": "number",
+                    "description": "The factor by which the next target count is calculated.",
+                    "minimum": 1.0,
+                    "maximum": 10.0,
+                    "multipleOf": 0.01
+                },
+                "increase":
+                {
+                    "type": "integer",
+                    "description": "The amount of levels by which the skill increases when reaching the target count.",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "phrases":
+        {
+            "type": "array",
+            "items":
+            {
+                "type": "string"
+            },
+            "uniqueItems": true,
+            "default":
+            []
+        },
+        "inventory":
+        {
+            "type": "array",
+            "items":
+            {
+                "type": "object",
+                "required":
+                [
+                    "id",
+                    "name"
+                ],
+                "properties":
+                {
+                    "id":
+                    {
+                        "type": "string",
+                        "description": "The id of the item to add as inventory."
+                    },
+                    "name":
+                    {
+                        "type": "string",
+                        "description": "The name of the item to add as inventory."
+                    },
+                    "maximumCount":
+                    {
+                        "type": "integer",
+                        "description": "The maximum number of the item to add to the inventory.",
+                        "minimum": 0,
+                        "default": 1
+                    },
+                    "chance":
+                    {
+                        "description": "The chance to add the item to the inventory.",
+                        "$ref": "#/definitions/chance_p3",
+                        "default": 1.0
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "strategy":
+        {
+            "type": "object",
+            "required":
+            [
+                "closest",
+                "weakest",
+                "strongest",
+                "random"
+            ],
+            "properties":
+            {
+                "closest":
+                {
+                    "type": "integer",
+                    "description": "The chance to choose the nearest target when selecting one.",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "weakest":
+                {
+                    "type": "integer",
+                    "description": "The chance to choose the weakest target when selecting one.",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "strongest":
+                {
+                    "type": "integer",
+                    "description": "The chance to choose the target who has dealt the most damage when selecting one.",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "random":
+                {
+                    "type": "integer",
+                    "description": "The chance to choose the a random target when selecting one.",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "flee":
+                {
+                    "description": "The parameters for when a monster decides to flee.",
+                    "$ref": "#/definitions/strategy_fleeing"
+                },
+                "changeTarget":
+                {
+                    "description": "The parameters for when a monster decides to change target.",
+                    "$ref": "#/definitions/strategy_changeTarget"
+                }
+            },
+            "additionalProperties": false
+        },
+        "strategy_fleeing":
+        {
+            "type": "object",
+            "properties":
+            {
+                "hitpointThreshold":
+                {
+                    "type": "integer",
+                    "description": "The hitpoint threshold at which to flee.",
+                    "minimum": 0,
+                    "default": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "strategy_changeTarget":
+        {
+            "type": "object",
+            "required":
+            [
+                "chance"
+            ],
+            "properties":
+            {
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance it has on every evaluation.",
+                    "$ref": "#/definitions/chance_p2"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability":
+        {
+            "oneOf":
+            [
+                {
+                    "$ref": "#/definitions/ability_self"
+                },
+                {
+                    "$ref": "#/definitions/ability_target"
+                },
+                {
+                    "$ref": "#/definitions/ability_selfArea"
+                },
+                {
+                    "$ref": "#/definitions/ability_targetArea"
+                },
+                {
+                    "$ref": "#/definitions/ability_targetDirection"
+                }
+            ]
+        },
+        "ability_self":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "casterEffect",
+                "chance",
+                "actions"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "self"
+                    ]
+                },
+                "casterEffect":
+                {
+                    "description": "The effect shown over the caster.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "actions":
+                {
+                    "type": "array",
+                    "description": "The actions that occur when the ability is cast.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability_action"
+                    }
+                },
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance of this ability being cast at each evaluation.",
+                    "$ref": "#/definitions/chance_p3"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_selfArea":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "radius",
+                "areaEffect",
+                "actions",
+                "chance"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "selfArea"
+                    ]
+                },
+                "radius":
+                {
+                    "type": "integer",
+                    "description": "The radius of the area covered.",
+                    "minimum": 0,
+                    "maximum": 10,
+                    "default": 0
+                },
+                "areaEffect":
+                {
+                    "description": "The effect displayed over the area covered.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "actions":
+                {
+                    "type": "array",
+                    "description": "The actions that occur when the ability is cast.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability_action"
+                    }
+                },
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance of this ability being cast at each evaluation.",
+                    "$ref": "#/definitions/chance_p3"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_target":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "range",
+                "projectileEffect",
+                "targetEffect",
+                "actions",
+                "chance"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "target"
+                    ]
+                },
+                "range":
+                {
+                    "type": "integer",
+                    "description": "The maximum range at which the ability can be cast.",
+                    "minimum": 1,
+                    "default": 1
+                },
+                "casterEffect":
+                {
+                    "description": "The effect shown over the caster.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "projectileEffect":
+                {
+                    "description": "The projectile effect shown from the caster to the target.",
+                    "$ref": "#/definitions/enum_projectileEffects"
+                },
+                "targetEffect":
+                {
+                    "description": "The effect shown over the target.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "actions":
+                {
+                    "type": "array",
+                    "description": "The actions that occur when the ability is cast.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability_action"
+                    }
+                },
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance of this ability being cast at each evaluation.",
+                    "$ref": "#/definitions/chance_p3"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_targetArea":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "range",
+                "projectileEffect",
+                "areaEffect",
+                "radius",
+                "actions",
+                "chance"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "targetArea"
+                    ]
+                },
+                "range":
+                {
+                    "type": "integer",
+                    "description": "The maximum range at which the ability can be cast.",
+                    "minimum": 1,
+                    "default": 1
+                },
+                "casterEffect":
+                {
+                    "description": "The effect shown over the caster.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "projectileEffect":
+                {
+                    "description": "The projectile effect shown from the caster to the target.",
+                    "$ref": "#/definitions/enum_projectileEffects"
+                },
+                "areaEffect":
+                {
+                    "description": "The effect displayed over the area covered.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "radius":
+                {
+                    "type": "integer",
+                    "description": "The radius of the area covered.",
+                    "minimum": 0,
+                    "default": 0
+                },
+                "actions":
+                {
+                    "type": "array",
+                    "description": "The actions that occur when the ability is cast.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability_action"
+                    }
+                },
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance of this ability being cast at each evaluation.",
+                    "$ref": "#/definitions/chance_p3"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_targetDirection":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "spread",
+                "length",
+                "areaEffect",
+                "actions",
+                "chance"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "targetDirection"
+                    ]
+                },
+                "casterEffect":
+                {
+                    "description": "The effect when the ability is cast.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "spread":
+                {
+                    "type": "integer",
+                    "description": "The spread of the area on cast.",
+                    "minimum": 0,
+                    "maximum": 90,
+                    "default": 0
+                },
+                "length":
+                {
+                    "type": "integer",
+                    "description": "The length of the area on cast.",
+                    "minimum": 1,
+                    "default": 1
+                },
+                "areaEffect":
+                {
+                    "description": "The effect displayed over the directional area.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "actions":
+                {
+                    "type": "array",
+                    "description": "The actions that occur when the ability is cast.",
+                    "items":
+                    {
+                        "$ref": "#/definitions/ability_action"
+                    }
+                },
+                "interval":
+                {
+                    "$ref": "#/definitions/interval",
+                    "default": 2000
+                },
+                "chance":
+                {
+                    "description": "The chance of this ability being cast at each evaluation.",
+                    "$ref": "#/definitions/chance_p3"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action":
+        {
+            "oneOf":
+            [
+                {
+                    "$ref": "#/definitions/ability_action_healing"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_damage"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_summon"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_magicField"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_changeSpeed"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_changeSkill"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_changeOutfit"
+                },
+                {
+                    "$ref": "#/definitions/ability_action_makeDrunk"
+                }
+            ]
+        },
+        "ability_action_healing":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "base",
+                "variation"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "heal"
+                    ]
+                },
+                "base":
+                {
+                    "type": "integer",
+                    "description": "The base healing value.",
+                    "minimum": 0
+                },
+                "variation":
+                {
+                    "type": "integer",
+                    "description": "The variation of the healing value.",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_damage":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "kind",
+                "base",
+                "variation"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "damage"
+                    ]
+                },
+                "kind":
+                {
+                    "description": "The kind of damage.",
+                    "$ref": "#/definitions/enum_damageKinds"
+                },
+                "base":
+                {
+                    "type": "integer",
+                    "description": "The base healing value.",
+                    "minimum": 0
+                },
+                "variation":
+                {
+                    "type": "integer",
+                    "description": "The variation of the healing value.",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_summon":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "monsterFile",
+                "maximumCount"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "summon"
+                    ]
+                },
+                "monsterFile":
+                {
+                    "description": "The filename of monster to summon.",
+                    "type": "string"
+                },
+                "maximumCount":
+                {
+                    "type": "integer",
+                    "description": "The maximum number of that type of monster to control.",
+                    "minimum": 1,
+                    "default": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_magicField":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "kind"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "magicField"
+                    ]
+                },
+                "kind":
+                {
+                    "description": "The kind of magic field.",
+                    "$ref": "#/definitions/enum_magicFieldKinds"
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_changeSpeed":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "base",
+                "variation",
+                "duration"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "changeSpeed"
+                    ]
+                },
+                "base":
+                {
+                    "type": "integer",
+                    "description": "The base change in speed."
+                },
+                "variation":
+                {
+                    "type": "integer",
+                    "description": "The variation to the speed change.",
+                    "minimum": 0
+                },
+                "duration":
+                {
+                    "type": "number",
+                    "description": "The duration of the speed change.",
+                    "minimum": 500,
+                    "multipleOf": 500
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_changeSkill":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "base",
+                "variation",
+                "duration",
+                "kind"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "changeSkill"
+                    ]
+                },
+                "base":
+                {
+                    "type": "integer",
+                    "description": "The base change in the skill."
+                },
+                "variation":
+                {
+                    "type": "integer",
+                    "description": "The variation to the skill change.",
+                    "minimum": 0
+                },
+                "duration":
+                {
+                    "type": "number",
+                    "description": "The duration of the change.",
+                    "minimum": 500,
+                    "multipleOf": 500
+                },
+                "kind":
+                {
+                    "description": "The kind of skill changing.",
+                    "type": "string"
+                },
+            },
+            "additionalProperties": false
+        },
+        "ability_action_changeOutfit":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "targetLook",
+                "duration"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "changeOutfit"
+                    ]
+                },
+                "targetLook":
+                {
+                    "description": "The new look.",
+                    "$ref": "#/definitions/look"
+                },
+                "duration":
+                {
+                    "type": "number",
+                    "description": "The duration of the speed change.",
+                    "minimum": 500,
+                    "multipleOf": 500
+                }
+            },
+            "additionalProperties": false
+        },
+        "ability_action_makeDrunk":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "base",
+                "duration"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "makeDrunk"
+                    ]
+                },
+                "base":
+                {
+                    "type": "integer",
+                    "description": "How badly drunk are we.",
+                    "minimum": 1,
+                    "maximum": 10
+                },
+                "effect":
+                {
+                    "description": "The effect to display when the drunk movement is triggered.",
+                    "$ref": "#/definitions/enum_animatedEffect"
+                },
+                "duration":
+                {
+                    "type": "number",
+                    "description": "The duration of the drunken state.",
+                    "minimum": 500,
+                    "multipleOf": 500
+                }
+            },
+            "additionalProperties": false
+        },
+        "immunity":
+        {
+            "type": "object",
+            "required":
+            [
+                "type",
+                "modifier"
+            ],
+            "properties":
+            {
+                "type":
+                {
+                    "enum":
+                    [
+                        "poison",
+                        "fire",
+                        "energy",
+                        "lifeDrain",
+                        "paralysis",
+                        "physical"
+                    ]
+                },
+                "modifier":
+                {
+                    "description": "The percent by which the monster resists or absorbs the element.",
+                    "$ref": "#/definitions/percent",
+                    "default": 0.0
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required":
+    [
+        "article",
+        "name",
+        "look",
+        "stats",
+        "experienceYield"
+    ],
+    "properties":
+    {
+        "article":
+        {
+            "description": "An article to prefix the name of the monster with.",
+            "type": "string"
+        },
+        "blood":
+        {
+            "description": "The type of blood that this monster has.",
+            "$ref": "#/definitions/enum_bloodTypes"
+        },
+        "corpse":
+        {
+            "description": "The corpse that this monster leaves when dying.",
+            "type": "string"
+        },
+        "name":
+        {
+            "description": "The name of the monster.",
+            "type": "string"
+        },
+        "look":
+        {
+            "description": "The definition for the way this monster looks.",
+            "$ref": "#/definitions/look"
+        },
+        "experienceYield":
+        {
+            "type": "integer",
+            "description": "The experience that this monster yields when dying.",
+            "minimum": 0
+        },
+        "stats":
+        {
+            "description": "The stats for this monster.",
+            "$ref": "#/definitions/stats"
+        },
+        "combat":
+        {
+            "description": "The definition for how this monster does combat.",
+            "$ref": "#/definitions/combat"
+        },
+        "flags":
+        {
+            "type": "array",
+            "description": "The flags that the monster has.",
+            "items":
+            {
+                "$ref": "#/definitions/enum_flags"
+            }
+        },
+        "phrases":
+        {
+            "description": "The definition for how this monster speaks.",
+            "$ref": "#/definitions/phrases"
+        },
+        "inventory":
+        {
+            "description": "The way that the inventory for this monster is composed.",
+            "$ref": "#/definitions/inventory"
+        }
+    },
+    "additionalProperties": false
+}

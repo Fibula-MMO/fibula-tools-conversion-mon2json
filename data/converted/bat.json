@@ -1,0 +1,50 @@
+{
+  "article": "a",
+  "name": "bat",
+  "blood": "blood",
+  "experienceYield": 10,
+  "look": {
+    "type": "race",
+    "id": 122
+  },
+  "corpse": "4363",
+  "stats": {
+    "hitpoints": 30,
+    "baseSpeed": 60,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 8,
+    "baseDefensePower": 6,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 16,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 3
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "Flap! Flap!"
+  ]
+}

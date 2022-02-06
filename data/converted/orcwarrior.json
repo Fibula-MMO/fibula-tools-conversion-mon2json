@@ -1,0 +1,101 @@
+{
+  "article": "an",
+  "name": "orc warrior",
+  "blood": "blood",
+  "experienceYield": 50,
+  "look": {
+    "type": "race",
+    "id": 7
+  },
+  "corpse": "4043",
+  "stats": {
+    "hitpoints": 125,
+    "baseSpeed": 55,
+    "carryStrength": 400
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 19,
+    "baseDefensePower": 14,
+    "baseArmor": 8,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 42,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "2875",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3430",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.65
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3299",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3273",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3412",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    }
+  ],
+  "phrases": [
+    "Grow truk grrrr.",
+    "Trak grrrr brik.",
+    "Alk!"
+  ]
+}

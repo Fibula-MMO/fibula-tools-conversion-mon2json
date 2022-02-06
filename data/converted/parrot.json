@@ -1,0 +1,55 @@
+{
+  "article": "a",
+  "name": "parrot",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 217
+  },
+  "corpse": "4379",
+  "stats": {
+    "hitpoints": 25,
+    "baseSpeed": 120,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 6,
+    "baseDefensePower": 6,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 13,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 25
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "BR? PL? SWE?",
+    "Screeeeeeech!",
+    "Neeeewbiiieee!",
+    "You advanshed, you advanshed!",
+    "Hope you die and loooosh it!",
+    "Hunterrr ish PK!"
+  ]
+}

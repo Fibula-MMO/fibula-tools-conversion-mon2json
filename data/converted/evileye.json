@@ -1,0 +1,305 @@
+{
+  "article": "",
+  "name": "The Evil Eye",
+  "blood": "blood",
+  "experienceYield": 500,
+  "look": {
+    "type": "race",
+    "id": 210
+  },
+  "corpse": "4233",
+  "stats": {
+    "hitpoints": 1100,
+    "baseSpeed": 55,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 24,
+    "baseDefensePower": 35,
+    "baseArmor": 19,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 65,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.3
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 110,
+            "variation": 109
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 95,
+            "variation": 35,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 100,
+            "variation": 15,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "BubbleBlack",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 155,
+            "variation": 20,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 40,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 120,
+            "variation": 10,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -95,
+            "variation": 15,
+            "duration": 20000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 37",
+            "maximumCount": 6
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 48",
+            "maximumCount": 6
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "RingsGreen",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 60,
+            "variation": 25,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "GlitterRed",
+        "chance": 0.055,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "RingsBlue",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 50,
+            "kind": "ManaDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3418",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 24,
+      "chance": 0.9
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 32,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 40,
+      "chance": 0.7
+    },
+    {
+      "id": "3285",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3282",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3059",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3412",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    }
+  ],
+  "phrases": [
+    "653768764!",
+    "Let me take a look at you!",
+    "Inferior creatures, bow before my power!",
+    "659978 54764!"
+  ]
+}

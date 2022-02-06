@@ -1,0 +1,289 @@
+{
+  "article": "",
+  "name": "Fernfang",
+  "blood": "blood",
+  "experienceYield": 400,
+  "look": {
+    "type": "race",
+    "id": 206
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 400,
+    "baseSpeed": 95,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 40,
+    "baseDefensePower": 50,
+    "baseArmor": 25,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 50,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.07
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 20.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 105,
+            "variation": 15
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 85,
+            "variation": 5,
+            "duration": 10000
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.047,
+        "actions": [
+          {
+            "type": "changeSkill",
+            "base": 85,
+            "variation": 5,
+            "duration": 10000,
+            "kind": "1"
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.047,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 14000,
+            "targetLook": {
+              "type": "race",
+              "id": 3
+            }
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 10,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageEnergy",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 10,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 160,
+            "variation": 20,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 3",
+            "maximumCount": 4
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3147",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "2902",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.065
+    },
+    {
+      "id": "3600",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.14
+    },
+    {
+      "id": "2885",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3105",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.077
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 18,
+      "chance": 0.15
+    },
+    {
+      "id": "3661",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3563",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "2914",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3050",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3736",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3012",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3037",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    }
+  ],
+  "phrases": [
+    "You desecrated this place!",
+    "I will cleanse this isle!",
+    "Grrrrrrr",
+    "#y Yoooohhuuuu!"
+  ]
+}

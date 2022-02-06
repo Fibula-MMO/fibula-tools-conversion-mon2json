@@ -1,0 +1,217 @@
+{
+  "article": "a",
+  "name": "priestess",
+  "blood": "blood",
+  "experienceYield": 420,
+  "look": {
+    "type": "race",
+    "id": 58
+  },
+  "corpse": "4247",
+  "stats": {
+    "hitpoints": 390,
+    "baseSpeed": 45,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 20,
+    "baseDefensePower": 50,
+    "baseArmor": 30,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 45,
+            "variation": 11
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 75,
+            "variation": 20,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 90,
+            "variation": 30,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 18",
+            "maximumCount": 2
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3429",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "2843",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "2902",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3311",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3076",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.012
+    },
+    {
+      "id": "3008",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3267",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.23
+    },
+    {
+      "id": "3674",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3739",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3585",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.075
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.14
+    },
+    {
+      "id": "3034",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.007
+    },
+    {
+      "id": "3067",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3727",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "2948",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.014
+    }
+  ],
+  "phrases": [
+    "Your energy is mine.",
+    "Now, your life has come to an end, hahahha!",
+    "Throw the soul on the altar!"
+  ]
+}

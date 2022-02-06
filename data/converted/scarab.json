@@ -1,0 +1,164 @@
+{
+  "article": "a",
+  "name": "scarab",
+  "blood": "slime",
+  "experienceYield": 120,
+  "look": {
+    "type": "race",
+    "id": 83
+  },
+  "corpse": "4194",
+  "stats": {
+    "hitpoints": 320,
+    "baseSpeed": 40,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 25,
+    "baseDefensePower": 26,
+    "baseArmor": 21,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 42,
+        "targetCount": 50,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 80
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.05,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 45,
+            "variation": 5,
+            "duration": 4000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "Puff",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 1,
+        "radius": 0,
+        "areaEffect": "DamageVenomMissile",
+        "projectileEffect": "None",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 20,
+            "variation": 5,
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3447",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.05
+    },
+    {
+      "id": "3327",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.705
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 40,
+      "chance": 0.445
+    },
+    {
+      "id": "3330",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.54
+    },
+    {
+      "id": "3042",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3042",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3032",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    }
+  ],
+  "phrases": []
+}

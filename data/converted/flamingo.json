@@ -1,0 +1,48 @@
+{
+  "article": "a",
+  "name": "flamingo",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 212
+  },
+  "corpse": "4366",
+  "stats": {
+    "hitpoints": 25,
+    "baseSpeed": 44,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 4,
+    "baseDefensePower": 6,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 9,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 25
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": []
+}

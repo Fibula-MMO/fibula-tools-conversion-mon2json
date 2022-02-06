@@ -1,0 +1,118 @@
+{
+  "article": "a",
+  "name": "kongra",
+  "blood": "blood",
+  "experienceYield": 110,
+  "look": {
+    "type": "race",
+    "id": 116
+  },
+  "corpse": "4333",
+  "stats": {
+    "hitpoints": 340,
+    "baseSpeed": 52,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 30,
+    "baseDefensePower": 14,
+    "baseArmor": 18,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 40,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 50,
+            "variation": 5,
+            "duration": 3000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.3
+    },
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.05
+    },
+    {
+      "id": "3093",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 30,
+      "chance": 0.1
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3050",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3084",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    }
+  ],
+  "phrases": [
+    "Hugah!",
+    "Ungh! Ungh!",
+    "Huaauaauaauaa!"
+  ]
+}

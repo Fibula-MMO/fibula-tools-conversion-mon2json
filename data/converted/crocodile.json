@@ -1,0 +1,89 @@
+{
+  "article": "a",
+  "name": "crocodile",
+  "blood": "blood",
+  "experienceYield": 40,
+  "look": {
+    "type": "race",
+    "id": 119
+  },
+  "corpse": "4342",
+  "stats": {
+    "hitpoints": 105,
+    "baseSpeed": 38,
+    "carryStrength": 1000
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 32,
+    "baseDefensePower": 5,
+    "baseArmor": 13,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 21,
+        "targetCount": 100,
+        "factor": 2.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 70.0,
+      "weakest": 0.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3556",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.5
+    },
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.4
+    },
+    {
+      "id": "3355",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3559",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.7
+    }
+  ],
+  "phrases": []
+}

@@ -1,0 +1,232 @@
+{
+  "article": "",
+  "name": "Necropharus",
+  "blood": "blood",
+  "experienceYield": 700,
+  "look": {
+    "type": "race",
+    "id": 209
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 750,
+    "baseSpeed": 60,
+    "carryStrength": 300
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 45,
+    "baseDefensePower": 45,
+    "baseArmor": 55,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 35,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 75,
+            "variation": 15
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "XBlood",
+        "projectileEffect": "None",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 100,
+            "variation": 20,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 95,
+            "variation": 45,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 18",
+            "maximumCount": 2
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 48",
+            "maximumCount": 1
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 65",
+            "maximumCount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3116",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3115",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3337",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.199
+    },
+    {
+      "id": "3441",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3079",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3311",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.057
+    },
+    {
+      "id": "3070",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 99,
+      "chance": 0.673
+    },
+    {
+      "id": "3732",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.225
+    },
+    {
+      "id": "3574",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.018
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.085
+    },
+    {
+      "id": "3294",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.086
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.16
+    },
+    {
+      "id": "3324",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    }
+  ],
+  "phrases": [
+    "You will rise as my servant!",
+    "Praise to my master Urgith!"
+  ]
+}

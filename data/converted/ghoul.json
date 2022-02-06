@@ -1,0 +1,147 @@
+{
+  "article": "a",
+  "name": "ghoul",
+  "blood": "blood",
+  "experienceYield": 85,
+  "look": {
+    "type": "race",
+    "id": 18
+  },
+  "corpse": "4034",
+  "stats": {
+    "hitpoints": 100,
+    "baseSpeed": 32,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 26,
+    "baseDefensePower": 17,
+    "baseArmor": 8,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 37,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 12,
+            "variation": 3
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 20,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3354",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 30,
+      "chance": 0.75
+    },
+    {
+      "id": "3291",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3052",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.6
+    },
+    {
+      "id": "3367",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 6,
+      "chance": 0.8
+    }
+  ],
+  "phrases": []
+}

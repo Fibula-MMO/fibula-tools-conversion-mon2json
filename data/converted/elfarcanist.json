@@ -1,0 +1,232 @@
+{
+  "article": "an",
+  "name": "elf arcanist",
+  "blood": "blood",
+  "experienceYield": 175,
+  "look": {
+    "type": "race",
+    "id": 63
+  },
+  "corpse": "4160",
+  "stats": {
+    "hitpoints": 220,
+    "baseSpeed": 70,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 20,
+    "baseDefensePower": 20,
+    "baseArmor": 15,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 55,
+            "variation": 13
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Arrow",
+        "chance": 0.09,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 30,
+            "variation": 15,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageEnergy",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 10,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 70,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3447",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.06
+    },
+    {
+      "id": "3147",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "2902",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    },
+    {
+      "id": "3600",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.14
+    },
+    {
+      "id": "2917",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.22
+    },
+    {
+      "id": "3082",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3661",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3563",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3509",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3593",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.22
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "2815",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3073",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3037",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    }
+  ],
+  "phrases": [
+    "Feel my wrath!",
+    "For the Daughter of the Stars!",
+    "I'll bring balance upon you!",
+    "Tha'shi Cenath!",
+    "Vihil Ealuel!"
+  ]
+}

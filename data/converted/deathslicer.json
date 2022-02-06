@@ -1,0 +1,118 @@
+{
+  "article": "a",
+  "name": "deathslicer",
+  "blood": "bones",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 102
+  },
+  "corpse": "3138",
+  "stats": {
+    "hitpoints": 8200,
+    "baseSpeed": 199,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBeTargetted"
+  ],
+  "combat": {
+    "baseAttackPower": 90,
+    "baseDefensePower": 199,
+    "baseArmor": 199,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "physical",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 110,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 25
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 20
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.5,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 50,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 50,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "SparkYellow",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 50,
+            "kind": "Energy"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": []
+}

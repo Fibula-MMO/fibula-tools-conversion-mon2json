@@ -1,0 +1,131 @@
+{
+  "article": "a",
+  "name": "human",
+  "blood": "blood",
+  "experienceYield": 50,
+  "look": {
+    "type": "race",
+    "id": 1
+  },
+  "corpse": "0",
+  "stats": {
+    "hitpoints": 150,
+    "baseSpeed": 70,
+    "carryStrength": 400
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 7,
+    "baseDefensePower": 5,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "shield",
+        "level": 10,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 0
+      },
+      {
+        "type": "ranged",
+        "level": 10,
+        "targetCount": 30,
+        "factor": 2.0,
+        "increase": 0
+      },
+      {
+        "type": "sword",
+        "level": 10,
+        "targetCount": 50,
+        "factor": 2.0,
+        "increase": 0
+      },
+      {
+        "type": "club",
+        "level": 10,
+        "targetCount": 50,
+        "factor": 2.0,
+        "increase": 0
+      },
+      {
+        "type": "axe",
+        "level": 10,
+        "targetCount": 50,
+        "factor": 2.0,
+        "increase": 0
+      },
+      {
+        "type": "fist",
+        "level": 10,
+        "targetCount": 50,
+        "factor": 1.5,
+        "increase": 0
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 20
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "2854",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3600",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.5
+    },
+    {
+      "id": "3607",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.6
+    },
+    {
+      "id": "3361",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.6
+    },
+    {
+      "id": "3355",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.4
+    },
+    {
+      "id": "3264",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.8
+    }
+  ],
+  "phrases": []
+}

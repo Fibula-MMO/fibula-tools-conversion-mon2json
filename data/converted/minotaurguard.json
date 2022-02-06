@@ -1,0 +1,116 @@
+{
+  "article": "a",
+  "name": "minotaur guard",
+  "blood": "blood",
+  "experienceYield": 160,
+  "look": {
+    "type": "race",
+    "id": 29
+  },
+  "corpse": "4057",
+  "stats": {
+    "hitpoints": 185,
+    "baseSpeed": 55,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 35,
+    "baseDefensePower": 32,
+    "baseArmor": 15,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 50,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 20.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3413",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3359",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3558",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3275",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3483",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.6
+    },
+    {
+      "id": "3276",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3559",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Kirll Karrrl!",
+    "Kaplar!"
+  ]
+}

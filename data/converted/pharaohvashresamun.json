@@ -1,0 +1,209 @@
+{
+  "article": "",
+  "name": "Vashresamun",
+  "blood": "bones",
+  "experienceYield": 2950,
+  "look": {
+    "type": "race",
+    "id": 85
+  },
+  "corpse": "4197",
+  "stats": {
+    "hitpoints": 4000,
+    "baseSpeed": 115,
+    "carryStrength": 900
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 45,
+    "baseDefensePower": 75,
+    "baseArmor": 40,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 60,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.03
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 80.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 350,
+            "variation": 100
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 400,
+            "variation": 350,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -90,
+            "variation": 20,
+            "duration": 50000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 4,
+        "areaEffect": "SoundRed",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 400,
+            "variation": 150,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 78",
+            "maximumCount": 2
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3022",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3236",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 1.0
+    },
+    {
+      "id": "3567",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3333",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3007",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 80,
+      "chance": 0.7
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 85,
+      "chance": 0.5
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 95,
+      "chance": 0.35
+    },
+    {
+      "id": "2950",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "2953",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3026",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Heheheheee!",
+    "Come my maidens, we have visitors!",
+    "Are you enjoying my music?",
+    "Dance a dance of death for me!",
+    "If music is the food of death, drop dead.",
+    "Chakka Chakka!"
+  ]
+}

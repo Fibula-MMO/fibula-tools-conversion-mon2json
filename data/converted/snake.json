@@ -1,0 +1,54 @@
+{
+  "article": "a",
+  "name": "snake",
+  "blood": "blood",
+  "experienceYield": 10,
+  "look": {
+    "type": "race",
+    "id": 28
+  },
+  "corpse": "3998",
+  "stats": {
+    "hitpoints": 15,
+    "baseSpeed": 20,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 5,
+    "baseDefensePower": 1,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 11,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "Zzzzzzt"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "article": "a",
+  "name": "troll",
+  "blood": "blood",
+  "experienceYield": 20,
+  "look": {
+    "type": "race",
+    "id": 15
+  },
+  "corpse": "3987",
+  "stats": {
+    "hitpoints": 50,
+    "baseSpeed": 23,
+    "carryStrength": 200
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 10,
+    "baseDefensePower": 8,
+    "baseArmor": 6,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 15,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.6
+    },
+    {
+      "id": "3268",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "3552",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3355",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3003",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3054",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3277",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3336",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3412",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    }
+  ],
+  "phrases": [
+    "Grrrr",
+    "Groar",
+    "Gruntz!",
+    "Hmmm, bugs.",
+    "Hmmm, dogs."
+  ]
+}

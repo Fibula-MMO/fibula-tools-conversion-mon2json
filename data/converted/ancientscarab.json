@@ -1,0 +1,243 @@
+{
+  "article": "an",
+  "name": "ancient scarab",
+  "blood": "slime",
+  "experienceYield": 720,
+  "look": {
+    "type": "race",
+    "id": 79
+  },
+  "corpse": "4185",
+  "stats": {
+    "hitpoints": 1000,
+    "baseSpeed": 69,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 50,
+    "baseDefensePower": 33,
+    "baseArmor": 36,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 80,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 20.0,
+      "strongest": 0.0,
+      "random": 10.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 85,
+            "variation": 5,
+            "duration": 9000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 75,
+            "variation": 60,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -90,
+            "variation": 10,
+            "duration": 25000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 4,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 450,
+            "variation": 50,
+            "kind": "PoisonCondition"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 4,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 450,
+            "variation": 50,
+            "kind": "PoisonCondition"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 4,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -80,
+            "variation": 20,
+            "duration": 20000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 82",
+            "maximumCount": 3
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3025",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3328",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.444
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 66,
+      "chance": 0.757
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 22,
+      "chance": 0.999
+    },
+    {
+      "id": "3046",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.109
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3018",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3042",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.05
+    },
+    {
+      "id": "3042",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3440",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.012
+    },
+    {
+      "id": "3032",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.006
+    }
+  ],
+  "phrases": []
+}

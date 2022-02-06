@@ -1,0 +1,120 @@
+{
+  "article": "a",
+  "name": "tarantula",
+  "blood": "slime",
+  "experienceYield": 120,
+  "look": {
+    "type": "race",
+    "id": 219
+  },
+  "corpse": "4385",
+  "stats": {
+    "hitpoints": 225,
+    "baseSpeed": 67,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 38,
+    "baseDefensePower": 20,
+    "baseArmor": 20,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 40,
+        "targetCount": 100,
+        "factor": 2.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 0.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 95,
+            "variation": 15,
+            "duration": 2000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "Puff",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3372",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.7
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 30,
+      "chance": 0.3
+    },
+    {
+      "id": "3410",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3351",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3053",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    }
+  ],
+  "phrases": []
+}

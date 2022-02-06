@@ -1,0 +1,61 @@
+{
+  "article": "a",
+  "name": "deer",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 31
+  },
+  "corpse": "4016",
+  "stats": {
+    "hitpoints": 25,
+    "baseSpeed": 58,
+    "carryStrength": 250
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 2,
+    "baseDefensePower": 2,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 10,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 25
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.45
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.8
+    }
+  ],
+  "phrases": []
+}

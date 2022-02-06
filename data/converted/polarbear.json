@@ -1,0 +1,66 @@
+{
+  "article": "a",
+  "name": "polar bear",
+  "blood": "blood",
+  "experienceYield": 28,
+  "look": {
+    "type": "race",
+    "id": 42
+  },
+  "corpse": "4074",
+  "stats": {
+    "hitpoints": 85,
+    "baseSpeed": 38,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 18,
+    "baseDefensePower": 10,
+    "baseArmor": 7,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 19,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 5
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.5
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.7
+    }
+  ],
+  "phrases": [
+    "Grrrrrr",
+    "#Y GROARRR!"
+  ]
+}

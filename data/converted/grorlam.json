@@ -1,0 +1,167 @@
+{
+  "article": "",
+  "name": "Grorlam",
+  "blood": "bones",
+  "experienceYield": 1600,
+  "look": {
+    "type": "race",
+    "id": 205
+  },
+  "corpse": "4133",
+  "stats": {
+    "hitpoints": 2700,
+    "baseSpeed": 100,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 60,
+    "baseDefensePower": 35,
+    "baseArmor": 55,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 75,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 125,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.055,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 95,
+            "variation": 5,
+            "duration": 6000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "LargeRock",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 175,
+            "variation": 25,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3007",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.16
+    },
+    {
+      "id": "3456",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3050",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    },
+    {
+      "id": "3039",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.065
+    },
+    {
+      "id": "1781",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.13
+    },
+    {
+      "id": "3554",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    }
+  ],
+  "phrases": []
+}

@@ -1,0 +1,134 @@
+{
+  "article": "a",
+  "name": "sibang",
+  "blood": "blood",
+  "experienceYield": 100,
+  "look": {
+    "type": "race",
+    "id": 118
+  },
+  "corpse": "4339",
+  "stats": {
+    "hitpoints": 225,
+    "baseSpeed": 67,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 20,
+    "baseDefensePower": 32,
+    "baseArmor": 15,
+    "distance": 4,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 33,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 75,
+            "variation": 5,
+            "duration": 3000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "SmallStone",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 45,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.3
+    },
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.05
+    },
+    {
+      "id": "3352",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3589",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.2
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.8
+    },
+    {
+      "id": "3593",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3586",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.2
+    },
+    {
+      "id": "1781",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.3
+    }
+  ],
+  "phrases": [
+    "Eeeeek! Eeeeek",
+    "Huh! Huh! Huh!",
+    "Ahhuuaaa!"
+  ]
+}

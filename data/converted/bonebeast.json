@@ -1,0 +1,173 @@
+{
+  "article": "a",
+  "name": "bonebeast",
+  "blood": "bones",
+  "experienceYield": 580,
+  "look": {
+    "type": "race",
+    "id": 101
+  },
+  "corpse": "4212",
+  "stats": {
+    "hitpoints": 515,
+    "baseSpeed": 69,
+    "carryStrength": 1000
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 47,
+    "baseDefensePower": 45,
+    "baseArmor": 40,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 75,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.2
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "Poison",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 45,
+            "variation": 15
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 45,
+            "variation": 20,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "GlitterRed",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 10,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 70,
+            "variation": 10,
+            "kind": "PoisonCondition"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3116",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3115",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3337",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3441",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 90,
+      "chance": 0.3
+    },
+    {
+      "id": "3732",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    }
+  ],
+  "phrases": [
+    "Cccchhhhhhhhh!",
+    "Knooorrrrr!"
+  ]
+}

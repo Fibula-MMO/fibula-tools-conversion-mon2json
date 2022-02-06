@@ -1,0 +1,137 @@
+{
+  "article": "a",
+  "name": "Gamemaster",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 75
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 8200,
+    "baseSpeed": 199,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "CannotBeTargetted"
+  ],
+  "combat": {
+    "baseAttackPower": 299,
+    "baseDefensePower": 199,
+    "baseArmor": 199,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "physical",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 599,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 25
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 20
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.5,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 6000,
+            "variation": 1500
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 2000,
+            "variation": 150,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 999,
+            "variation": 30,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 1,
+        "spread": 0,
+        "areaEffect": "DamageEnergy",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 2000,
+            "variation": 250,
+            "kind": "Energy"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": [
+    "Watch the rules!",
+    "Hey, you! I've seen that!",
+    "Are you AFK or what?",
+    "Does your mother know what you are doing?"
+  ]
+}

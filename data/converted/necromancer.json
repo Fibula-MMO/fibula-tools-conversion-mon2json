@@ -1,0 +1,196 @@
+{
+  "article": "a",
+  "name": "necromancer",
+  "blood": "blood",
+  "experienceYield": 580,
+  "look": {
+    "type": "race",
+    "id": 9
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 580,
+    "baseSpeed": 54,
+    "carryStrength": 300
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 40,
+    "baseDefensePower": 40,
+    "baseArmor": 50,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 30,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 55,
+            "variation": 13
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "XBlood",
+        "projectileEffect": "None",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 20,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 65,
+            "variation": 30,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 18",
+            "maximumCount": 2
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 48",
+            "maximumCount": 1
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 65",
+            "maximumCount": 1
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3079",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3311",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 90,
+      "chance": 0.3
+    },
+    {
+      "id": "3732",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3574",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3294",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3324",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    }
+  ],
+  "phrases": [
+    "Your corpse will be mine!",
+    "Taste the sweetness of death!"
+  ]
+}

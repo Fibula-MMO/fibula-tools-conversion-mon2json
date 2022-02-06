@@ -1,0 +1,218 @@
+{
+  "article": "a",
+  "name": "hydra",
+  "blood": "blood",
+  "experienceYield": 2100,
+  "look": {
+    "type": "race",
+    "id": 121
+  },
+  "corpse": "4348",
+  "stats": {
+    "hitpoints": 2250,
+    "baseSpeed": 60,
+    "carryStrength": 900
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 56,
+    "baseDefensePower": 45,
+    "baseArmor": 27,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 71,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 300
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 10.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 300,
+            "variation": 100
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "RingsGreen",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -80,
+            "variation": 40,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "RingsBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 150,
+            "variation": 50,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 180,
+            "variation": 120,
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3079",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.6
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 50,
+      "chance": 0.4
+    },
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.6
+    },
+    {
+      "id": "4839",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.009
+    },
+    {
+      "id": "3370",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.9
+    },
+    {
+      "id": "3436",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3098",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.012
+    },
+    {
+      "id": "3392",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3029",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3081",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.008
+    },
+    {
+      "id": "3369",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    }
+  ],
+  "phrases": [
+    "#Y FCHHHHH",
+    "#Y HISSSS"
+  ]
+}

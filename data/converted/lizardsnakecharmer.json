@@ -1,0 +1,183 @@
+{
+  "article": "a",
+  "name": "lizard snakecharmer",
+  "blood": "blood",
+  "experienceYield": 200,
+  "look": {
+    "type": "race",
+    "id": 115
+  },
+  "corpse": "4327",
+  "stats": {
+    "hitpoints": 325,
+    "baseSpeed": 52,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 18,
+    "baseDefensePower": 15,
+    "baseArmor": 22,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 28,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 75,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 170,
+            "variation": 30,
+            "kind": "PoisonCondition"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 81",
+            "maximumCount": 6
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 0,
+        "areaEffect": "RingsGreen",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 75,
+            "variation": 25,
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3565",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3407",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3998",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.7
+    },
+    {
+      "id": "3122",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.199
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.8
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3052",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3065",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3066",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3037",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    }
+  ],
+  "phrases": [
+    "Shhhhhhhh.",
+    "I ssssmell warm blood!"
+  ]
+}

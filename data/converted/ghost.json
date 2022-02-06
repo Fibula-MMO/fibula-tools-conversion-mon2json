@@ -1,0 +1,138 @@
+{
+  "article": "a",
+  "name": "ghost",
+  "blood": "bones",
+  "experienceYield": 120,
+  "look": {
+    "type": "race",
+    "id": 48
+  },
+  "corpse": "4094",
+  "stats": {
+    "hitpoints": 150,
+    "baseSpeed": 40,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "CannotBeTargetted"
+  ],
+  "combat": {
+    "baseAttackPower": 28,
+    "baseDefensePower": 20,
+    "baseArmor": 10,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      },
+      {
+        "type": "physical",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 45,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 10,
+            "kind": "LifeDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3432",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.008
+    },
+    {
+      "id": "2843",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3565",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3292",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3282",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3740",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3049",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    }
+  ],
+  "phrases": [
+    "Huh!",
+    "Shhhhhh",
+    "Buuuuuh"
+  ]
+}

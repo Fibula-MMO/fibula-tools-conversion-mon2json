@@ -1,0 +1,241 @@
+{
+  "article": "",
+  "name": "Demodras",
+  "blood": "blood",
+  "experienceYield": 4000,
+  "look": {
+    "type": "race",
+    "id": 204
+  },
+  "corpse": "4062",
+  "stats": {
+    "hitpoints": 3750,
+    "baseSpeed": 77,
+    "carryStrength": 900
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 80,
+    "baseDefensePower": 70,
+    "baseArmor": 45,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 90,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 300
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 10.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 550,
+            "variation": 150
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 34",
+            "maximumCount": 2
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 300,
+            "variation": 50,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 5,
+        "areaEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "AreaFlame",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 400,
+            "variation": 150,
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "2842",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3583",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.75
+    },
+    {
+      "id": "3386",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3051",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3280",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.95
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 50,
+      "chance": 0.55
+    },
+    {
+      "id": "2903",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3732",
+      "name": "placeholder",
+      "maximumCount": 7,
+      "chance": 0.24
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.012
+    },
+    {
+      "id": "3450",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.16
+    },
+    {
+      "id": "3392",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3029",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3373",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.008
+    },
+    {
+      "id": "3428",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    }
+  ],
+  "phrases": [
+    "#Y ZCHHHHH",
+    "#Y I WILL SET THE WORLD IN FIRE!",
+    "#Y I WILL PROTECT MY BROOD!"
+  ]
+}

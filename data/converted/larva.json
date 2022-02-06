@@ -1,0 +1,70 @@
+{
+  "article": "a",
+  "name": "larva",
+  "blood": "slime",
+  "experienceYield": 44,
+  "look": {
+    "type": "race",
+    "id": 82
+  },
+  "corpse": "4191",
+  "stats": {
+    "hitpoints": 70,
+    "baseSpeed": 22,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 20,
+    "baseDefensePower": 11,
+    "baseArmor": 5,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 30,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.35
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    }
+  ],
+  "phrases": []
+}

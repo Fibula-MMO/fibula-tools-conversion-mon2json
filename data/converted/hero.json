@@ -1,0 +1,223 @@
+{
+  "article": "a",
+  "name": "hero",
+  "blood": "blood",
+  "experienceYield": 1200,
+  "look": {
+    "type": "race",
+    "id": 73
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 1400,
+    "baseSpeed": 100,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 58,
+    "baseDefensePower": 50,
+    "baseArmor": 35,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 80,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 80.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 225,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Arrow",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 100,
+            "variation": 25,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3447",
+      "name": "placeholder",
+      "maximumCount": 13,
+      "chance": 0.27
+    },
+    {
+      "id": "3350",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "3381",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3385",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3382",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3419",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3280",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.6
+    },
+    {
+      "id": "3592",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3563",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "2949",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.18
+    },
+    {
+      "id": "3048",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3658",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3003",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3572",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "2815",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.45
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3279",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3004",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    }
+  ],
+  "phrases": [
+    "Let's have a fight!",
+    "Welcome to my battleground.",
+    "Have you seen princess Lumelia?",
+    "I will sing a tune at your grave."
+  ]
+}

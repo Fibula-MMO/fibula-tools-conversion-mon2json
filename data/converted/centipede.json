@@ -1,0 +1,74 @@
+{
+  "article": "a",
+  "name": "centipede",
+  "blood": "blood",
+  "experienceYield": 30,
+  "look": {
+    "type": "race",
+    "id": 124
+  },
+  "corpse": "4354",
+  "stats": {
+    "hitpoints": 70,
+    "baseSpeed": 43,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems"
+  ],
+  "combat": {
+    "baseAttackPower": 24,
+    "baseDefensePower": 9,
+    "baseArmor": 8,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 30,
+        "targetCount": 100,
+        "factor": 2.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.06
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 0.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.8
+    },
+    {
+      "id": "3286",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3264",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    }
+  ],
+  "phrases": []
+}

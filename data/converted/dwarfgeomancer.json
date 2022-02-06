@@ -1,0 +1,188 @@
+{
+  "article": "a",
+  "name": "dwarf geomancer",
+  "blood": "blood",
+  "experienceYield": 245,
+  "look": {
+    "type": "race",
+    "id": 66
+  },
+  "corpse": "4168",
+  "stats": {
+    "hitpoints": 380,
+    "baseSpeed": 60,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 30,
+    "baseDefensePower": 35,
+    "baseArmor": 15,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 50,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 150
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.5,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 100,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "LargeRock",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 25,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 65,
+            "variation": 15,
+            "kind": "ManaDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "2853",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3147",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3311",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3097",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 30,
+      "chance": 0.7
+    },
+    {
+      "id": "3552",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "3046",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3584",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.18
+    },
+    {
+      "id": "3029",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3375",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3059",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3362",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3723",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.6
+    }
+  ],
+  "phrases": [
+    "Hail Durin!",
+    "Earth is the strongest element.",
+    "Dust to dust."
+  ]
+}

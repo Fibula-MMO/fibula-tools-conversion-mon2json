@@ -1,0 +1,71 @@
+{
+  "article": "a",
+  "name": "cobra",
+  "blood": "blood",
+  "experienceYield": 30,
+  "look": {
+    "type": "race",
+    "id": 81
+  },
+  "corpse": "4188",
+  "stats": {
+    "hitpoints": 65,
+    "baseSpeed": 20,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 15,
+    "baseDefensePower": 6,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 23,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 5,
+        "targetEffect": "None",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 20,
+            "variation": 6,
+            "kind": "PoisonCondition"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": [
+    "Zzzzzz"
+  ]
+}

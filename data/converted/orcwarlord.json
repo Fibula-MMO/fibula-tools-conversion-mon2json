@@ -1,0 +1,189 @@
+{
+  "article": "an",
+  "name": "orc warlord",
+  "blood": "blood",
+  "experienceYield": 670,
+  "look": {
+    "type": "race",
+    "id": 2
+  },
+  "corpse": "4148",
+  "stats": {
+    "hitpoints": 950,
+    "baseSpeed": 77,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 68,
+    "baseDefensePower": 55,
+    "baseArmor": 28,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "fire",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 72,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 15.0,
+      "strongest": 15.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.04,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 2000,
+            "targetLook": {
+              "type": "invisible"
+            }
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "ThrowingStar",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 110,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3359",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3372",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3391",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3384",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3322",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3578",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.1
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 45,
+      "chance": 0.19
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.2
+    },
+    {
+      "id": "3316",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3557",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3084",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3307",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3049",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3287",
+      "name": "placeholder",
+      "maximumCount": 40,
+      "chance": 0.3
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    }
+  ],
+  "phrases": [
+    "Ranat Ulderek!",
+    "Orc buta bana!",
+    "Ikem rambo zambo!",
+    "Futchi maruk buta!"
+  ]
+}

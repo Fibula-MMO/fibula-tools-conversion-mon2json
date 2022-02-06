@@ -1,0 +1,175 @@
+{
+  "article": "an",
+  "name": "orc shaman",
+  "blood": "blood",
+  "experienceYield": 110,
+  "look": {
+    "type": "race",
+    "id": 6
+  },
+  "corpse": "4041",
+  "stats": {
+    "hitpoints": 115,
+    "baseSpeed": 30,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 13,
+    "baseDefensePower": 10,
+    "baseArmor": 8,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 20,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 35,
+            "variation": 8
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageEnergy",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 25,
+            "variation": 5,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 28",
+            "maximumCount": 4
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 0,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 25,
+            "variation": 20,
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "2839",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3352",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "2853",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3597",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.11
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.9
+    },
+    {
+      "id": "3277",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3072",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    }
+  ],
+  "phrases": [
+    "Grak brrretz gulu.",
+    "Huumans stinkk!"
+  ]
+}

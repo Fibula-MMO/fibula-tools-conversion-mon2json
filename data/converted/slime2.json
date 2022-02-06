@@ -1,0 +1,58 @@
+{
+  "article": "a",
+  "name": "slime",
+  "blood": "slime",
+  "experienceYield": 55,
+  "look": {
+    "type": "race",
+    "id": 19
+  },
+  "corpse": "2121",
+  "stats": {
+    "hitpoints": 150,
+    "baseSpeed": 20,
+    "carryStrength": 100
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 42,
+    "baseDefensePower": 10,
+    "baseArmor": 3,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 22,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "Blubb"
+  ]
+}

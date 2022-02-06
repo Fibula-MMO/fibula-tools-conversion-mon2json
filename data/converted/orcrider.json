@@ -1,0 +1,136 @@
+{
+  "article": "an",
+  "name": "orc rider",
+  "blood": "blood",
+  "experienceYield": 110,
+  "look": {
+    "type": "race",
+    "id": 4
+  },
+  "corpse": "4153",
+  "stats": {
+    "hitpoints": 180,
+    "baseSpeed": 90,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 41,
+    "baseDefensePower": 20,
+    "baseArmor": 9,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 48,
+        "targetCount": 100,
+        "factor": 2.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 30.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 45,
+            "variation": 5,
+            "duration": 6000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "2854",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3413",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.5
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 80,
+      "chance": 0.001
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.3
+    },
+    {
+      "id": "3313",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3316",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3376",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3012",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Grrrrrrr",
+    "Orc arga Huummmak!"
+  ]
+}

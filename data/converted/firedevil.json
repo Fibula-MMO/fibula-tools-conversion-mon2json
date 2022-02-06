@@ -1,0 +1,148 @@
+{
+  "article": "a",
+  "name": "fire devil",
+  "blood": "blood",
+  "experienceYield": 110,
+  "look": {
+    "type": "race",
+    "id": 40
+  },
+  "corpse": "4067",
+  "stats": {
+    "hitpoints": 200,
+    "baseSpeed": 50,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 22,
+    "baseDefensePower": 15,
+    "baseArmor": 13,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "fire",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 30,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 75,
+            "variation": 15,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 1,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 15,
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3147",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3471",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3275",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3415",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3451",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3307",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.15
+    },
+    {
+      "id": "3069",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    }
+  ],
+  "phrases": [
+    "Hot, eh?",
+    "Hell, oh hell!"
+  ]
+}

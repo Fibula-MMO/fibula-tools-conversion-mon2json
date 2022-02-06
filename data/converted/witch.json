@@ -1,0 +1,174 @@
+{
+  "article": "a",
+  "name": "witch",
+  "blood": "blood",
+  "experienceYield": 120,
+  "look": {
+    "type": "race",
+    "id": 54
+  },
+  "corpse": "4247",
+  "stats": {
+    "hitpoints": 300,
+    "baseSpeed": 62,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 18,
+    "baseDefensePower": 12,
+    "baseArmor": 8,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 18,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 30
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 15,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 0,
+        "areaEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3454",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3565",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3607",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "3562",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3598",
+      "name": "placeholder",
+      "maximumCount": 8,
+      "chance": 0.3
+    },
+    {
+      "id": "3083",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.1
+    },
+    {
+      "id": "3552",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3293",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "3290",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3736",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3069",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3012",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Horax pokti!",
+    "Hihihihi!",
+    "Herba budinia ex!"
+  ]
+}

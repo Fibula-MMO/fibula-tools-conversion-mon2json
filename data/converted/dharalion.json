@@ -1,0 +1,258 @@
+{
+  "article": "",
+  "name": "Dharalion",
+  "blood": "blood",
+  "experienceYield": 380,
+  "look": {
+    "type": "race",
+    "id": 203
+  },
+  "corpse": "4160",
+  "stats": {
+    "hitpoints": 390,
+    "baseSpeed": 72,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 28,
+    "baseDefensePower": 39,
+    "baseArmor": 15,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 30,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.07
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 10.0,
+      "weakest": 10.0,
+      "strongest": 20.0,
+      "random": 60.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 105,
+            "variation": 15
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 85,
+            "variation": 5,
+            "duration": 10000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 45,
+            "variation": 15,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageEnergy",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 10,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 140,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "changeSkill",
+            "base": -80,
+            "variation": 10,
+            "duration": 15000,
+            "kind": "2"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.055,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 37",
+            "maximumCount": 2
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3147",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "2902",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.065
+    },
+    {
+      "id": "3600",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.14
+    },
+    {
+      "id": "2917",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3082",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3661",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3563",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3509",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3593",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "2815",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3037",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    }
+  ],
+  "phrases": [
+    "You desecrated this temple!",
+    "Noone will stop my ascension!",
+    "My powers are divine!",
+    "Muahahaha!"
+  ]
+}

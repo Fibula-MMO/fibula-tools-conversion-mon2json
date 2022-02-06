@@ -1,0 +1,227 @@
+{
+  "article": "a",
+  "name": "dragon lord",
+  "blood": "blood",
+  "experienceYield": 2100,
+  "look": {
+    "type": "race",
+    "id": 39
+  },
+  "corpse": "4062",
+  "stats": {
+    "hitpoints": 1900,
+    "baseSpeed": 60,
+    "carryStrength": 900
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 55,
+    "baseDefensePower": 48,
+    "baseArmor": 32,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 65,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 300
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 10.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 75,
+            "variation": 18
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 150,
+            "variation": 30,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "AreaFlame",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 200,
+            "variation": 50,
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "2842",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3583",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.6
+    },
+    {
+      "id": "3386",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3051",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3280",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.6
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 50,
+      "chance": 0.4
+    },
+    {
+      "id": "2903",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3732",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3450",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3392",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3029",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3373",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3428",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    }
+  ],
+  "phrases": [
+    "#Y ZCHHHHH",
+    "#Y YOU WILL BURN!"
+  ]
+}

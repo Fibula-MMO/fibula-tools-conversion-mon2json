@@ -1,0 +1,55 @@
+{
+  "article": "a",
+  "name": "wasp",
+  "blood": "slime",
+  "experienceYield": 24,
+  "look": {
+    "type": "race",
+    "id": 44
+  },
+  "corpse": "4080",
+  "stats": {
+    "hitpoints": 35,
+    "baseSpeed": 120,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 12,
+    "baseDefensePower": 8,
+    "baseArmor": 4,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 23,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 60.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 40.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "Bsssssss"
+  ]
+}

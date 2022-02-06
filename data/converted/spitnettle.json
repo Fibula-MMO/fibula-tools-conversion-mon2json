@@ -1,0 +1,141 @@
+{
+  "article": "a",
+  "name": "spit nettle",
+  "blood": "slime",
+  "experienceYield": 20,
+  "look": {
+    "type": "race",
+    "id": 221
+  },
+  "corpse": "4391",
+  "stats": {
+    "hitpoints": 150,
+    "baseSpeed": 0,
+    "carryStrength": 100
+  },
+  "flags": [
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 9,
+    "baseDefensePower": 33,
+    "baseArmor": 12,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 15,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 150
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 12,
+            "variation": 4
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "RingsGreen",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 27,
+            "variation": 10,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "RingsGreen",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 30,
+            "variation": 8,
+            "kind": "PoisonCondition"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.1
+    },
+    {
+      "id": "3661",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3740",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3738",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    }
+  ],
+  "phrases": []
+}

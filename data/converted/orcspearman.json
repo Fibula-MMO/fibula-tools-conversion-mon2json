@@ -1,0 +1,111 @@
+{
+  "article": "an",
+  "name": "orc spearman",
+  "blood": "blood",
+  "experienceYield": 38,
+  "look": {
+    "type": "race",
+    "id": 50
+  },
+  "corpse": "4101",
+  "stats": {
+    "hitpoints": 105,
+    "baseSpeed": 48,
+    "carryStrength": 150
+  },
+  "flags": [
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 17,
+    "baseDefensePower": 12,
+    "baseArmor": 6,
+    "distance": 4,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 19,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Spear",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 28,
+            "variation": 12,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3105",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.077
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 7,
+      "chance": 0.22
+    },
+    {
+      "id": "3308",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3277",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.23
+    },
+    {
+      "id": "3376",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3362",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Ugaar!"
+  ]
+}

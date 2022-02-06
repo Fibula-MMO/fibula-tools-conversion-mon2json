@@ -1,0 +1,95 @@
+{
+  "article": "a",
+  "name": "fire elemental",
+  "blood": "fire",
+  "experienceYield": 220,
+  "look": {
+    "type": "race",
+    "id": 49
+  },
+  "corpse": "2118",
+  "stats": {
+    "hitpoints": 280,
+    "baseSpeed": 55,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 38,
+    "baseDefensePower": 20,
+    "baseArmor": 18,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 38,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 80.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 20.0
+    },
+    "abilities": [
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 1,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 105,
+            "variation": 50,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 0,
+        "areaEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Fire"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": []
+}

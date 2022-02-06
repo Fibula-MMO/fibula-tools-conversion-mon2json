@@ -1,0 +1,67 @@
+{
+  "article": "a",
+  "name": "rat",
+  "blood": "blood",
+  "experienceYield": 5,
+  "look": {
+    "type": "race",
+    "id": 21
+  },
+  "corpse": "3994",
+  "stats": {
+    "hitpoints": 20,
+    "baseSpeed": 27,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 7,
+    "baseDefensePower": 3,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 15,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 5
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3607",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.7
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.5
+    }
+  ],
+  "phrases": []
+}

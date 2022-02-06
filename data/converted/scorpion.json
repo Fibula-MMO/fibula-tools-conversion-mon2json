@@ -1,0 +1,53 @@
+{
+  "article": "a",
+  "name": "scorpion",
+  "blood": "slime",
+  "experienceYield": 45,
+  "look": {
+    "type": "race",
+    "id": 43
+  },
+  "corpse": "4078",
+  "stats": {
+    "hitpoints": 45,
+    "baseSpeed": 35,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 21,
+    "baseDefensePower": 5,
+    "baseArmor": 14,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 35,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 5
+      },
+      "closest": 60.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 40.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": []
+}

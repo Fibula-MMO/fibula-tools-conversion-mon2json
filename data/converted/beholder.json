@@ -1,0 +1,237 @@
+{
+  "article": "a",
+  "name": "beholder",
+  "blood": "blood",
+  "experienceYield": 170,
+  "look": {
+    "type": "race",
+    "id": 17
+  },
+  "corpse": "4089",
+  "stats": {
+    "hitpoints": 260,
+    "baseSpeed": 35,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 12,
+    "baseDefensePower": 20,
+    "baseArmor": 5,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 35,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 30,
+            "variation": 15,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.062,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 10,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "BubbleBlack",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.071,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 25,
+            "variation": 20,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.058,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.05,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 15,
+            "variation": 10,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 33",
+            "maximumCount": 6
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3418",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.9
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 16,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.7
+    },
+    {
+      "id": "3285",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3282",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3065",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3059",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3412",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    }
+  ],
+  "phrases": [
+    "Eye for eye!",
+    "Here's looking at you!",
+    "Let me take a look at you!",
+    "You've got the look!"
+  ]
+}

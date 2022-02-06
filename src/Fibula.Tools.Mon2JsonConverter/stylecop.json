@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "namingRules": { "tupleElementNameCasing": "PascalCase" },
+    "layoutRules": {
+      "allowConsecutiveUsings": false,
+      "newlineAtEndOfFile": "require"
+    },
+    "documentationRules": {
+      "companyName": "The Fibula Project",
+      "headerDecoration": "-----------------------------------------------------------------",
+      "copyrightText": "Copyright (c) | {companyName}.\r\n{peopleInProject}\r\n\r\nAll Rights Reserved.\r\n\r\nLicensed under the MIT License. See LICENSE in the project root for license information.",
+      "variables": {
+        "peopleInProject": "https://github.com/orgs/fibula-mmo/people"
+      }
+    }
+  }
+}

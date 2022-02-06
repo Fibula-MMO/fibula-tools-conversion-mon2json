@@ -1,0 +1,116 @@
+{
+  "article": "an",
+  "name": "orc berserker",
+  "blood": "blood",
+  "experienceYield": 195,
+  "look": {
+    "type": "race",
+    "id": 8
+  },
+  "corpse": "4045",
+  "stats": {
+    "hitpoints": 210,
+    "baseSpeed": 85,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 65,
+    "baseDefensePower": 12,
+    "baseArmor": 12,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 50,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 60.0,
+      "weakest": 40.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 50,
+            "variation": 5,
+            "duration": 6000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3266",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3352",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.55
+    },
+    {
+      "id": "3269",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.17
+    },
+    {
+      "id": "2914",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    }
+  ],
+  "phrases": [
+    "#Y KRAK ORRRRRRK!"
+  ]
+}

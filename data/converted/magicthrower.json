@@ -1,0 +1,92 @@
+{
+  "article": "a",
+  "name": "magicthrower",
+  "blood": "bones",
+  "experienceYield": 18,
+  "look": {
+    "type": "invisible"
+  },
+  "corpse": "2472",
+  "stats": {
+    "hitpoints": 100,
+    "baseSpeed": 0,
+    "carryStrength": 100
+  },
+  "flags": [
+    "CanPushCreatures",
+    "CannotBePushed",
+    "CannotBeTargetted"
+  ],
+  "combat": {
+    "baseAttackPower": 1,
+    "baseDefensePower": 1,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      },
+      {
+        "type": "physical",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 1,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 100
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "Flame",
+        "projectileEffect": "BlueOrb",
+        "chance": 1.0,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 75,
+            "variation": 25,
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": []
+}

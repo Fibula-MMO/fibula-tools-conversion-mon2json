@@ -1,0 +1,135 @@
+{
+  "article": "an",
+  "name": "elf scout",
+  "blood": "blood",
+  "experienceYield": 75,
+  "look": {
+    "type": "race",
+    "id": 64
+  },
+  "corpse": "4162",
+  "stats": {
+    "hitpoints": 160,
+    "baseSpeed": 70,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 18,
+    "baseDefensePower": 18,
+    "baseArmor": 7,
+    "distance": 4,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Arrow",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 45,
+            "variation": 15,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3447",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.3
+    },
+    {
+      "id": "3350",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.3
+    },
+    {
+      "id": "3592",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "3285",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3448",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.15
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3378",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3376",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "2901",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.14
+    }
+  ],
+  "phrases": [
+    "Tha'shi Ab'Dendriel!",
+    "Feel the sting of my arrows!",
+    "Thy blood will quench the soil's thirst!",
+    "Evicor guide my arrow.",
+    "Your existence will end here!"
+  ]
+}

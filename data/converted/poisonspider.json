@@ -1,0 +1,60 @@
+{
+  "article": "a",
+  "name": "poison spider",
+  "blood": "slime",
+  "experienceYield": 22,
+  "look": {
+    "type": "race",
+    "id": 36
+  },
+  "corpse": "4029",
+  "stats": {
+    "hitpoints": 26,
+    "baseSpeed": 40,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 12,
+    "baseDefensePower": 6,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 6
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.25
+    }
+  ],
+  "phrases": []
+}

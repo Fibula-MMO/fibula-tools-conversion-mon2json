@@ -1,0 +1,137 @@
+{
+  "article": "a",
+  "name": "goblin",
+  "blood": "blood",
+  "experienceYield": 25,
+  "look": {
+    "type": "race",
+    "id": 61
+  },
+  "corpse": "4121",
+  "stats": {
+    "hitpoints": 50,
+    "baseSpeed": 20,
+    "carryStrength": 400
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 10,
+    "baseDefensePower": 8,
+    "baseArmor": 6,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 15,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "SmallStone",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 20,
+            "variation": 5,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3115",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3337",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3267",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "3578",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 9,
+      "chance": 0.5
+    },
+    {
+      "id": "3361",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3355",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3120",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "3294",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3462",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "1781",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.3
+    }
+  ],
+  "phrases": [
+    "Me have him!",
+    "Zig Zag! Gobo attack!",
+    "Help! Goblinkiller!",
+    "Bugga! Bugga!",
+    "Me green, me mean!"
+  ]
+}

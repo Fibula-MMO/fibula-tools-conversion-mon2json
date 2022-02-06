@@ -1,0 +1,120 @@
+{
+  "article": "a",
+  "name": "stone golem",
+  "blood": "bones",
+  "experienceYield": 160,
+  "look": {
+    "type": "race",
+    "id": 67
+  },
+  "corpse": "4133",
+  "stats": {
+    "hitpoints": 270,
+    "baseSpeed": 50,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 38,
+    "baseDefensePower": 25,
+    "baseArmor": 30,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 52,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3283",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3007",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.16
+    },
+    {
+      "id": "3050",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3039",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "1781",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.13
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.07
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    }
+  ],
+  "phrases": []
+}

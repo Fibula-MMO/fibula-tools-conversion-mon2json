@@ -1,0 +1,89 @@
+{
+  "article": "a",
+  "name": "swamp troll",
+  "blood": "blood",
+  "experienceYield": 25,
+  "look": {
+    "type": "race",
+    "id": 76
+  },
+  "corpse": "4176",
+  "stats": {
+    "hitpoints": 55,
+    "baseSpeed": 24,
+    "carryStrength": 300
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 12,
+    "baseDefensePower": 10,
+    "baseArmor": 6,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 20,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3267",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3578",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.6
+    },
+    {
+      "id": "3483",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.5
+    },
+    {
+      "id": "3552",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.15
+    }
+  ],
+  "phrases": [
+    "Grrrr",
+    "Groar!",
+    "Me strong! Me ate spinach!"
+  ]
+}

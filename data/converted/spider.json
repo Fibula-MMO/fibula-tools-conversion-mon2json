@@ -1,0 +1,55 @@
+{
+  "article": "a",
+  "name": "spider",
+  "blood": "slime",
+  "experienceYield": 12,
+  "look": {
+    "type": "race",
+    "id": 30
+  },
+  "corpse": "3988",
+  "stats": {
+    "hitpoints": 20,
+    "baseSpeed": 36,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 7,
+    "baseDefensePower": 2,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 19,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 6
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.35
+    }
+  ],
+  "phrases": []
+}

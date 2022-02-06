@@ -1,0 +1,593 @@
+{
+  "article": "",
+  "name": "Apocalypse",
+  "blood": "fire",
+  "experienceYield": 30000,
+  "look": {
+    "type": "race",
+    "id": 35
+  },
+  "corpse": "4097",
+  "stats": {
+    "hitpoints": 125000,
+    "baseSpeed": 230,
+    "carryStrength": 5000
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 295,
+    "baseDefensePower": 145,
+    "baseArmor": 188,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 200,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 5
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 3000
+      },
+      "closest": 65.0,
+      "weakest": 5.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 8000,
+            "variation": 2000
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.25,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 2500,
+            "variation": 500
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 95,
+            "variation": 5,
+            "duration": 5000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 7,
+        "areaEffect": "BubbleBlack",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 500,
+            "variation": 100,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 5,
+        "areaEffect": "DamageVenomMissile",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -95,
+            "variation": 5,
+            "duration": 60000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "XGray",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "changeSkill",
+            "base": 90,
+            "variation": 10,
+            "duration": 10000,
+            "kind": "1"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 6,
+        "areaEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 500,
+            "variation": 400,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 0,
+        "spread": 30,
+        "areaEffect": "BubbleBlue",
+        "chance": 0.062,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 850,
+            "variation": 250,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 30,
+        "areaEffect": "None",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 600,
+            "variation": 300,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 0,
+        "areaEffect": "GlitterRed",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 1000,
+            "variation": 500,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 0,
+        "spread": 0,
+        "areaEffect": "Poison",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 1500,
+            "variation": 500,
+            "kind": "PoisonCondition"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 0,
+        "areaEffect": "GlitterRed",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 750,
+            "variation": 250,
+            "kind": "LifeDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3025",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "3116",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3027",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.15
+    },
+    {
+      "id": "3041",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3079",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3076",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3008",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3007",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    },
+    {
+      "id": "3420",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.155
+    },
+    {
+      "id": "3356",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3275",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3322",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3051",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.135
+    },
+    {
+      "id": "3320",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.17
+    },
+    {
+      "id": "3281",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.125
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.999
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.888
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.777
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 100,
+      "chance": 0.666
+    },
+    {
+      "id": "3063",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3364",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "2903",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3306",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3038",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3284",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3046",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.115
+    },
+    {
+      "id": "3366",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3414",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3048",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3062",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3070",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "3060",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3055",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3084",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "2848",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.026
+    },
+    {
+      "id": "3098",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "3006",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "3054",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "3290",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.155
+    },
+    {
+      "id": "3324",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.135
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.095
+    },
+    {
+      "id": "3032",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.155
+    },
+    {
+      "id": "3029",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.135
+    },
+    {
+      "id": "3066",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "3049",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.095
+    },
+    {
+      "id": "3081",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3058",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3034",
+      "name": "placeholder",
+      "maximumCount": 7,
+      "chance": 0.14
+    },
+    {
+      "id": "2993",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.145
+    },
+    {
+      "id": "3309",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.135
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3069",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.035
+    },
+    {
+      "id": "3002",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3072",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3026",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.125
+    }
+  ],
+  "phrases": [
+    "#Y BOW TO THE POWER OF THE RUTHLESS SEVEN!",
+    "#Y DESTRUCTION!",
+    "#Y CHAOS!",
+    "#Y DEATH TO ALL!"
+  ]
+}

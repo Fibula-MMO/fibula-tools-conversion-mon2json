@@ -1,0 +1,274 @@
+{
+  "article": "an",
+  "name": "elder beholder",
+  "blood": "blood",
+  "experienceYield": 280,
+  "look": {
+    "type": "race",
+    "id": 108
+  },
+  "corpse": "4233",
+  "stats": {
+    "hitpoints": 500,
+    "baseSpeed": 45,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 16,
+    "baseDefensePower": 26,
+    "baseArmor": 13,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 45,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.071,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 60,
+            "variation": 15,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 70,
+            "variation": 10,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "BubbleBlack",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 10,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 50,
+            "variation": 20,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.055,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.055,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 80,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.052,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 30,
+            "variation": 10,
+            "kind": "ManaDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -90,
+            "variation": 20,
+            "duration": 20000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 109",
+            "maximumCount": 6
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 100",
+            "maximumCount": 6
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3408",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3418",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 24,
+      "chance": 0.9
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 32,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 35,
+      "chance": 0.7
+    },
+    {
+      "id": "3285",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3282",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3059",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    }
+  ],
+  "phrases": [
+    "653768764!",
+    "Let me take a look at you!",
+    "Inferior creatures, bow before my power!",
+    "659978 54764!"
+  ]
+}

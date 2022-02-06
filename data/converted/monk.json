@@ -1,0 +1,155 @@
+{
+  "article": "a",
+  "name": "monk",
+  "blood": "blood",
+  "experienceYield": 200,
+  "look": {
+    "type": "race",
+    "id": 57
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 240,
+    "baseSpeed": 80,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 42,
+    "baseDefensePower": 52,
+    "baseArmor": 25,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 55,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 20.0,
+      "strongest": 10.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 40,
+            "variation": 10
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 55,
+            "variation": 5,
+            "duration": 2000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3077",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "2853",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.13
+    },
+    {
+      "id": "3600",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "2885",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 18,
+      "chance": 0.15
+    },
+    {
+      "id": "3361",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    },
+    {
+      "id": "3061",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "2914",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3050",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3551",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "2815",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    }
+  ],
+  "phrases": [
+    "I will punish the sinners!",
+    "A prayer to the almighty one.",
+    "#Y Repent Heretic!"
+  ]
+}

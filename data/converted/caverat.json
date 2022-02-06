@@ -1,0 +1,76 @@
+{
+  "article": "a",
+  "name": "cave rat",
+  "blood": "blood",
+  "experienceYield": 10,
+  "look": {
+    "type": "race",
+    "id": 56
+  },
+  "corpse": "3994",
+  "stats": {
+    "hitpoints": 30,
+    "baseSpeed": 35,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 8,
+    "baseDefensePower": 4,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 18,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 3
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3607",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3598",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.85
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.5
+    }
+  ],
+  "phrases": [
+    "Meeeeep!",
+    "Meep!"
+  ]
+}

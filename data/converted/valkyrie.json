@@ -1,0 +1,148 @@
+{
+  "article": "a",
+  "name": "valkyrie",
+  "blood": "blood",
+  "experienceYield": 85,
+  "look": {
+    "type": "outfit",
+    "id": 139,
+    "head": 113,
+    "body": 38,
+    "legs": 76,
+    "feet": 96
+  },
+  "corpse": "4247",
+  "stats": {
+    "hitpoints": 190,
+    "baseSpeed": 48,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 20,
+    "baseDefensePower": 14,
+    "baseArmor": 12,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 35,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Spear",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 7,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3352",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3267",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.25
+    },
+    {
+      "id": "3275",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.004
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.32
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.3
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.008
+    },
+    {
+      "id": "3084",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.011
+    },
+    {
+      "id": "3585",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.075
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.8
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3277",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.6
+    }
+  ],
+  "phrases": [
+    "Stand still!",
+    "One more head for me!",
+    "Head off!"
+  ]
+}

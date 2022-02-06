@@ -1,0 +1,54 @@
+{
+  "article": "a",
+  "name": "pig",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 60
+  },
+  "corpse": "4116",
+  "stats": {
+    "hitpoints": 25,
+    "baseSpeed": 17,
+    "carryStrength": 150
+  },
+  "flags": [],
+  "combat": {
+    "baseDefensePower": 2,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 10,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 25
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.65
+    }
+  ],
+  "phrases": []
+}

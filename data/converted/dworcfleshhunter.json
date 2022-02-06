@@ -1,0 +1,134 @@
+{
+  "article": "a",
+  "name": "dworc fleshhunter",
+  "blood": "blood",
+  "experienceYield": 35,
+  "look": {
+    "type": "race",
+    "id": 215
+  },
+  "corpse": "4372",
+  "stats": {
+    "hitpoints": 85,
+    "baseSpeed": 34,
+    "carryStrength": 400
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 17,
+    "baseDefensePower": 8,
+    "baseArmor": 3,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 8
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "ThrowingKnife",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 10,
+            "variation": 5,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3441",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3471",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.8
+    },
+    {
+      "id": "3347",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3361",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.11
+    },
+    {
+      "id": "3299",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3346",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.03
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.055
+    },
+    {
+      "id": "3403",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    }
+  ],
+  "phrases": [
+    "Grak brrretz!",
+    "Grow truk grrrrr.",
+    "Prek tars, dekklep zurk."
+  ]
+}

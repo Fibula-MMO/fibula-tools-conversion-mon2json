@@ -1,0 +1,46 @@
+{
+  "article": "a",
+  "name": "butterfly",
+  "blood": "slime",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 228
+  },
+  "corpse": "4991",
+  "stats": {
+    "hitpoints": 2,
+    "baseSpeed": 120,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseDefensePower": 14,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 5,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 2
+      },
+      "closest": 60.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 40.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": []
+}

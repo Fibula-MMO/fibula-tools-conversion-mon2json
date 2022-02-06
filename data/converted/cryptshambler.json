@@ -1,0 +1,153 @@
+{
+  "article": "a",
+  "name": "crypt shambler",
+  "blood": "bones",
+  "experienceYield": 195,
+  "look": {
+    "type": "race",
+    "id": 100
+  },
+  "corpse": "4209",
+  "stats": {
+    "hitpoints": 330,
+    "baseSpeed": 30,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 39,
+    "baseDefensePower": 25,
+    "baseArmor": 30,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 60,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.04
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 0.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 40,
+            "variation": 15,
+            "kind": "LifeDrain"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3115",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3441",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3338",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.4
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 30,
+      "chance": 0.3
+    },
+    {
+      "id": "3353",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3112",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3287",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.01
+    },
+    {
+      "id": "3265",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.9
+    }
+  ],
+  "phrases": [
+    "Uhhhhhhh!",
+    "Aaaaahhhh!",
+    "Hoooohhh!",
+    "Chhhhhhh!"
+  ]
+}

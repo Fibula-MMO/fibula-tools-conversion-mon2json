@@ -1,0 +1,123 @@
+{
+  "article": "a",
+  "name": "lizard sentinel",
+  "blood": "blood",
+  "experienceYield": 105,
+  "look": {
+    "type": "race",
+    "id": 114
+  },
+  "corpse": "4324",
+  "stats": {
+    "hitpoints": 265,
+    "baseSpeed": 50,
+    "carryStrength": 400
+  },
+  "flags": [
+    "CanPushItems",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 26,
+    "baseDefensePower": 24,
+    "baseArmor": 17,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 35,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Spear",
+        "chance": 0.066,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 55,
+            "variation": 15,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3358",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 15,
+      "chance": 0.8
+    },
+    {
+      "id": "3269",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3313",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.012
+    },
+    {
+      "id": "3377",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3444",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3277",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Tssss!"
+  ]
+}

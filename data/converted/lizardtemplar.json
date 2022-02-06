@@ -1,0 +1,113 @@
+{
+  "article": "a",
+  "name": "lizard templar",
+  "blood": "blood",
+  "experienceYield": 145,
+  "look": {
+    "type": "race",
+    "id": 113
+  },
+  "corpse": "4321",
+  "stats": {
+    "hitpoints": 410,
+    "baseSpeed": 47,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 30,
+    "baseDefensePower": 20,
+    "baseArmor": 26,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 44,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.8
+    },
+    {
+      "id": "3282",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.007
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3445",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3294",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3032",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3351",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3264",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3345",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    }
+  ],
+  "phrases": [
+    "Hissss!"
+  ]
+}

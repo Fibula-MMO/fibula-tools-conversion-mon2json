@@ -1,0 +1,201 @@
+{
+  "article": "",
+  "name": "The Halloween Hare",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 74
+  },
+  "corpse": "0",
+  "stats": {
+    "hitpoints": 2000,
+    "baseSpeed": 120,
+    "carryStrength": 1000
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance",
+    "CannotBeTargetted"
+  ],
+  "combat": {
+    "baseDefensePower": 999,
+    "baseArmor": 999,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      },
+      {
+        "type": "physical",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 0,
+        "targetCount": 0,
+        "factor": 1.2,
+        "increase": 0
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.95
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 0.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 100.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "None",
+        "chance": 1.0,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 60000,
+            "targetLook": {
+              "type": "race",
+              "id": 74
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "race",
+              "id": 54
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "race",
+              "id": 48
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "item",
+              "id": 2978
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "race",
+              "id": 33
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "race",
+              "id": 68
+            }
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 5,
+        "radius": 3,
+        "areaEffect": "Puff",
+        "projectileEffect": "BlackOrb",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 6000000,
+            "targetLook": {
+              "type": "race",
+              "id": 65
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [],
+  "phrases": []
+}

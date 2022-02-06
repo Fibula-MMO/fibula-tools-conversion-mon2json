@@ -1,0 +1,167 @@
+{
+  "article": "a",
+  "name": "merlkin",
+  "blood": "blood",
+  "experienceYield": 135,
+  "look": {
+    "type": "race",
+    "id": 117
+  },
+  "corpse": "4336",
+  "stats": {
+    "hitpoints": 230,
+    "baseSpeed": 57,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 15,
+    "baseDefensePower": 40,
+    "baseArmor": 16,
+    "distance": 4,
+    "immunities": [
+      {
+        "type": "energy",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 25,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.09,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 25,
+            "variation": 15
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "AreaFlame",
+        "projectileEffect": "OrangeOrb",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 60,
+            "variation": 30,
+            "kind": "Fire"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageEnergy",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.333,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 30,
+            "variation": 15,
+            "kind": "Energy"
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 0,
+        "areaEffect": "None",
+        "projectileEffect": "BlueOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.3
+    },
+    {
+      "id": "3587",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.05
+    },
+    {
+      "id": "3348",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 25,
+      "chance": 0.8
+    },
+    {
+      "id": "3046",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3586",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.01
+    },
+    {
+      "id": "3033",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3072",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    }
+  ],
+  "phrases": [
+    "Ugh! Ugh! Ugh!",
+    "Holy banana!",
+    "Chakka! Chakka!"
+  ]
+}

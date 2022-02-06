@@ -1,0 +1,49 @@
+{
+  "article": "a",
+  "name": "dog",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 32
+  },
+  "corpse": "4020",
+  "stats": {
+    "hitpoints": 20,
+    "baseSpeed": 22,
+    "carryStrength": 250
+  },
+  "flags": [],
+  "combat": {
+    "baseDefensePower": 2,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 0,
+        "targetCount": 0,
+        "factor": 1.2,
+        "increase": 0
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 8
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [],
+  "phrases": [
+    "Wuff wuff"
+  ]
+}

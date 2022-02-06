@@ -1,0 +1,209 @@
+{
+  "article": "",
+  "name": "The Old Widow",
+  "blood": "slime",
+  "experienceYield": 2800,
+  "look": {
+    "type": "race",
+    "id": 208
+  },
+  "corpse": "4038",
+  "stats": {
+    "hitpoints": 3550,
+    "baseSpeed": 99,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 95,
+    "baseDefensePower": 60,
+    "baseArmor": 45,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 120,
+        "targetCount": 100,
+        "factor": 1.1,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.1
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 20.0,
+      "strongest": 0.0,
+      "random": 10.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 250,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 155,
+            "variation": 45,
+            "duration": 6000
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 275,
+            "variation": 25,
+            "kind": "Poison"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.2,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -90,
+            "variation": 10,
+            "duration": 25000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 38",
+            "maximumCount": 2
+          }
+        ]
+      },
+      {
+        "type": "targetArea",
+        "range": 7,
+        "radius": 3,
+        "areaEffect": "None",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.09,
+        "actions": [
+          {
+            "type": "magicField",
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3372",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.16
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 77,
+      "chance": 0.666
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 66,
+      "chance": 0.999
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 22,
+      "chance": 0.999
+    },
+    {
+      "id": "3370",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3371",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.006
+    },
+    {
+      "id": "3357",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3055",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3351",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3053",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.014
+    }
+  ],
+  "phrases": []
+}

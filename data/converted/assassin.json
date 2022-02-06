@@ -1,0 +1,191 @@
+{
+  "article": "an",
+  "name": "assassin",
+  "blood": "blood",
+  "experienceYield": 105,
+  "look": {
+    "type": "outfit",
+    "id": 129,
+    "head": 95,
+    "body": 95,
+    "legs": 95,
+    "feet": 95
+  },
+  "corpse": "4240",
+  "stats": {
+    "hitpoints": 175,
+    "baseSpeed": 72,
+    "carryStrength": 500
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 45,
+    "baseDefensePower": 40,
+    "baseArmor": 17,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 45,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 20.0,
+      "strongest": 10.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": 60,
+            "variation": 5,
+            "duration": 3000
+          }
+        ]
+      },
+      {
+        "type": "self",
+        "casterEffect": "GlitterBlue",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "changeOutfit",
+            "duration": 2000,
+            "targetLook": {
+              "type": "invisible"
+            }
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "ThrowingStar",
+        "chance": 0.125,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 33,
+            "variation": 5,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 6,
+        "targetEffect": "DamageVenomMissile",
+        "projectileEffect": "GreenOrb",
+        "chance": 0.09,
+        "actions": [
+          {
+            "type": "makeDrunk",
+            "base": 3,
+            "duration": 3000,
+            "effect": "None"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3413",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3292",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 40,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.15
+    },
+    {
+      "id": "3405",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3291",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3404",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3410",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.02
+    },
+    {
+      "id": "3028",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3351",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3409",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.3
+    }
+  ],
+  "phrases": [
+    "Die!",
+    "Feel the hand of death!",
+    "You are on my deathlist!"
+  ]
+}

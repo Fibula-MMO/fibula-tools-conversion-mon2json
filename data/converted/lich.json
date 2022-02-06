@@ -1,0 +1,256 @@
+{
+  "article": "a",
+  "name": "lich",
+  "blood": "bones",
+  "experienceYield": 900,
+  "look": {
+    "type": "race",
+    "id": 99
+  },
+  "corpse": "4206",
+  "stats": {
+    "hitpoints": 880,
+    "baseSpeed": 65,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 40,
+    "baseDefensePower": 60,
+    "baseArmor": 50,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 40,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.03
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 80.0,
+      "weakest": 10.0,
+      "strongest": 10.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 100,
+            "variation": 50
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "GlitterBlue",
+        "projectileEffect": "None",
+        "chance": 0.033,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 150,
+            "variation": 100,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -95,
+            "variation": 20,
+            "duration": 30000
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "GlitterRed",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 160,
+            "variation": 40,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.166,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 101",
+            "maximumCount": 4
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 0,
+        "areaEffect": "GlitterRed",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 150,
+            "variation": 50,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "targetDirection",
+        "length": 8,
+        "spread": 0,
+        "areaEffect": "Poison",
+        "chance": 0.083,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 350,
+            "variation": 50,
+            "kind": "PoisonCondition"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3027",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3567",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3435",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3122",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 80,
+      "chance": 0.3
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 40,
+      "chance": 0.4
+    },
+    {
+      "id": "3062",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3055",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3098",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3059",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    },
+    {
+      "id": "3289",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.6
+    },
+    {
+      "id": "3373",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.005
+    },
+    {
+      "id": "3026",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    }
+  ],
+  "phrases": [
+    "Death awaits all!",
+    "Doomed be the living!",
+    "Death and Decay!",
+    "You will endure agony beyond thy death!",
+    "Come to me my children!",
+    "Pain sweet pain!",
+    "Thy living flesh offends me!"
+  ]
+}

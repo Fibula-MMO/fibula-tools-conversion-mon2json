@@ -1,0 +1,111 @@
+{
+  "article": "a",
+  "name": "rotworm",
+  "blood": "blood",
+  "experienceYield": 40,
+  "look": {
+    "type": "race",
+    "id": 26
+  },
+  "corpse": "4005",
+  "stats": {
+    "hitpoints": 65,
+    "baseSpeed": 18,
+    "carryStrength": 300
+  },
+  "flags": [
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 18,
+    "baseDefensePower": 11,
+    "baseArmor": 8,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 26,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3430",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 8,
+      "chance": 0.6
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 12,
+      "chance": 0.3
+    },
+    {
+      "id": "3582",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3300",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.003
+    },
+    {
+      "id": "3374",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3286",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.045
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3264",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.03
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 5,
+      "chance": 0.5
+    }
+  ],
+  "phrases": []
+}

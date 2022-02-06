@@ -1,0 +1,87 @@
+{
+  "article": "a",
+  "name": "terror bird",
+  "blood": "blood",
+  "experienceYield": 150,
+  "look": {
+    "type": "race",
+    "id": 218
+  },
+  "corpse": "4382",
+  "stats": {
+    "hitpoints": 300,
+    "baseSpeed": 66,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 37,
+    "baseDefensePower": 21,
+    "baseArmor": 13,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 46,
+        "targetCount": 100,
+        "factor": 2.0,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 0.0,
+      "strongest": 30.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3406",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.7
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 20,
+      "chance": 0.4
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.5
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.2
+    }
+  ],
+  "phrases": [
+    "CRAAAHHH!",
+    "Gruuuh Gruuuh.",
+    "Carrah Carrah!"
+  ]
+}

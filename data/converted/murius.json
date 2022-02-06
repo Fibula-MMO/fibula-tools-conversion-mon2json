@@ -1,0 +1,173 @@
+{
+  "article": "",
+  "name": "General Murius",
+  "blood": "blood",
+  "experienceYield": 300,
+  "look": {
+    "type": "race",
+    "id": 207
+  },
+  "corpse": "4057",
+  "stats": {
+    "hitpoints": 550,
+    "baseSpeed": 85,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CanPushCreatures",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 55,
+    "baseDefensePower": 52,
+    "baseArmor": 26,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 70,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.05
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 70.0,
+      "weakest": 10.0,
+      "strongest": 20.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "self",
+        "casterEffect": "GlitterRed",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "heal",
+            "base": 75,
+            "variation": 25
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "Bolt",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 85,
+            "variation": 35,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 2,
+        "areaEffect": "XGray",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 65,
+            "variation": 15,
+            "kind": "Physical"
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 24",
+            "maximumCount": 2
+          }
+        ]
+      },
+      {
+        "type": "selfArea",
+        "radius": 0,
+        "areaEffect": "GlitterBlue",
+        "chance": 0.111,
+        "actions": [
+          {
+            "type": "summon",
+            "monsterFile": "filename for race 29",
+            "maximumCount": 2
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3413",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.18
+    },
+    {
+      "id": "3359",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.28
+    },
+    {
+      "id": "3558",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.35
+    },
+    {
+      "id": "3275",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.075
+    },
+    {
+      "id": "3483",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 50,
+      "chance": 0.6
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Feel the power of the Mooh'Tah!",
+    "You will get what you deserve!",
+    "For the king!",
+    "Guards!"
+  ]
+}

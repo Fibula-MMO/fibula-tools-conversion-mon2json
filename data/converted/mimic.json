@@ -1,0 +1,61 @@
+{
+  "article": "a",
+  "name": "mimic",
+  "blood": "bones",
+  "experienceYield": 18,
+  "look": {
+    "type": "race",
+    "id": 92
+  },
+  "corpse": "2472",
+  "stats": {
+    "hitpoints": 29,
+    "baseSpeed": 40,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 9,
+    "baseDefensePower": 3,
+    "baseArmor": 2,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 23,
+        "targetCount": 50,
+        "factor": 1.0,
+        "increase": 2
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3590",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.03
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 6,
+      "chance": 0.35
+    }
+  ],
+  "phrases": []
+}

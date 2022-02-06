@@ -1,0 +1,136 @@
+{
+  "article": "an",
+  "name": "amazon",
+  "blood": "blood",
+  "experienceYield": 60,
+  "look": {
+    "type": "outfit",
+    "id": 137,
+    "head": 113,
+    "body": 120,
+    "legs": 95,
+    "feet": 115
+  },
+  "corpse": "4247",
+  "stats": {
+    "hitpoints": 110,
+    "baseSpeed": 46,
+    "carryStrength": 800
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed",
+    "KeepsDistance"
+  ],
+  "combat": {
+    "baseAttackPower": 16,
+    "baseDefensePower": 11,
+    "baseArmor": 11,
+    "distance": 4,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 24,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.5
+      },
+      "flee": {
+        "hitpointThreshold": 10
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "None",
+        "projectileEffect": "ThrowingKnife",
+        "chance": 0.1,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 25,
+            "variation": 5,
+            "kind": "Physical"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3602",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "3008",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3267",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.8
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 10,
+      "chance": 0.4
+    },
+    {
+      "id": "3361",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.5
+    },
+    {
+      "id": "3273",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.23
+    },
+    {
+      "id": "3114",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.8
+    },
+    {
+      "id": "3030",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3426",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "2920",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    }
+  ],
+  "phrases": [
+    "Yeeee ha!",
+    "Your head will be mine!"
+  ]
+}

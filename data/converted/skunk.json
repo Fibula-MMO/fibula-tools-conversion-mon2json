@@ -1,0 +1,78 @@
+{
+  "article": "a",
+  "name": "skunk",
+  "blood": "blood",
+  "experienceYield": 3,
+  "look": {
+    "type": "race",
+    "id": 106
+  },
+  "corpse": "4227",
+  "stats": {
+    "hitpoints": 20,
+    "baseSpeed": 28,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 4,
+    "baseDefensePower": 5,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 15,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 8
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "targetArea",
+        "range": 1,
+        "radius": 0,
+        "areaEffect": "DamageVenomMissile",
+        "projectileEffect": "None",
+        "chance": 0.016,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 2,
+            "variation": 1,
+            "kind": "Poison"
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.01
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    }
+  ],
+  "phrases": []
+}

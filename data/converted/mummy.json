@@ -1,0 +1,169 @@
+{
+  "article": "a",
+  "name": "mummy",
+  "blood": "bones",
+  "experienceYield": 150,
+  "look": {
+    "type": "race",
+    "id": 65
+  },
+  "corpse": "4130",
+  "stats": {
+    "hitpoints": 240,
+    "baseSpeed": 35,
+    "carryStrength": 600
+  },
+  "flags": [
+    "CanPushItems",
+    "CannotBePushed"
+  ],
+  "combat": {
+    "baseAttackPower": 32,
+    "baseDefensePower": 23,
+    "baseArmor": 14,
+    "distance": 1,
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifeDrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 50,
+        "targetCount": 100,
+        "factor": 1.5,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 0
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": [
+      {
+        "type": "target",
+        "range": 1,
+        "targetEffect": "None",
+        "projectileEffect": "None",
+        "chance": 0.142,
+        "actions": [
+          {
+            "type": "damage",
+            "base": 35,
+            "variation": 5,
+            "kind": "LifeDrain"
+          }
+        ]
+      },
+      {
+        "type": "target",
+        "range": 7,
+        "targetEffect": "GlitterRed",
+        "projectileEffect": "None",
+        "chance": 0.076,
+        "actions": [
+          {
+            "type": "changeSpeed",
+            "base": -80,
+            "variation": 40,
+            "duration": 10000
+          }
+        ]
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "id": "3027",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3429",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.002
+    },
+    {
+      "id": "3007",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.015
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 80,
+      "chance": 0.4
+    },
+    {
+      "id": "3046",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.16
+    },
+    {
+      "id": "3299",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.025
+    },
+    {
+      "id": "3294",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3054",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.001
+    },
+    {
+      "id": "3017",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.04
+    },
+    {
+      "id": "3045",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.05
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.7
+    }
+  ],
+  "phrases": [
+    "I will ssswallow your sssoul!",
+    "Ahkahra exura belil mort!",
+    "Yohag Sssetham!",
+    "I will tassste life again!",
+    "Mort ulhegh dakh visss.",
+    "Flesssh to dussst!"
+  ]
+}

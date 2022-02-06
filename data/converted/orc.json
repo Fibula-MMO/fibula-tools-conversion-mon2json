@@ -1,0 +1,95 @@
+{
+  "article": "an",
+  "name": "orc",
+  "blood": "blood",
+  "experienceYield": 25,
+  "look": {
+    "type": "race",
+    "id": 5
+  },
+  "corpse": "4001",
+  "stats": {
+    "hitpoints": 70,
+    "baseSpeed": 35,
+    "carryStrength": 400
+  },
+  "flags": [],
+  "combat": {
+    "baseAttackPower": 13,
+    "baseDefensePower": 8,
+    "baseArmor": 4,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 22,
+        "targetCount": 100,
+        "factor": 1.2,
+        "increase": 1
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3274",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.08
+    },
+    {
+      "id": "3031",
+      "name": "placeholder",
+      "maximumCount": 8,
+      "chance": 0.85
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "3273",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.06
+    },
+    {
+      "id": "3378",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.12
+    },
+    {
+      "id": "3376",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.09
+    },
+    {
+      "id": "3426",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.1
+    }
+  ],
+  "phrases": [
+    "Grak brrretz!",
+    "Grow truk grrrrr.",
+    "Prek tars, dekklep zurk."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "article": "a",
+  "name": "chicken",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 111
+  },
+  "corpse": "4330",
+  "stats": {
+    "hitpoints": 15,
+    "baseSpeed": 24,
+    "carryStrength": 200
+  },
+  "flags": [],
+  "combat": {
+    "baseDefensePower": 2,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 0,
+        "targetCount": 0,
+        "factor": 1.2,
+        "increase": 0
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 15
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3606",
+      "name": "placeholder",
+      "maximumCount": 1,
+      "chance": 0.01
+    },
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 2,
+      "chance": 0.02
+    },
+    {
+      "id": "3492",
+      "name": "placeholder",
+      "maximumCount": 3,
+      "chance": 0.3
+    }
+  ],
+  "phrases": [
+    "Gokgoooook",
+    "Cluck Cluck"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "article": "a",
+  "name": "black sheep",
+  "blood": "blood",
+  "experienceYield": 0,
+  "look": {
+    "type": "race",
+    "id": 13
+  },
+  "corpse": "4095",
+  "stats": {
+    "hitpoints": 20,
+    "baseSpeed": 18,
+    "carryStrength": 100
+  },
+  "flags": [],
+  "combat": {
+    "baseDefensePower": 2,
+    "baseArmor": 1,
+    "distance": 1,
+    "immunities": [],
+    "skills": [
+      {
+        "type": "fist",
+        "level": 0,
+        "targetCount": 0,
+        "factor": 1.2,
+        "increase": 0
+      }
+    ],
+    "strategy": {
+      "changeTarget": {
+        "chance": 0.0
+      },
+      "flee": {
+        "hitpointThreshold": 20
+      },
+      "closest": 100.0,
+      "weakest": 0.0,
+      "strongest": 0.0,
+      "random": 0.0
+    },
+    "abilities": []
+  },
+  "inventory": [
+    {
+      "id": "3577",
+      "name": "placeholder",
+      "maximumCount": 4,
+      "chance": 0.7
+    }
+  ],
+  "phrases": [
+    "Maeh"
+  ]
+}
