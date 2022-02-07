@@ -32,7 +32,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Fibula.Utilities.CLI.Streams" Version="0.0.1" />
-		<PackageReference Include="Fibula.Utilities.CommandLine" Version="0.0.1" />
 		<PackageReference Include="Fibula.Utilities.Validation" Version="1.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.2-mauipre.1.22054.8" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.2-mauipre.1.22054.8" />
