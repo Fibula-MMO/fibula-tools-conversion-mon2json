@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -61,7 +61,7 @@
             "type": "damage",
             "base": 75,
             "variation": 25,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -70,79 +70,79 @@
   "inventory": [
     {
       "id": "3447",
-      "name": "placeholder",
+      "name": "arrow",
       "maximumCount": 10,
       "chance": 0.7
     },
     {
       "id": "3447",
-      "name": "placeholder",
+      "name": "arrow",
       "maximumCount": 12,
       "chance": 0.4
     },
     {
       "id": "3350",
-      "name": "placeholder",
+      "name": "bow",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3359",
-      "name": "placeholder",
+      "name": "brass armor",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3354",
-      "name": "placeholder",
+      "name": "brass helmet",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3449",
-      "name": "placeholder",
+      "name": "burst arrow",
       "maximumCount": 3,
       "chance": 0.05
     },
     {
       "id": "3085",
-      "name": "placeholder",
+      "name": "dragon necklace",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.14
     },
     {
       "id": "3586",
-      "name": "placeholder",
+      "name": "orange",
       "maximumCount": 2,
       "chance": 0.2
     },
     {
       "id": "3601",
-      "name": "placeholder",
+      "name": "roll",
       "maximumCount": 2,
       "chance": 0.11
     },
     {
       "id": "3030",
-      "name": "placeholder",
+      "name": "small ruby",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.05
     }

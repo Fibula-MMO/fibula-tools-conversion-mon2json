@@ -35,15 +35,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -70,7 +70,7 @@
             "type": "damage",
             "base": 45,
             "variation": 10,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -79,49 +79,49 @@
   "inventory": [
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 2,
       "chance": 0.3
     },
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 10,
       "chance": 0.05
     },
     {
       "id": "3352",
-      "name": "placeholder",
+      "name": "chain helmet",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3589",
-      "name": "placeholder",
+      "name": "coconut",
       "maximumCount": 5,
       "chance": 0.2
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.8
     },
     {
       "id": "3593",
-      "name": "placeholder",
+      "name": "melon",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3586",
-      "name": "placeholder",
+      "name": "orange",
       "maximumCount": 5,
       "chance": 0.2
     },
     {
       "id": "1781",
-      "name": "placeholder",
+      "name": "small stone",
       "maximumCount": 3,
       "chance": 0.3
     }

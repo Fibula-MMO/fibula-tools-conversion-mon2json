@@ -31,6 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Fibula.Plugins.ItemLoaders.CipObjectsFile" Version="1.0.0" />
 		<PackageReference Include="Fibula.Utilities.CLI.Streams" Version="0.0.1" />
 		<PackageReference Include="Fibula.Utilities.Validation" Version="1.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.2-mauipre.1.22054.8" />

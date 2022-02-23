@@ -39,70 +39,70 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.8
     },
     {
       "id": "3282",
-      "name": "placeholder",
+      "name": "morning star",
       "maximumCount": 1,
       "chance": 0.007
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3445",
-      "name": "placeholder",
+      "name": "salamander shield",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3032",
-      "name": "placeholder",
+      "name": "small emerald",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3351",
-      "name": "placeholder",
+      "name": "steel helmet",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3345",
-      "name": "placeholder",
+      "name": "templar scytheblade",
       "maximumCount": 1,
       "chance": 0.005
     }

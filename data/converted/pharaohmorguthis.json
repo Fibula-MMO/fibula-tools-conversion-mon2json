@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 80.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 80.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -123,7 +123,7 @@
             "type": "damage",
             "base": 400,
             "variation": 150,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -152,7 +152,7 @@
             "type": "damage",
             "base": 450,
             "variation": 150,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -166,7 +166,7 @@
             "type": "damage",
             "base": 600,
             "variation": 150,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -188,61 +188,61 @@
   "inventory": [
     {
       "id": "3027",
-      "name": "placeholder",
+      "name": "black pearl",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3019",
-      "name": "placeholder",
+      "name": "demonbone amulet",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 85,
       "chance": 0.5
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 95,
       "chance": 0.35
     },
     {
       "id": "3318",
-      "name": "placeholder",
+      "name": "knight axe",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3331",
-      "name": "placeholder",
+      "name": "ravager's axe",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3554",
-      "name": "placeholder",
+      "name": "steel boots",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3081",
-      "name": "placeholder",
+      "name": "stone skin amulet",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3237",
-      "name": "placeholder",
+      "name": "sword hilt",
       "maximumCount": 1,
       "chance": 1.0
     }

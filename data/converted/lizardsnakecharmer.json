@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -73,7 +73,7 @@
             "type": "damage",
             "base": 170,
             "variation": 30,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       },
@@ -102,7 +102,7 @@
             "type": "damage",
             "base": 75,
             "variation": 25,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -111,67 +111,67 @@
   "inventory": [
     {
       "id": "3565",
-      "name": "placeholder",
+      "name": "cape",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3407",
-      "name": "placeholder",
+      "name": "charmer's tiara",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3998",
-      "name": "placeholder",
+      "name": "dead snake",
       "maximumCount": 1,
       "chance": 0.7
     },
     {
       "id": "3122",
-      "name": "placeholder",
+      "name": "dirty cape",
       "maximumCount": 1,
       "chance": 0.199
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.8
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3052",
-      "name": "placeholder",
+      "name": "life ring",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3065",
-      "name": "placeholder",
+      "name": "quagmire rod",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3066",
-      "name": "placeholder",
+      "name": "snakebite rod",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3037",
-      "name": "placeholder",
+      "name": "yellow gem",
       "maximumCount": 1,
       "chance": 0.002
     }

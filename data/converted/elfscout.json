@@ -35,15 +35,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -57,7 +57,7 @@
             "type": "damage",
             "base": 45,
             "variation": 15,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -66,61 +66,61 @@
   "inventory": [
     {
       "id": "3447",
-      "name": "placeholder",
+      "name": "arrow",
       "maximumCount": 12,
       "chance": 0.3
     },
     {
       "id": "3350",
-      "name": "placeholder",
+      "name": "bow",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 5,
       "chance": 0.3
     },
     {
       "id": "3592",
-      "name": "placeholder",
+      "name": "grapes",
       "maximumCount": 1,
       "chance": 0.18
     },
     {
       "id": "3285",
-      "name": "placeholder",
+      "name": "longsword",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3448",
-      "name": "placeholder",
+      "name": "poison arrow",
       "maximumCount": 3,
       "chance": 0.15
     },
     {
       "id": "3551",
-      "name": "placeholder",
+      "name": "sandals",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3378",
-      "name": "placeholder",
+      "name": "studded armor",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3376",
-      "name": "placeholder",
+      "name": "studded helmet",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "2901",
-      "name": "placeholder",
+      "name": "waterskin",
       "maximumCount": 1,
       "chance": 0.14
     }

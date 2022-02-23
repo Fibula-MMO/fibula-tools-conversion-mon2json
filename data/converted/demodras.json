@@ -33,7 +33,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -52,15 +52,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 10.0
       },
       "flee": {
         "hitpointThreshold": 300
-      },
-      "closest": 70.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 10.0
+      }
     },
     "abilities": [
       {
@@ -100,7 +100,7 @@
             "type": "damage",
             "base": 300,
             "variation": 50,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -114,7 +114,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -129,7 +129,7 @@
             "type": "damage",
             "base": 400,
             "variation": 150,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       }
@@ -138,97 +138,97 @@
   "inventory": [
     {
       "id": "2842",
-      "name": "placeholder",
+      "name": "book",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3583",
-      "name": "placeholder",
+      "name": "dragon ham",
       "maximumCount": 10,
       "chance": 0.75
     },
     {
       "id": "3386",
-      "name": "placeholder",
+      "name": "dragon scale mail",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3051",
-      "name": "placeholder",
+      "name": "energy ring",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3280",
-      "name": "placeholder",
+      "name": "fire sword",
       "maximumCount": 1,
       "chance": 0.006
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.95
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 50,
       "chance": 0.55
     },
     {
       "id": "2903",
-      "name": "placeholder",
+      "name": "golden mug",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3732",
-      "name": "placeholder",
+      "name": "green mushroom",
       "maximumCount": 7,
       "chance": 0.24
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.012
     },
     {
       "id": "3450",
-      "name": "placeholder",
+      "name": "power bolt",
       "maximumCount": 1,
       "chance": 0.16
     },
     {
       "id": "3392",
-      "name": "placeholder",
+      "name": "royal helmet",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3373",
-      "name": "placeholder",
+      "name": "strange helmet",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3428",
-      "name": "placeholder",
+      "name": "tower shield",
       "maximumCount": 1,
       "chance": 0.006
     }

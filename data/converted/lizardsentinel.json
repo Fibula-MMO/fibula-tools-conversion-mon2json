@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -61,7 +61,7 @@
             "type": "damage",
             "base": 55,
             "variation": 15,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -70,49 +70,49 @@
   "inventory": [
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 15,
       "chance": 0.8
     },
     {
       "id": "3269",
-      "name": "placeholder",
+      "name": "halberd",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3313",
-      "name": "placeholder",
+      "name": "obsidian lance",
       "maximumCount": 1,
       "chance": 0.012
     },
     {
       "id": "3377",
-      "name": "placeholder",
+      "name": "scale armor",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3444",
-      "name": "placeholder",
+      "name": "sentinel shield",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3028",
-      "name": "placeholder",
+      "name": "small diamond",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 3,
       "chance": 0.1
     }

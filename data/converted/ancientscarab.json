@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.1
+        "chance": 0.1,
+        "closest": 70.0,
+        "weakest": 20.0,
+        "strongest": 0.0,
+        "random": 10.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 20.0,
-      "strongest": 0.0,
-      "random": 10.0
+      }
     },
     "abilities": [
       {
@@ -83,7 +83,7 @@
             "type": "damage",
             "base": 75,
             "variation": 60,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -112,7 +112,7 @@
             "type": "damage",
             "base": 450,
             "variation": 50,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       },
@@ -126,7 +126,7 @@
             "type": "damage",
             "base": 450,
             "variation": 50,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       },
@@ -162,79 +162,79 @@
   "inventory": [
     {
       "id": "3025",
-      "name": "placeholder",
+      "name": "ancient amulet",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3328",
-      "name": "placeholder",
+      "name": "daramanian waraxe",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.444
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 66,
       "chance": 0.757
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 22,
       "chance": 0.999
     },
     {
       "id": "3046",
-      "name": "placeholder",
+      "name": "magic light wand",
       "maximumCount": 1,
       "chance": 0.109
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3018",
-      "name": "placeholder",
+      "name": "scarab amulet",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3042",
-      "name": "placeholder",
+      "name": "scarab coin",
       "maximumCount": 2,
       "chance": 0.05
     },
     {
       "id": "3042",
-      "name": "placeholder",
+      "name": "scarab coin",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3440",
-      "name": "placeholder",
+      "name": "scarab shield",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 4,
       "chance": 0.012
     },
     {
       "id": "3032",
-      "name": "placeholder",
+      "name": "small emerald",
       "maximumCount": 3,
       "chance": 0.006
     }

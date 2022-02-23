@@ -30,7 +30,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -45,15 +45,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.07
+        "chance": 0.07,
+        "closest": 70.0,
+        "weakest": 10.0,
+        "strongest": 20.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 10.0,
-      "strongest": 20.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -121,7 +121,7 @@
             "type": "damage",
             "base": 35,
             "variation": 10,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -136,7 +136,7 @@
             "type": "damage",
             "base": 80,
             "variation": 10,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -151,7 +151,7 @@
             "type": "damage",
             "base": 160,
             "variation": 20,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -173,109 +173,109 @@
   "inventory": [
     {
       "id": "3147",
-      "name": "placeholder",
+      "name": "blank rune",
       "maximumCount": 1,
       "chance": 0.18
     },
     {
       "id": "2902",
-      "name": "placeholder",
+      "name": "bowl",
       "maximumCount": 1,
       "chance": 0.065
     },
     {
       "id": "3600",
-      "name": "placeholder",
+      "name": "bread",
       "maximumCount": 1,
       "chance": 0.14
     },
     {
       "id": "2885",
-      "name": "placeholder",
+      "name": "brown flask",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3105",
-      "name": "placeholder",
+      "name": "dirty fur",
       "maximumCount": 1,
       "chance": 0.077
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 18,
       "chance": 0.15
     },
     {
       "id": "3661",
-      "name": "placeholder",
+      "name": "grave flower",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3563",
-      "name": "placeholder",
+      "name": "green tunic",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "2914",
-      "name": "placeholder",
+      "name": "lamp",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3050",
-      "name": "placeholder",
+      "name": "power ring",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3551",
-      "name": "placeholder",
+      "name": "sandals",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3738",
-      "name": "placeholder",
+      "name": "sling herb",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3289",
-      "name": "placeholder",
+      "name": "staff",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3289",
-      "name": "placeholder",
+      "name": "staff",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3736",
-      "name": "placeholder",
+      "name": "star herb",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3012",
-      "name": "placeholder",
+      "name": "wolf tooth chain",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3037",
-      "name": "placeholder",
+      "name": "yellow gem",
       "maximumCount": 1,
       "chance": 0.004
     }

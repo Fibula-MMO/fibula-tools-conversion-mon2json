@@ -40,15 +40,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -62,7 +62,7 @@
             "type": "damage",
             "base": 30,
             "variation": 15,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -78,7 +78,7 @@
             "type": "damage",
             "base": 65,
             "variation": 30,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -92,7 +92,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       }
@@ -101,67 +101,67 @@
   "inventory": [
     {
       "id": "3359",
-      "name": "placeholder",
+      "name": "brass armor",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3595",
-      "name": "placeholder",
+      "name": "carrot",
       "maximumCount": 7,
       "chance": 0.1
     },
     {
       "id": "3558",
-      "name": "placeholder",
+      "name": "chain legs",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3292",
-      "name": "placeholder",
+      "name": "combat knife",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3998",
-      "name": "placeholder",
+      "name": "dead snake",
       "maximumCount": 1,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.8
     },
     {
       "id": "3291",
-      "name": "placeholder",
+      "name": "knife",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 2,
       "chance": 0.3
     },
     {
       "id": "3073",
-      "name": "placeholder",
+      "name": "wand of cosmic energy",
       "maximumCount": 1,
       "chance": 0.005
     }

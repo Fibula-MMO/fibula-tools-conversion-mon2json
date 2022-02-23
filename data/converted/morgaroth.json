@@ -37,7 +37,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -56,15 +56,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.1
+        "chance": 0.1,
+        "closest": 65.0,
+        "weakest": 5.0,
+        "strongest": 15.0,
+        "random": 15.0
       },
       "flee": {
         "hitpointThreshold": 2500
-      },
-      "closest": 65.0,
-      "weakest": 5.0,
-      "strongest": 15.0,
-      "random": 15.0
+      }
     },
     "abilities": [
       {
@@ -115,7 +115,7 @@
             "type": "damage",
             "base": 550,
             "variation": 450,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -145,7 +145,7 @@
             "type": "damage",
             "base": 550,
             "variation": 150,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -159,7 +159,7 @@
             "type": "damage",
             "base": 550,
             "variation": 150,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -217,7 +217,7 @@
             "type": "damage",
             "base": 500,
             "variation": 400,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -232,7 +232,7 @@
             "type": "damage",
             "base": 675,
             "variation": 175,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -241,343 +241,343 @@
   "inventory": [
     {
       "id": "3025",
-      "name": "placeholder",
+      "name": "ancient amulet",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3116",
-      "name": "placeholder",
+      "name": "big bone",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3027",
-      "name": "placeholder",
+      "name": "black pearl",
       "maximumCount": 15,
       "chance": 0.15
     },
     {
       "id": "3041",
-      "name": "placeholder",
+      "name": "blue gem",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3079",
-      "name": "placeholder",
+      "name": "boots of haste",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3070",
-      "name": "placeholder",
+      "name": "moonlight rod",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3076",
-      "name": "placeholder",
+      "name": "crystal ball",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3008",
-      "name": "placeholder",
+      "name": "crystal necklace",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3007",
-      "name": "placeholder",
+      "name": "crystal ring",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3420",
-      "name": "placeholder",
+      "name": "demon shield",
       "maximumCount": 1,
       "chance": 0.155
     },
     {
       "id": "3356",
-      "name": "placeholder",
+      "name": "devil helmet",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3275",
-      "name": "placeholder",
+      "name": "double axe",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3322",
-      "name": "placeholder",
+      "name": "dragon hammer",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3051",
-      "name": "placeholder",
+      "name": "energy ring",
       "maximumCount": 1,
       "chance": 0.135
     },
     {
       "id": "3320",
-      "name": "placeholder",
+      "name": "fire axe",
       "maximumCount": 1,
       "chance": 0.17
     },
     {
       "id": "3281",
-      "name": "placeholder",
+      "name": "giant sword",
       "maximumCount": 1,
       "chance": 0.125
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.999
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.888
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.777
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.666
     },
     {
       "id": "3063",
-      "name": "placeholder",
+      "name": "gold ring",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3364",
-      "name": "placeholder",
+      "name": "golden legs",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "2903",
-      "name": "placeholder",
+      "name": "golden mug",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3306",
-      "name": "placeholder",
+      "name": "golden sickle",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3066",
-      "name": "placeholder",
+      "name": "snakebite rod",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3038",
-      "name": "placeholder",
+      "name": "green gem",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3072",
-      "name": "placeholder",
+      "name": "wand of plague",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3284",
-      "name": "placeholder",
+      "name": "ice rapier",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3046",
-      "name": "placeholder",
+      "name": "magic light wand",
       "maximumCount": 1,
       "chance": 0.115
     },
     {
       "id": "3366",
-      "name": "placeholder",
+      "name": "magic plate armor",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3414",
-      "name": "placeholder",
+      "name": "mastermind shield",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3048",
-      "name": "placeholder",
+      "name": "might ring",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3062",
-      "name": "placeholder",
+      "name": "mind stone",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3060",
-      "name": "placeholder",
+      "name": "orb",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3055",
-      "name": "placeholder",
+      "name": "platinum amulet",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3084",
-      "name": "placeholder",
+      "name": "protection amulet",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "2848",
-      "name": "placeholder",
+      "name": "purple tome",
       "maximumCount": 1,
       "chance": 0.026
     },
     {
       "id": "3098",
-      "name": "placeholder",
+      "name": "ring of healing",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3006",
-      "name": "placeholder",
+      "name": "ring of the sky",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3054",
-      "name": "placeholder",
+      "name": "silver amulet",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3290",
-      "name": "placeholder",
+      "name": "silver dagger",
       "maximumCount": 1,
       "chance": 0.155
     },
     {
       "id": "3324",
-      "name": "placeholder",
+      "name": "skull staff",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 20,
       "chance": 0.135
     },
     {
       "id": "3028",
-      "name": "placeholder",
+      "name": "small diamond",
       "maximumCount": 5,
       "chance": 0.095
     },
     {
       "id": "3032",
-      "name": "placeholder",
+      "name": "small emerald",
       "maximumCount": 10,
       "chance": 0.155
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 10,
       "chance": 0.135
     },
     {
       "id": "3049",
-      "name": "placeholder",
+      "name": "stealth ring",
       "maximumCount": 1,
       "chance": 0.095
     },
     {
       "id": "3081",
-      "name": "placeholder",
+      "name": "stone skin amulet",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3058",
-      "name": "placeholder",
+      "name": "strange symbol",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3034",
-      "name": "placeholder",
+      "name": "talon",
       "maximumCount": 7,
       "chance": 0.14
     },
     {
       "id": "2993",
-      "name": "placeholder",
+      "name": "teddy bear",
       "maximumCount": 1,
       "chance": 0.145
     },
     {
       "id": "3309",
-      "name": "placeholder",
+      "name": "thunder hammer",
       "maximumCount": 1,
       "chance": 0.135
     },
     {
       "id": "3265",
-      "name": "placeholder",
+      "name": "two handed sword",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3002",
-      "name": "placeholder",
+      "name": "voodoo doll",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3069",
-      "name": "placeholder",
+      "name": "volcanic rod",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3026",
-      "name": "placeholder",
+      "name": "white pearl",
       "maximumCount": 15,
       "chance": 0.125
     }

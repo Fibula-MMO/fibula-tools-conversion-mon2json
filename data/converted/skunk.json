@@ -31,15 +31,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 8
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -54,7 +54,7 @@
             "type": "damage",
             "base": 2,
             "variation": 1,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -63,13 +63,13 @@
   "inventory": [
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 2,
       "chance": 0.01
     },
     {
       "id": "3492",
-      "name": "placeholder",
+      "name": "worm",
       "maximumCount": 1,
       "chance": 0.05
     }

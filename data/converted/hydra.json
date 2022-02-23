@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 10.0
       },
       "flee": {
         "hitpointThreshold": 300
-      },
-      "closest": 70.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 10.0
+      }
     },
     "abilities": [
       {
@@ -98,7 +98,7 @@
             "type": "damage",
             "base": 150,
             "variation": 50,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -113,7 +113,7 @@
             "type": "damage",
             "base": 180,
             "variation": 120,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -122,91 +122,91 @@
   "inventory": [
     {
       "id": "3079",
-      "name": "placeholder",
+      "name": "boots of haste",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 100,
       "chance": 0.6
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 50,
       "chance": 0.4
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 3,
       "chance": 0.6
     },
     {
       "id": "4839",
-      "name": "placeholder",
+      "name": "hydra egg",
       "maximumCount": 1,
       "chance": 0.009
     },
     {
       "id": "3370",
-      "name": "placeholder",
+      "name": "knight armor",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.006
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 4,
       "chance": 0.9
     },
     {
       "id": "3436",
-      "name": "placeholder",
+      "name": "medusa shield",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3098",
-      "name": "placeholder",
+      "name": "ring of healing",
       "maximumCount": 1,
       "chance": 0.012
     },
     {
       "id": "3392",
-      "name": "placeholder",
+      "name": "royal helmet",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3081",
-      "name": "placeholder",
+      "name": "stone skin amulet",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3369",
-      "name": "placeholder",
+      "name": "warrior helmet",
       "maximumCount": 1,
       "chance": 0.01
     }

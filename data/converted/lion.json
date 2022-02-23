@@ -33,28 +33,28 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 2,
       "chance": 0.2
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 3,
       "chance": 0.45
     }

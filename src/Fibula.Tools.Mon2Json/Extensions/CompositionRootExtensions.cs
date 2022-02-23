@@ -11,6 +11,7 @@
 
 namespace Fibula.Tools.Mon2Json
 {
+    using Fibula.Data.Contracts.Abstractions;
     using Fibula.Utilities.Validation;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -31,7 +32,7 @@ namespace Fibula.Tools.Mon2Json
 
             services.AddSingleton((serviceProvider) =>
             {
-                return new MonsterFilesConverter(Options.Create(new MonsterFilesConverterOptions()));
+                return new MonsterFilesConverter(Options.Create(new MonsterFilesConverterOptions()), serviceProvider.GetService<IItemTypesLoader>());
             });
         }
 

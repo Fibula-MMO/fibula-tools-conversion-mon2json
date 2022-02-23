@@ -56,15 +56,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.03
+        "chance": 0.03,
+        "closest": 80.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 80.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -78,7 +78,7 @@
             "type": "damage",
             "base": 165,
             "variation": 20,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -87,121 +87,121 @@
   "inventory": [
     {
       "id": "3305",
-      "name": "placeholder",
+      "name": "battle hammer",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3079",
-      "name": "placeholder",
+      "name": "boots of haste",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3372",
-      "name": "placeholder",
+      "name": "brass legs",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3602",
-      "name": "placeholder",
+      "name": "brown bread",
       "maximumCount": 2,
       "chance": 0.2
     },
     {
       "id": "3383",
-      "name": "placeholder",
+      "name": "dark armor",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3384",
-      "name": "placeholder",
+      "name": "dark helmet",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3302",
-      "name": "placeholder",
+      "name": "dragon lance",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 60,
       "chance": 0.333
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 90,
       "chance": 0.222
     },
     {
       "id": "3269",
-      "name": "placeholder",
+      "name": "halberd",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3370",
-      "name": "placeholder",
+      "name": "knight armor",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3318",
-      "name": "placeholder",
+      "name": "knight axe",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3371",
-      "name": "placeholder",
+      "name": "knight legs",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3003",
-      "name": "placeholder",
+      "name": "rope",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3016",
-      "name": "placeholder",
+      "name": "ruby necklace",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 3,
       "chance": 0.3
     },
     {
       "id": "3351",
-      "name": "placeholder",
+      "name": "steel helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3265",
-      "name": "placeholder",
+      "name": "two handed sword",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3369",
-      "name": "placeholder",
+      "name": "warrior helmet",
       "maximumCount": 1,
       "chance": 0.05
     }

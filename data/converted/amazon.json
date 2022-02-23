@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -61,7 +61,7 @@
             "type": "damage",
             "base": 25,
             "variation": 5,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -70,61 +70,61 @@
   "inventory": [
     {
       "id": "3602",
-      "name": "placeholder",
+      "name": "brown bread",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3008",
-      "name": "placeholder",
+      "name": "crystal necklace",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3267",
-      "name": "placeholder",
+      "name": "dagger",
       "maximumCount": 1,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.4
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3273",
-      "name": "placeholder",
+      "name": "sabre",
       "maximumCount": 1,
       "chance": 0.23
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 2,
       "chance": 0.8
     },
     {
       "id": "3030",
-      "name": "placeholder",
+      "name": "small ruby",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3426",
-      "name": "placeholder",
+      "name": "studded shield",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.05
     }

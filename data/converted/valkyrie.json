@@ -38,15 +38,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -60,7 +60,7 @@
             "type": "damage",
             "base": 35,
             "variation": 7,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -69,73 +69,73 @@
   "inventory": [
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3352",
-      "name": "placeholder",
+      "name": "chain helmet",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3267",
-      "name": "placeholder",
+      "name": "dagger",
       "maximumCount": 1,
       "chance": 0.25
     },
     {
       "id": "3275",
-      "name": "placeholder",
+      "name": "double axe",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 12,
       "chance": 0.32
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 3,
       "chance": 0.3
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3084",
-      "name": "placeholder",
+      "name": "protection amulet",
       "maximumCount": 1,
       "chance": 0.011
     },
     {
       "id": "3585",
-      "name": "placeholder",
+      "name": "red apple",
       "maximumCount": 2,
       "chance": 0.075
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 2,
       "chance": 0.8
     },
     {
       "id": "3028",
-      "name": "placeholder",
+      "name": "small diamond",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 3,
       "chance": 0.6
     }

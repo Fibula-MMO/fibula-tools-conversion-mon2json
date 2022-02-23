@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.2
+        "chance": 0.2,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -82,7 +82,7 @@
             "type": "damage",
             "base": 45,
             "variation": 20,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -96,7 +96,7 @@
             "type": "damage",
             "base": 40,
             "variation": 10,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -110,7 +110,7 @@
             "type": "damage",
             "base": 70,
             "variation": 10,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       }
@@ -119,49 +119,49 @@
   "inventory": [
     {
       "id": "3116",
-      "name": "placeholder",
+      "name": "big bone",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3115",
-      "name": "placeholder",
+      "name": "bone",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3337",
-      "name": "placeholder",
+      "name": "bone club",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3441",
-      "name": "placeholder",
+      "name": "bone shield",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 90,
       "chance": 0.3
     },
     {
       "id": "3732",
-      "name": "placeholder",
+      "name": "green mushroom",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 1,
       "chance": 0.2
     }

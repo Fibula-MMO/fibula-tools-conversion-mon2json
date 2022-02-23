@@ -37,7 +37,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -60,15 +60,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.95
+        "chance": 0.95,
+        "closest": 0.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 100.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 0.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 100.0
+      }
     },
     "abilities": [
       {

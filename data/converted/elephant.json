@@ -35,40 +35,40 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3044",
-      "name": "placeholder",
+      "name": "elephant tusk",
       "maximumCount": 2,
       "chance": 0.01
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 3,
       "chance": 0.6
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 4,
       "chance": 0.9
     },
     {
       "id": "3443",
-      "name": "placeholder",
+      "name": "tusk shield",
       "maximumCount": 1,
       "chance": 0.001
     }

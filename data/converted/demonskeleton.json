@@ -33,7 +33,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -52,15 +52,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -74,7 +74,7 @@
             "type": "damage",
             "base": 40,
             "variation": 10,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -83,61 +83,61 @@
   "inventory": [
     {
       "id": "3305",
-      "name": "placeholder",
+      "name": "battle hammer",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3413",
-      "name": "placeholder",
+      "name": "battle shield",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.4
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.3
     },
     {
       "id": "3415",
-      "name": "placeholder",
+      "name": "guardian shield",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3353",
-      "name": "placeholder",
+      "name": "iron helmet",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3062",
-      "name": "placeholder",
+      "name": "mind stone",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3078",
-      "name": "placeholder",
+      "name": "mysterious fetish",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3287",
-      "name": "placeholder",
+      "name": "throwing star",
       "maximumCount": 3,
       "chance": 0.1
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.5
     }

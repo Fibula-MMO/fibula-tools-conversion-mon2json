@@ -35,82 +35,82 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3413",
-      "name": "placeholder",
+      "name": "battle shield",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3093",
-      "name": "placeholder",
+      "name": "club ring",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3384",
-      "name": "placeholder",
+      "name": "dark helmet",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.4
     },
     {
       "id": "3269",
-      "name": "placeholder",
+      "name": "halberd",
       "maximumCount": 1,
       "chance": 0.007
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 2,
       "chance": 0.2
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3410",
-      "name": "placeholder",
+      "name": "plate shield",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3012",
-      "name": "placeholder",
+      "name": "wolf tooth chain",
       "maximumCount": 1,
       "chance": 0.002
     }

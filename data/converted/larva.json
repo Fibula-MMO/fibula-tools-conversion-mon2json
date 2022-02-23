@@ -40,28 +40,28 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.35
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.3
     }

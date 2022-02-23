@@ -24,5 +24,29 @@ namespace Fibula.Tools.Mon2Json.Models
         /// </summary>
         [JsonProperty("chance", DefaultValueHandling = DefaultValueHandling.Include)]
         public decimal Chance { get; set; }
+
+        /// <summary>
+        /// Gets or sets the chance to choose the nearest target when selecting one.
+        /// </summary>
+        [JsonProperty("closest", DefaultValueHandling = DefaultValueHandling.Include)]
+        public decimal Closest { get; set; }
+
+        /// <summary>
+        /// Gets or sets the chance to choose the weakest target when selecting one.
+        /// </summary>
+        [JsonProperty("weakest", DefaultValueHandling = DefaultValueHandling.Include)]
+        public decimal Weakest { get; set; }
+
+        /// <summary>
+        /// Gets or sets the chance to choose the target who has dealt the most damage when selecting one.
+        /// </summary>
+        [JsonProperty("strongest", DefaultValueHandling = DefaultValueHandling.Include)]
+        public decimal Strongest { get; set; }
+
+        /// <summary>
+        /// Gets or sets the chance to choose the a random target when selecting one.
+        /// </summary>
+        [JsonProperty("random", DefaultValueHandling = DefaultValueHandling.Include)]
+        public decimal Random { get; set; }
     }
 }

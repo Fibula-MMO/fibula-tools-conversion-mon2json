@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.04
+        "chance": 0.04,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -70,7 +70,7 @@
             "type": "damage",
             "base": 40,
             "variation": 15,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -79,67 +79,67 @@
   "inventory": [
     {
       "id": "3115",
-      "name": "placeholder",
+      "name": "bone",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3441",
-      "name": "placeholder",
+      "name": "bone shield",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3338",
-      "name": "placeholder",
+      "name": "bone sword",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.4
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 30,
       "chance": 0.3
     },
     {
       "id": "3353",
-      "name": "placeholder",
+      "name": "iron helmet",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3112",
-      "name": "placeholder",
+      "name": "rotten meat",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3028",
-      "name": "placeholder",
+      "name": "small diamond",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3287",
-      "name": "placeholder",
+      "name": "throwing star",
       "maximumCount": 3,
       "chance": 0.01
     },
     {
       "id": "3265",
-      "name": "placeholder",
+      "name": "two handed sword",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3492",
-      "name": "placeholder",
+      "name": "worm",
       "maximumCount": 10,
       "chance": 0.9
     }

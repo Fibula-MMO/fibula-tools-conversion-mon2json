@@ -31,15 +31,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -53,7 +53,7 @@
             "type": "damage",
             "base": 20,
             "variation": 5,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -62,67 +62,67 @@
   "inventory": [
     {
       "id": "3115",
-      "name": "placeholder",
+      "name": "bone",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3337",
-      "name": "placeholder",
+      "name": "bone club",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3267",
-      "name": "placeholder",
+      "name": "dagger",
       "maximumCount": 1,
       "chance": 0.18
     },
     {
       "id": "3578",
-      "name": "placeholder",
+      "name": "fish",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 9,
       "chance": 0.5
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3120",
-      "name": "placeholder",
+      "name": "moldy cheese",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3462",
-      "name": "placeholder",
+      "name": "small axe",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "1781",
-      "name": "placeholder",
+      "name": "small stone",
       "maximumCount": 3,
       "chance": 0.3
     }

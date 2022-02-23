@@ -35,15 +35,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 20.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 20.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -82,7 +82,7 @@
             "type": "damage",
             "base": 37,
             "variation": 12,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -91,73 +91,73 @@
   "inventory": [
     {
       "id": "3077",
-      "name": "placeholder",
+      "name": "ankh",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3600",
-      "name": "placeholder",
+      "name": "bread",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "2885",
-      "name": "placeholder",
+      "name": "brown flask",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "2853",
-      "name": "placeholder",
+      "name": "bag",
       "maximumCount": 1,
       "chance": 0.13
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 18,
       "chance": 0.15
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "2914",
-      "name": "placeholder",
+      "name": "lamp",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3050",
-      "name": "placeholder",
+      "name": "power ring",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3551",
-      "name": "placeholder",
+      "name": "sandals",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "2815",
-      "name": "placeholder",
+      "name": "scroll",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3289",
-      "name": "placeholder",
+      "name": "staff",
       "maximumCount": 1,
       "chance": 0.11
     }

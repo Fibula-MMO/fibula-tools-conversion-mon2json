@@ -12,9 +12,14 @@
 namespace Fibula.Tools.Mon2Json
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
+    using System.Text.RegularExpressions;
+    using Fibula.Data.Contracts.Abstractions;
+    using Fibula.Definitions.Data.Entities;
     using Fibula.Parsing.CipFiles;
     using Fibula.Tools.Mon2Json.Extensions;
+    using Fibula.Tools.Mon2Json.Models;
     using Fibula.Utilities.Validation;
     using Microsoft.Extensions.Options;
     using Newtonsoft.Json;
@@ -24,15 +29,21 @@ namespace Fibula.Tools.Mon2Json
     /// </summary>
     public class MonsterFilesConverter
     {
-        private MonsterFilesConverterOptions options;
+        private readonly MonsterFilesConverterOptions options;
+        private readonly IItemTypesLoader itemTypesLoader;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MonsterFilesConverter"/> class.
         /// </summary>
         /// <param name="options">The options for this converter.</param>
-        public MonsterFilesConverter(IOptions<MonsterFilesConverterOptions> options)
+        /// <param name="itemTypesLoader">A reference to an item types loader to load monster inventory names.</param>
+        public MonsterFilesConverter(IOptions<MonsterFilesConverterOptions> options, IItemTypesLoader itemTypesLoader)
         {
+            options.ThrowIfNull(nameof(options));
+            itemTypesLoader.ThrowIfNull(nameof(itemTypesLoader));
+
             this.options = options.Value;
+            this.itemTypesLoader = itemTypesLoader;
         }
 
         /// <summary>
@@ -48,6 +59,8 @@ namespace Fibula.Tools.Mon2Json
             this.options.OverwriteFiles = overwriteFiles ?? this.options.OverwriteFiles;
 
             DataAnnotationsValidator.ValidateObjectRecursive(this.options);
+
+            var itemDictionary = this.itemTypesLoader.LoadTypes();
 
             var monDirectoryInfo = new DirectoryInfo(monDirPath);
             var jsonDirectoryInfo = new DirectoryInfo(jsonDirPath);
@@ -78,6 +91,9 @@ namespace Fibula.Tools.Mon2Json
                 }
 
                 var targetModel = parsedMonsterModel.ToSerializableModel();
+
+                this.AmmendInventoryItemNames(itemDictionary, targetModel);
+
                 var convertedFilePath = Path.Combine(jsonDirectoryInfo.FullName, Path.GetTempFileName());
                 var tempFileSream = File.Create(convertedFilePath);
 
@@ -91,6 +107,25 @@ namespace Fibula.Tools.Mon2Json
                 }
 
                 File.Move(convertedFilePath, Path.Combine(jsonDirectoryInfo.FullName, monFileInfo.Name).Replace(".mon", ".json"), overwriteFiles ?? false);
+            }
+        }
+
+        private void AmmendInventoryItemNames(IDictionary<string, ItemTypeEntity> itemDictionary, MonsterModel targetModel)
+        {
+            foreach (var inventoryModel in targetModel.Inventory)
+            {
+                if (!itemDictionary.ContainsKey(inventoryModel.Id))
+                {
+                    // TODO: logging?
+                    continue;
+                }
+
+                var match = Regex.Match(itemDictionary[inventoryModel.Id].Name, "^(?'article'an?)?\\s?(?'itemName'.*)$");
+
+                match.Groups.TryGetValue("article", out Group articleGrp);
+                match.Groups.TryGetValue("itemName", out Group nameGrp);
+
+                inventoryModel.Name = nameGrp.Value;
             }
         }
     }

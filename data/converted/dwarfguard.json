@@ -40,76 +40,76 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 20.0,
+        "random": 10.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 20.0,
-      "random": 10.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3092",
-      "name": "placeholder",
+      "name": "axe ring",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3305",
-      "name": "placeholder",
+      "name": "battle hammer",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3413",
-      "name": "placeholder",
+      "name": "battle shield",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3275",
-      "name": "placeholder",
+      "name": "double axe",
       "maximumCount": 1,
       "chance": 0.006
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 30,
       "chance": 0.5
     },
     {
       "id": "3552",
-      "name": "placeholder",
+      "name": "leather boots",
       "maximumCount": 1,
       "chance": 0.4
     },
     {
       "id": "3377",
-      "name": "placeholder",
+      "name": "scale armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3351",
-      "name": "placeholder",
+      "name": "steel helmet",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3723",
-      "name": "placeholder",
+      "name": "white mushroom",
       "maximumCount": 2,
       "chance": 0.55
     }

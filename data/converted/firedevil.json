@@ -40,15 +40,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -63,7 +63,7 @@
             "type": "damage",
             "base": 75,
             "variation": 15,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -79,7 +79,7 @@
             "type": "damage",
             "base": 35,
             "variation": 15,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       }
@@ -88,55 +88,55 @@
   "inventory": [
     {
       "id": "3147",
-      "name": "placeholder",
+      "name": "blank rune",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3471",
-      "name": "placeholder",
+      "name": "cleaver",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3275",
-      "name": "placeholder",
+      "name": "double axe",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3415",
-      "name": "placeholder",
+      "name": "guardian shield",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3451",
-      "name": "placeholder",
+      "name": "pitchfork",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3307",
-      "name": "placeholder",
+      "name": "scimitar",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 2,
       "chance": 0.15
     },
     {
       "id": "3069",
-      "name": "placeholder",
+      "name": "volcanic rod",
       "maximumCount": 1,
       "chance": 0.005
     }

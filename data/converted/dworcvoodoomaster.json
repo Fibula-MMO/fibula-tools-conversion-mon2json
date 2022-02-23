@@ -38,15 +38,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -99,7 +99,7 @@
             "type": "damage",
             "base": 20,
             "variation": 19,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -160,7 +160,7 @@
             "type": "damage",
             "base": 12,
             "variation": 6,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -174,7 +174,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -183,61 +183,61 @@
   "inventory": [
     {
       "id": "3116",
-      "name": "placeholder",
+      "name": "big bone",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3115",
-      "name": "placeholder",
+      "name": "bone",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.8
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 3,
       "chance": 0.03
     },
     {
       "id": "3058",
-      "name": "placeholder",
+      "name": "strange symbol",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3403",
-      "name": "placeholder",
+      "name": "tribal mask",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3002",
-      "name": "placeholder",
+      "name": "voodoo doll",
       "maximumCount": 1,
       "chance": 0.001
     }

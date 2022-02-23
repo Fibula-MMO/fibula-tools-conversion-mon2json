@@ -33,76 +33,76 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3430",
-      "name": "placeholder",
+      "name": "copper shield",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 8,
       "chance": 0.6
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 12,
       "chance": 0.3
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3300",
-      "name": "placeholder",
+      "name": "katana",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3374",
-      "name": "placeholder",
+      "name": "legion helmet",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3286",
-      "name": "placeholder",
+      "name": "mace",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3492",
-      "name": "placeholder",
+      "name": "worm",
       "maximumCount": 5,
       "chance": 0.5
     }

@@ -81,12 +81,12 @@ namespace Fibula.Tools.Mon2Json.Extensions
                 Abilities = cipModel.Spells.ToMonsterAbilitiesModel(),
                 Strategy = new MonsterStrategyModel()
                 {
-                    Closest = cipModel.Strategy.Closest,
-                    Strongest = cipModel.Strategy.Strongest,
-                    Weakest = cipModel.Strategy.Weakest,
-                    Random = cipModel.Strategy.Random,
                     ChangeTarget = new ChangeTargetInStrategyModel()
                     {
+                        Closest = cipModel.Strategy.Closest,
+                        Strongest = cipModel.Strategy.Strongest,
+                        Weakest = cipModel.Strategy.Weakest,
+                        Random = cipModel.Strategy.Random,
                         Chance = Convert.ToDecimal(cipModel.LoseTarget) / 100,
                     },
                     Flee = new FleeInStrategyModel()
@@ -276,16 +276,15 @@ namespace Fibula.Tools.Mon2Json.Extensions
         {
             return fromUint switch
             {
-                1 => "Physical",
-                2 => "Poison",
-                4 => "Fire",
-                8 => "Energy",
-                16 => "Unknown",
-                32 => "PoisonCondition",
-                64 => "FireCondition",
-                128 => "EnergyCondition",
-                256 => "LifeDrain",
-                512 => "ManaDrain",
+                1 => "physical",
+                2 => "poison",
+                4 => "fire",
+                8 => "energy",
+                32 => "poisoned",
+                64 => "burning",
+                128 => "energized",
+                256 => "lifedrain",
+                512 => "manadrain",
                 _ => throw new NotSupportedException($"Unsupported damage type code {fromUint}."),
             };
         }
@@ -294,9 +293,9 @@ namespace Fibula.Tools.Mon2Json.Extensions
         {
             return fromUint switch
             {
-                1 => "Fire",
-                2 => "Poison",
-                3 => "Energy",
+                1 => "fire",
+                2 => "poison",
+                3 => "energy",
                 _ => throw new NotSupportedException($"Unsupported field type code {fromUint}."),
             };
         }
@@ -622,11 +621,11 @@ namespace Fibula.Tools.Mon2Json.Extensions
                 TargetLook = new MonsterLookModel()
                 {
                     Type = spellEffect.ChangeToOutfit.Type.ToString().ToLower(),
-                    Id = spellEffect.ChangeToOutfit.Id,
-                    Head = spellEffect.ChangeToOutfit.Head,
-                    Body = spellEffect.ChangeToOutfit.Body,
-                    Legs = spellEffect.ChangeToOutfit.Legs,
-                    Feet = spellEffect.ChangeToOutfit.Feet,
+                    Id = spellEffect.ChangeToOutfit.Type != CipOutfitType.Invisible ? spellEffect.ChangeToOutfit.Id : null,
+                    Head = spellEffect.ChangeToOutfit.Type == CipOutfitType.Outfit ? spellEffect.ChangeToOutfit.Head : null,
+                    Body = spellEffect.ChangeToOutfit.Type == CipOutfitType.Outfit ? spellEffect.ChangeToOutfit.Body : null,
+                    Legs = spellEffect.ChangeToOutfit.Type == CipOutfitType.Outfit ? spellEffect.ChangeToOutfit.Legs : null,
+                    Feet = spellEffect.ChangeToOutfit.Type == CipOutfitType.Outfit ? spellEffect.ChangeToOutfit.Feet : null,
                 },
                 Duration = Convert.ToUInt32(values[0] * 1000),
             };
@@ -677,7 +676,7 @@ namespace Fibula.Tools.Mon2Json.Extensions
 
             if (cipModel.Flags.Contains(CipCreatureFlag.NoLifeDrain))
             {
-                immunities.Add(new MonsterImmunityModel() { Type = "lifeDrain", Modifier = 1m });
+                immunities.Add(new MonsterImmunityModel() { Type = "lifedrain", Modifier = 1m });
             }
 
             if (cipModel.Flags.Contains(CipCreatureFlag.NoParalyze))

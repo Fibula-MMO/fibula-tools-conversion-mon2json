@@ -33,7 +33,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 30
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -76,73 +76,73 @@
   "inventory": [
     {
       "id": "3413",
-      "name": "placeholder",
+      "name": "battle shield",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3093",
-      "name": "placeholder",
+      "name": "club ring",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3383",
-      "name": "placeholder",
+      "name": "dark armor",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.4
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 2,
       "chance": 0.2
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3282",
-      "name": "placeholder",
+      "name": "morning star",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "1781",
-      "name": "placeholder",
+      "name": "small stone",
       "maximumCount": 10,
       "chance": 0.1
     },
     {
       "id": "3351",
-      "name": "placeholder",
+      "name": "steel helmet",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3336",
-      "name": "placeholder",
+      "name": "studded club",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3012",
-      "name": "placeholder",
+      "name": "wolf tooth chain",
       "maximumCount": 1,
       "chance": 0.002
     }

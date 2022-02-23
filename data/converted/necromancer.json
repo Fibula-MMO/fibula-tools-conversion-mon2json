@@ -30,7 +30,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -45,15 +45,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -79,7 +79,7 @@
             "type": "damage",
             "base": 80,
             "variation": 20,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -94,7 +94,7 @@
             "type": "damage",
             "base": 65,
             "variation": 30,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -142,49 +142,49 @@
   "inventory": [
     {
       "id": "3079",
-      "name": "placeholder",
+      "name": "boots of haste",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3311",
-      "name": "placeholder",
+      "name": "clerical mace",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 90,
       "chance": 0.3
     },
     {
       "id": "3732",
-      "name": "placeholder",
+      "name": "green mushroom",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3574",
-      "name": "placeholder",
+      "name": "mystic turban",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3377",
-      "name": "placeholder",
+      "name": "scale armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3324",
-      "name": "placeholder",
+      "name": "skull staff",
       "maximumCount": 1,
       "chance": 0.001
     }

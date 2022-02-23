@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 30.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 30.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -85,7 +85,7 @@
             "type": "damage",
             "base": 80,
             "variation": 25,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -109,79 +109,79 @@
   "inventory": [
     {
       "id": "3027",
-      "name": "placeholder",
+      "name": "black pearl",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "2902",
-      "name": "placeholder",
+      "name": "bowl",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3056",
-      "name": "placeholder",
+      "name": "bronze amulet",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3010",
-      "name": "placeholder",
+      "name": "emerald bangle",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.15
     },
     {
       "id": "3661",
-      "name": "placeholder",
+      "name": "grave flower",
       "maximumCount": 1,
       "chance": 0.18
     },
     {
       "id": "3284",
-      "name": "placeholder",
+      "name": "ice rapier",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3300",
-      "name": "placeholder",
+      "name": "katana",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3271",
-      "name": "placeholder",
+      "name": "spike sword",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3373",
-      "name": "placeholder",
+      "name": "strange helmet",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3434",
-      "name": "placeholder",
+      "name": "vampire shield",
       "maximumCount": 1,
       "chance": 0.001
     }

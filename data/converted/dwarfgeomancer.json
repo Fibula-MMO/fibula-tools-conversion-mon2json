@@ -45,15 +45,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 150
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -79,7 +79,7 @@
             "type": "damage",
             "base": 80,
             "variation": 25,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -94,7 +94,7 @@
             "type": "damage",
             "base": 65,
             "variation": 15,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       }
@@ -103,79 +103,79 @@
   "inventory": [
     {
       "id": "2853",
-      "name": "placeholder",
+      "name": "bag",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3147",
-      "name": "placeholder",
+      "name": "blank rune",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3311",
-      "name": "placeholder",
+      "name": "clerical mace",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3097",
-      "name": "placeholder",
+      "name": "dwarven ring",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 30,
       "chance": 0.7
     },
     {
       "id": "3552",
-      "name": "placeholder",
+      "name": "leather boots",
       "maximumCount": 1,
       "chance": 0.4
     },
     {
       "id": "3046",
-      "name": "placeholder",
+      "name": "magic light wand",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3584",
-      "name": "placeholder",
+      "name": "pear",
       "maximumCount": 2,
       "chance": 0.18
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3375",
-      "name": "placeholder",
+      "name": "soldier helmet",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3059",
-      "name": "placeholder",
+      "name": "spellbook",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3362",
-      "name": "placeholder",
+      "name": "studded legs",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3723",
-      "name": "placeholder",
+      "name": "white mushroom",
       "maximumCount": 2,
       "chance": 0.6
     }

@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.03
+        "chance": 0.03,
+        "closest": 80.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 80.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -82,7 +82,7 @@
             "type": "damage",
             "base": 400,
             "variation": 350,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -111,7 +111,7 @@
             "type": "damage",
             "base": 400,
             "variation": 150,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -133,67 +133,67 @@
   "inventory": [
     {
       "id": "3022",
-      "name": "placeholder",
+      "name": "ancient tiara",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3236",
-      "name": "placeholder",
+      "name": "blue note",
       "maximumCount": 1,
       "chance": 1.0
     },
     {
       "id": "3567",
-      "name": "placeholder",
+      "name": "blue robe",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3333",
-      "name": "placeholder",
+      "name": "crystal mace",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3007",
-      "name": "placeholder",
+      "name": "crystal ring",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 85,
       "chance": 0.5
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 95,
       "chance": 0.35
     },
     {
       "id": "2950",
-      "name": "placeholder",
+      "name": "lute",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "2953",
-      "name": "placeholder",
+      "name": "panpipes",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3026",
-      "name": "placeholder",
+      "name": "white pearl",
       "maximumCount": 1,
       "chance": 0.1
     }

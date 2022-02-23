@@ -31,7 +31,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -50,15 +50,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 150
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -84,7 +84,7 @@
             "type": "damage",
             "base": 27,
             "variation": 10,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -99,7 +99,7 @@
             "type": "damage",
             "base": 30,
             "variation": 8,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       }
@@ -108,31 +108,31 @@
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 5,
       "chance": 0.1
     },
     {
       "id": "3661",
-      "name": "placeholder",
+      "name": "grave flower",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3740",
-      "name": "placeholder",
+      "name": "shadow herb",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3738",
-      "name": "placeholder",
+      "name": "sling herb",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3738",
-      "name": "placeholder",
+      "name": "sling herb",
       "maximumCount": 1,
       "chance": 0.05
     }

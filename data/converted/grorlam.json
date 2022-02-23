@@ -48,15 +48,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -95,7 +95,7 @@
             "type": "damage",
             "base": 175,
             "variation": 25,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -104,61 +104,61 @@
   "inventory": [
     {
       "id": "3007",
-      "name": "placeholder",
+      "name": "crystal ring",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 15,
       "chance": 0.16
     },
     {
       "id": "3456",
-      "name": "placeholder",
+      "name": "pick",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3050",
-      "name": "placeholder",
+      "name": "power ring",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3039",
-      "name": "placeholder",
+      "name": "red gem",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3377",
-      "name": "placeholder",
+      "name": "scale armor",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 2,
       "chance": 0.065
     },
     {
       "id": "1781",
-      "name": "placeholder",
+      "name": "small stone",
       "maximumCount": 4,
       "chance": 0.13
     },
     {
       "id": "3554",
-      "name": "placeholder",
+      "name": "steel boots",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3409",
-      "name": "placeholder",
+      "name": "steel shield",
       "maximumCount": 1,
       "chance": 0.07
     }

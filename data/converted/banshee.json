@@ -33,7 +33,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -52,15 +52,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.03
+        "chance": 0.03,
+        "closest": 80.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 500
-      },
-      "closest": 80.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -86,7 +86,7 @@
             "type": "damage",
             "base": 200,
             "variation": 150,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -115,7 +115,7 @@
             "type": "damage",
             "base": 160,
             "variation": 40,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -124,115 +124,115 @@
   "inventory": [
     {
       "id": "3027",
-      "name": "placeholder",
+      "name": "black pearl",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3567",
-      "name": "placeholder",
+      "name": "blue robe",
       "maximumCount": 1,
       "chance": 0.006
     },
     {
       "id": "2917",
-      "name": "placeholder",
+      "name": "candlestick",
       "maximumCount": 1,
       "chance": 0.7
     },
     {
       "id": "3007",
-      "name": "placeholder",
+      "name": "crystal ring",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3122",
-      "name": "placeholder",
+      "name": "dirty cape",
       "maximumCount": 1,
       "chance": 0.199
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.3
     },
     {
       "id": "3061",
-      "name": "placeholder",
+      "name": "life crystal",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "2949",
-      "name": "placeholder",
+      "name": "lyre",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3463",
-      "name": "placeholder",
+      "name": "mirror",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3566",
-      "name": "placeholder",
+      "name": "red robe",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3098",
-      "name": "placeholder",
+      "name": "ring of healing",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3054",
-      "name": "placeholder",
+      "name": "silver amulet",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3017",
-      "name": "placeholder",
+      "name": "silver brooch",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3568",
-      "name": "placeholder",
+      "name": "simple dress",
       "maximumCount": 1,
       "chance": 0.6
     },
     {
       "id": "3059",
-      "name": "placeholder",
+      "name": "spellbook",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3081",
-      "name": "placeholder",
+      "name": "stone skin amulet",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3004",
-      "name": "placeholder",
+      "name": "wedding ring",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3026",
-      "name": "placeholder",
+      "name": "white pearl",
       "maximumCount": 1,
       "chance": 0.01
     }

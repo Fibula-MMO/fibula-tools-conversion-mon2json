@@ -16,6 +16,7 @@ namespace Fibula.Tools.Mon2Json.Standalone
     using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
+    using Fibula.Plugins.ItemLoaders.CipObjectsFile;
     using Fibula.Utilities.CLI;
     using Fibula.Utilities.CLI.Streams;
     using Microsoft.Extensions.Configuration;
@@ -56,9 +57,12 @@ namespace Fibula.Tools.Mon2Json.Standalone
                     configApp.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
                     configApp.AddJsonFile($"appsettings.{hostContext.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
                 })
-                .ConfigureServices(serviceCollection =>
+                .ConfigureServices((hostingContext, serviceCollection) =>
                 {
                     serviceCollection.AddInputStreamListener(Console.OpenStandardInput());
+
+                    // Chose a type of item types (catalog) loader:
+                    serviceCollection.AddObjectsFileItemTypeLoader(hostingContext.Configuration);
 
                     serviceCollection.AddInteractiveMonsterFilesConverter();
                 })

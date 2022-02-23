@@ -4,7 +4,8 @@
   "blood": "bones",
   "experienceYield": 18,
   "look": {
-    "type": "invisible"
+    "type": "invisible",
+    "id": 0
   },
   "corpse": "2472",
   "stats": {
@@ -36,7 +37,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -59,15 +60,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 100
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -81,7 +82,7 @@
             "type": "damage",
             "base": 110,
             "variation": 30,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }

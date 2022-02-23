@@ -30,7 +30,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -53,15 +53,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -87,7 +87,7 @@
             "type": "damage",
             "base": 600,
             "variation": 200,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -102,7 +102,7 @@
             "type": "damage",
             "base": 350,
             "variation": 150,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -168,67 +168,67 @@
   "inventory": [
     {
       "id": "3077",
-      "name": "placeholder",
+      "name": "ankh",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3041",
-      "name": "placeholder",
+      "name": "blue gem",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3051",
-      "name": "placeholder",
+      "name": "energy ring",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 85,
       "chance": 0.5
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 95,
       "chance": 0.35
     },
     {
       "id": "3062",
-      "name": "placeholder",
+      "name": "mind stone",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3241",
-      "name": "placeholder",
+      "name": "ornamented ankh",
       "maximumCount": 1,
       "chance": 1.0
     },
     {
       "id": "3334",
-      "name": "placeholder",
+      "name": "pharaoh sword",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3324",
-      "name": "placeholder",
+      "name": "skull staff",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 3,
       "chance": 0.1
     }

@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -44,15 +44,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -79,7 +79,7 @@
             "type": "damage",
             "base": 30,
             "variation": 5,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -94,7 +94,7 @@
             "type": "damage",
             "base": 10,
             "variation": 5,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       }
@@ -103,25 +103,25 @@
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 6,
       "chance": 0.9
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 8,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.7
     },
     {
       "id": "3412",
-      "name": "placeholder",
+      "name": "wooden shield",
       "maximumCount": 1,
       "chance": 0.03
     }

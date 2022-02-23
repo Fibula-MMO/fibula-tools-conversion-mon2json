@@ -7,6 +7,7 @@
     "type": "outfit",
     "id": 134,
     "head": 95,
+    "body": 0,
     "legs": 113,
     "feet": 115
   },
@@ -37,76 +38,76 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 18
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3292",
-      "name": "placeholder",
+      "name": "combat knife",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.8
     },
     {
       "id": "3582",
-      "name": "placeholder",
+      "name": "ham",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3291",
-      "name": "placeholder",
+      "name": "knife",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 2,
       "chance": 0.3
     }

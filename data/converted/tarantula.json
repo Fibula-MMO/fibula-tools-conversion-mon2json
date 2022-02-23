@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -72,7 +72,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -81,37 +81,37 @@
   "inventory": [
     {
       "id": "3372",
-      "name": "placeholder",
+      "name": "brass legs",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 30,
       "chance": 0.3
     },
     {
       "id": "3410",
-      "name": "placeholder",
+      "name": "plate shield",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3351",
-      "name": "placeholder",
+      "name": "steel helmet",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3053",
-      "name": "placeholder",
+      "name": "time ring",
       "maximumCount": 1,
       "chance": 0.001
     }

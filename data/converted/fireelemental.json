@@ -28,7 +28,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -47,15 +47,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.1
+        "chance": 0.1,
+        "closest": 80.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 20.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 80.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 20.0
+      }
     },
     "abilities": [
       {
@@ -70,7 +70,7 @@
             "type": "damage",
             "base": 105,
             "variation": 50,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -84,7 +84,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       }

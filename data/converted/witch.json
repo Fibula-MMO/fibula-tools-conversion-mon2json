@@ -44,15 +44,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 30
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -66,7 +66,7 @@
             "type": "damage",
             "base": 40,
             "variation": 15,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -80,7 +80,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       }
@@ -89,79 +89,79 @@
   "inventory": [
     {
       "id": "3454",
-      "name": "placeholder",
+      "name": "broom",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3565",
-      "name": "placeholder",
+      "name": "cape",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3607",
-      "name": "placeholder",
+      "name": "cheese",
       "maximumCount": 1,
       "chance": 0.4
     },
     {
       "id": "3562",
-      "name": "placeholder",
+      "name": "coat",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3598",
-      "name": "placeholder",
+      "name": "cookie",
       "maximumCount": 8,
       "chance": 0.3
     },
     {
       "id": "3083",
-      "name": "placeholder",
+      "name": "garlic necklace",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.1
     },
     {
       "id": "3552",
-      "name": "placeholder",
+      "name": "leather boots",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3293",
-      "name": "placeholder",
+      "name": "sickle",
       "maximumCount": 1,
       "chance": 0.4
     },
     {
       "id": "3290",
-      "name": "placeholder",
+      "name": "silver dagger",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3736",
-      "name": "placeholder",
+      "name": "star herb",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3069",
-      "name": "placeholder",
+      "name": "volcanic rod",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3012",
-      "name": "placeholder",
+      "name": "wolf tooth chain",
       "maximumCount": 1,
       "chance": 0.1
     }

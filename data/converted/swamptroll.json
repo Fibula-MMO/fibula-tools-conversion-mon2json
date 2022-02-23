@@ -31,52 +31,52 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3267",
-      "name": "placeholder",
+      "name": "dagger",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3578",
-      "name": "placeholder",
+      "name": "fish",
       "maximumCount": 1,
       "chance": 0.6
     },
     {
       "id": "3483",
-      "name": "placeholder",
+      "name": "fishing rod",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 5,
       "chance": 0.5
     },
     {
       "id": "3552",
-      "name": "placeholder",
+      "name": "leather boots",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.15
     }

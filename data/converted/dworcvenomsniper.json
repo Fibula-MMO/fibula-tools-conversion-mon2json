@@ -38,15 +38,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -60,7 +60,7 @@
             "type": "damage",
             "base": 20,
             "variation": 6,
-            "kind": "PoisonCondition"
+            "kind": "poisoned"
           }
         ]
       }
@@ -69,61 +69,61 @@
   "inventory": [
     {
       "id": "3560",
-      "name": "placeholder",
+      "name": "bast skirt",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3056",
-      "name": "placeholder",
+      "name": "bronze amulet",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.8
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3448",
-      "name": "placeholder",
+      "name": "poison arrow",
       "maximumCount": 3,
       "chance": 0.05
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 2,
       "chance": 0.01
     },
     {
       "id": "3298",
-      "name": "placeholder",
+      "name": "throwing knife",
       "maximumCount": 2,
       "chance": 0.08
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3403",
-      "name": "placeholder",
+      "name": "tribal mask",
       "maximumCount": 1,
       "chance": 0.005
     }

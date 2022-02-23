@@ -40,15 +40,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 15.0,
+        "strongest": 15.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 15.0,
-      "strongest": 15.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -62,7 +62,7 @@
             "type": "damage",
             "base": 60,
             "variation": 10,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -71,91 +71,91 @@
   "inventory": [
     {
       "id": "2854",
-      "name": "placeholder",
+      "name": "backpack",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3372",
-      "name": "placeholder",
+      "name": "brass legs",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3301",
-      "name": "placeholder",
+      "name": "broadsword",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "3267",
-      "name": "placeholder",
+      "name": "dagger",
       "maximumCount": 1,
       "chance": 0.23
     },
     {
       "id": "3578",
-      "name": "placeholder",
+      "name": "fish",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 35,
       "chance": 0.28
     },
     {
       "id": "3285",
-      "name": "placeholder",
+      "name": "longsword",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 2,
       "chance": 0.15
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3557",
-      "name": "placeholder",
+      "name": "plate legs",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3410",
-      "name": "placeholder",
+      "name": "plate shield",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3307",
-      "name": "placeholder",
+      "name": "scimitar",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3091",
-      "name": "placeholder",
+      "name": "sword ring",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3298",
-      "name": "placeholder",
+      "name": "throwing knife",
       "maximumCount": 4,
       "chance": 0.1
     },
     {
       "id": "3369",
-      "name": "placeholder",
+      "name": "warrior helmet",
       "maximumCount": 1,
       "chance": 0.001
     }

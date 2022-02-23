@@ -36,7 +36,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -55,15 +55,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -89,7 +89,7 @@
             "type": "damage",
             "base": 75,
             "variation": 35,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -104,7 +104,7 @@
             "type": "damage",
             "base": 90,
             "variation": 25,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -119,7 +119,7 @@
             "type": "damage",
             "base": 90,
             "variation": 30,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -180,7 +180,7 @@
             "type": "damage",
             "base": 80,
             "variation": 20,
-            "kind": "EnergyCondition"
+            "kind": "energized"
           }
         ]
       },
@@ -202,61 +202,61 @@
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 50,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.5
     },
     {
       "id": "3038",
-      "name": "placeholder",
+      "name": "green gem",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "2647",
-      "name": "placeholder",
+      "name": "green tapestry",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3330",
-      "name": "placeholder",
+      "name": "heavy machete",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3574",
-      "name": "placeholder",
+      "name": "mystic turban",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3584",
-      "name": "placeholder",
+      "name": "pear",
       "maximumCount": 12,
       "chance": 0.25
     },
     {
       "id": "3032",
-      "name": "placeholder",
+      "name": "small emerald",
       "maximumCount": 2,
       "chance": 0.07
     },
     {
       "id": "2933",
-      "name": "placeholder",
+      "name": "small oil lamp",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3071",
-      "name": "placeholder",
+      "name": "wand of inferno",
       "maximumCount": 1,
       "chance": 0.005
     }

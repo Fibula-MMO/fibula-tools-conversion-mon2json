@@ -31,34 +31,34 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 5
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3607",
-      "name": "placeholder",
+      "name": "cheese",
       "maximumCount": 1,
       "chance": 0.4
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 4,
       "chance": 0.7
     },
     {
       "id": "3492",
-      "name": "placeholder",
+      "name": "worm",
       "maximumCount": 3,
       "chance": 0.5
     }

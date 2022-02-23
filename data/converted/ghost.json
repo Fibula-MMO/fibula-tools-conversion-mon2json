@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -52,15 +52,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -74,7 +74,7 @@
             "type": "damage",
             "base": 35,
             "variation": 10,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -83,49 +83,49 @@
   "inventory": [
     {
       "id": "3432",
-      "name": "placeholder",
+      "name": "ancient shield",
       "maximumCount": 1,
       "chance": 0.008
     },
     {
       "id": "2843",
-      "name": "placeholder",
+      "name": "book",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3565",
-      "name": "placeholder",
+      "name": "cape",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3292",
-      "name": "placeholder",
+      "name": "combat knife",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3282",
-      "name": "placeholder",
+      "name": "morning star",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3551",
-      "name": "placeholder",
+      "name": "sandals",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3740",
-      "name": "placeholder",
+      "name": "shadow herb",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3049",
-      "name": "placeholder",
+      "name": "stealth ring",
       "maximumCount": 1,
       "chance": 0.002
     }

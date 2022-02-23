@@ -39,15 +39,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -61,7 +61,7 @@
             "type": "damage",
             "base": 30,
             "variation": 10,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -70,61 +70,61 @@
   "inventory": [
     {
       "id": "3092",
-      "name": "placeholder",
+      "name": "axe ring",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3266",
-      "name": "placeholder",
+      "name": "battle axe",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3446",
-      "name": "placeholder",
+      "name": "bolt",
       "maximumCount": 4,
       "chance": 0.4
     },
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3349",
-      "name": "placeholder",
+      "name": "crossbow",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3425",
-      "name": "placeholder",
+      "name": "dwarven shield",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 12,
       "chance": 0.35
     },
     {
       "id": "3457",
-      "name": "placeholder",
+      "name": "shovel",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3375",
-      "name": "placeholder",
+      "name": "soldier helmet",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3723",
-      "name": "placeholder",
+      "name": "white mushroom",
       "maximumCount": 2,
       "chance": 0.4
     }

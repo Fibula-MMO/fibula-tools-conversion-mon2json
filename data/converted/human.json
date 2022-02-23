@@ -65,64 +65,64 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 20
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "2854",
-      "name": "placeholder",
+      "name": "backpack",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3600",
-      "name": "placeholder",
+      "name": "bread",
       "maximumCount": 3,
       "chance": 0.5
     },
     {
       "id": "3607",
-      "name": "placeholder",
+      "name": "cheese",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.6
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.6
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 3,
       "chance": 0.4
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.8
     }

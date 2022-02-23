@@ -28,7 +28,7 @@
     "distance": 1,
     "immunities": [
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -43,15 +43,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.1
+        "chance": 0.1,
+        "closest": 60.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 40.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 60.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 40.0
+      }
     },
     "abilities": [
       {
@@ -79,7 +79,7 @@
             "type": "damage",
             "base": 25,
             "variation": 5,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -88,55 +88,55 @@
   "inventory": [
     {
       "id": "2854",
-      "name": "placeholder",
+      "name": "backpack",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3147",
-      "name": "placeholder",
+      "name": "blank rune",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3372",
-      "name": "placeholder",
+      "name": "brass legs",
       "maximumCount": 1,
       "chance": 0.035
     },
     {
       "id": "3411",
-      "name": "placeholder",
+      "name": "brass shield",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 8,
       "chance": 0.13
     },
     {
       "id": "3300",
-      "name": "placeholder",
+      "name": "katana",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3313",
-      "name": "placeholder",
+      "name": "obsidian lance",
       "maximumCount": 1,
       "chance": 0.012
     },
     {
       "id": "3298",
-      "name": "placeholder",
+      "name": "throwing knife",
       "maximumCount": 2,
       "chance": 0.11
     }

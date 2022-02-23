@@ -28,7 +28,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -47,15 +47,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -69,7 +69,7 @@
             "type": "damage",
             "base": 35,
             "variation": 5,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -93,67 +93,67 @@
   "inventory": [
     {
       "id": "3027",
-      "name": "placeholder",
+      "name": "black pearl",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3429",
-      "name": "placeholder",
+      "name": "black shield",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3007",
-      "name": "placeholder",
+      "name": "crystal ring",
       "maximumCount": 1,
       "chance": 0.015
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.4
     },
     {
       "id": "3046",
-      "name": "placeholder",
+      "name": "magic light wand",
       "maximumCount": 1,
       "chance": 0.16
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3294",
-      "name": "placeholder",
+      "name": "short sword",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3054",
-      "name": "placeholder",
+      "name": "silver amulet",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3017",
-      "name": "placeholder",
+      "name": "silver brooch",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3045",
-      "name": "placeholder",
+      "name": "strange talisman",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3492",
-      "name": "placeholder",
+      "name": "worm",
       "maximumCount": 3,
       "chance": 0.7
     }

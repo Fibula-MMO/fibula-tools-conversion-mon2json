@@ -29,15 +29,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.1
+        "chance": 0.1,
+        "closest": 60.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 40.0
       },
       "flee": {
         "hitpointThreshold": 2
-      },
-      "closest": 60.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 40.0
+      }
     },
     "abilities": []
   },

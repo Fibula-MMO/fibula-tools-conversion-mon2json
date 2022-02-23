@@ -34,15 +34,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -63,49 +63,49 @@
   "inventory": [
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 2,
       "chance": 0.3
     },
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 10,
       "chance": 0.05
     },
     {
       "id": "3093",
-      "name": "placeholder",
+      "name": "club ring",
       "maximumCount": 1,
       "chance": 0.002
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 30,
       "chance": 0.1
     },
     {
       "id": "3357",
-      "name": "placeholder",
+      "name": "plate armor",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3050",
-      "name": "placeholder",
+      "name": "power ring",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3084",
-      "name": "placeholder",
+      "name": "protection amulet",
       "maximumCount": 1,
       "chance": 0.01
     }

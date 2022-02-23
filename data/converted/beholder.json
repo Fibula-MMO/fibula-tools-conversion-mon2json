@@ -29,7 +29,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -44,15 +44,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -66,7 +66,7 @@
             "type": "damage",
             "base": 30,
             "variation": 15,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -81,7 +81,7 @@
             "type": "damage",
             "base": 35,
             "variation": 10,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -96,7 +96,7 @@
             "type": "damage",
             "base": 40,
             "variation": 10,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -111,7 +111,7 @@
             "type": "damage",
             "base": 25,
             "variation": 20,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -126,7 +126,7 @@
             "type": "damage",
             "base": 40,
             "variation": 5,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -141,7 +141,7 @@
             "type": "damage",
             "base": 15,
             "variation": 10,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -163,67 +163,67 @@
   "inventory": [
     {
       "id": "3418",
-      "name": "placeholder",
+      "name": "beholder shield",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 12,
       "chance": 0.9
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 16,
       "chance": 0.8
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.7
     },
     {
       "id": "3285",
-      "name": "placeholder",
+      "name": "longsword",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3282",
-      "name": "placeholder",
+      "name": "morning star",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3065",
-      "name": "placeholder",
+      "name": "quagmire rod",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3059",
-      "name": "placeholder",
+      "name": "spellbook",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3409",
-      "name": "placeholder",
+      "name": "steel shield",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3265",
-      "name": "placeholder",
+      "name": "two handed sword",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3412",
-      "name": "placeholder",
+      "name": "wooden shield",
       "maximumCount": 1,
       "chance": 0.03
     }

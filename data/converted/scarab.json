@@ -44,15 +44,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 80
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -76,7 +76,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       },
@@ -92,7 +92,7 @@
             "type": "damage",
             "base": 20,
             "variation": 5,
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -101,61 +101,61 @@
   "inventory": [
     {
       "id": "3447",
-      "name": "placeholder",
+      "name": "arrow",
       "maximumCount": 3,
       "chance": 0.05
     },
     {
       "id": "3327",
-      "name": "placeholder",
+      "name": "daramanian mace",
       "maximumCount": 1,
       "chance": 0.003
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 12,
       "chance": 0.705
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 40,
       "chance": 0.445
     },
     {
       "id": "3330",
-      "name": "placeholder",
+      "name": "heavy machete",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 2,
       "chance": 0.54
     },
     {
       "id": "3042",
-      "name": "placeholder",
+      "name": "scarab coin",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3042",
-      "name": "placeholder",
+      "name": "scarab coin",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3032",
-      "name": "placeholder",
+      "name": "small emerald",
       "maximumCount": 1,
       "chance": 0.003
     }

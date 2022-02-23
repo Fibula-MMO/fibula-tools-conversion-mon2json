@@ -38,34 +38,34 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.06
+        "chance": 0.06,
+        "closest": 70.0,
+        "weakest": 0.0,
+        "strongest": 30.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 0.0,
-      "strongest": 30.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 15,
       "chance": 0.8
     },
     {
       "id": "3286",
-      "name": "placeholder",
+      "name": "mace",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.03
     }

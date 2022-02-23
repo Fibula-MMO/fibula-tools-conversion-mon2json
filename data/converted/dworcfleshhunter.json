@@ -36,15 +36,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 8
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -58,7 +58,7 @@
             "type": "damage",
             "base": 10,
             "variation": 5,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -67,61 +67,61 @@
   "inventory": [
     {
       "id": "3441",
-      "name": "placeholder",
+      "name": "bone shield",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3471",
-      "name": "placeholder",
+      "name": "cleaver",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.8
     },
     {
       "id": "3347",
-      "name": "placeholder",
+      "name": "hunting spear",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3361",
-      "name": "placeholder",
+      "name": "leather armor",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3346",
-      "name": "placeholder",
+      "name": "ripper lance",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3114",
-      "name": "placeholder",
+      "name": "skull",
       "maximumCount": 3,
       "chance": 0.03
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.055
     },
     {
       "id": "3403",
-      "name": "placeholder",
+      "name": "tribal mask",
       "maximumCount": 1,
       "chance": 0.005
     }

@@ -31,64 +31,64 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "2875",
-      "name": "placeholder",
+      "name": "bottle",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3430",
-      "name": "placeholder",
+      "name": "copper shield",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 15,
       "chance": 0.65
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3299",
-      "name": "placeholder",
+      "name": "poison dagger",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3273",
-      "name": "placeholder",
+      "name": "sabre",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3412",
-      "name": "placeholder",
+      "name": "wooden shield",
       "maximumCount": 1,
       "chance": 0.18
     }

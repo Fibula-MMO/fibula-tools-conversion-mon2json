@@ -31,76 +31,76 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.6
     },
     {
       "id": "3268",
-      "name": "placeholder",
+      "name": "hand axe",
       "maximumCount": 1,
       "chance": 0.18
     },
     {
       "id": "3552",
-      "name": "placeholder",
+      "name": "leather boots",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3355",
-      "name": "placeholder",
+      "name": "leather helmet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3003",
-      "name": "placeholder",
+      "name": "rope",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3054",
-      "name": "placeholder",
+      "name": "silver amulet",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3336",
-      "name": "placeholder",
+      "name": "studded club",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3412",
-      "name": "placeholder",
+      "name": "wooden shield",
       "maximumCount": 1,
       "chance": 0.15
     }

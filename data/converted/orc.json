@@ -31,58 +31,58 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3274",
-      "name": "placeholder",
+      "name": "axe",
       "maximumCount": 1,
       "chance": 0.08
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 8,
       "chance": 0.85
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3273",
-      "name": "placeholder",
+      "name": "sabre",
       "maximumCount": 1,
       "chance": 0.06
     },
     {
       "id": "3378",
-      "name": "placeholder",
+      "name": "studded armor",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3376",
-      "name": "placeholder",
+      "name": "studded helmet",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3426",
-      "name": "placeholder",
+      "name": "studded shield",
       "maximumCount": 1,
       "chance": 0.1
     }

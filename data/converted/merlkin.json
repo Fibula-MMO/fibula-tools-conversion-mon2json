@@ -40,15 +40,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -74,7 +74,7 @@
             "type": "damage",
             "base": 60,
             "variation": 30,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -89,7 +89,7 @@
             "type": "damage",
             "base": 30,
             "variation": 15,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "actions": [
           {
             "type": "magicField",
-            "kind": "Poison"
+            "kind": "poison"
           }
         ]
       }
@@ -112,49 +112,49 @@
   "inventory": [
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 2,
       "chance": 0.3
     },
     {
       "id": "3587",
-      "name": "placeholder",
+      "name": "banana",
       "maximumCount": 10,
       "chance": 0.05
     },
     {
       "id": "3348",
-      "name": "placeholder",
+      "name": "banana staff",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 25,
       "chance": 0.8
     },
     {
       "id": "3046",
-      "name": "placeholder",
+      "name": "magic light wand",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3586",
-      "name": "placeholder",
+      "name": "orange",
       "maximumCount": 5,
       "chance": 0.01
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3072",
-      "name": "placeholder",
+      "name": "wand of plague",
       "maximumCount": 1,
       "chance": 0.01
     }

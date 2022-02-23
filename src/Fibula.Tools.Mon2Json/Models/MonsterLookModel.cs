@@ -29,30 +29,30 @@ namespace Fibula.Tools.Mon2Json.Models
         /// Gets or sets the identifier of the item or race, depending on the look type.
         /// </summary>
         [JsonProperty("id", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public ushort Id { get; set; }
+        public ushort? Id { get; set; }
 
         /// <summary>
         /// Gets or sets the look for the head.
         /// </summary>
         [JsonProperty("head", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public byte Head { get; set; }
+        public byte? Head { get; set; }
 
         /// <summary>
         /// Gets or sets the look for the body.
         /// </summary>
         [JsonProperty("body", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public byte Body { get; set; }
+        public byte? Body { get; set; }
 
         /// <summary>
         /// Gets or sets the look for the legs.
         /// </summary>
         [JsonProperty("legs", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public byte Legs { get; set; }
+        public byte? Legs { get; set; }
 
         /// <summary>
         /// Gets or sets the look for the feet.
         /// </summary>
         [JsonProperty("feet", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public byte Feet { get; set; }
+        public byte? Feet { get; set; }
     }
 }

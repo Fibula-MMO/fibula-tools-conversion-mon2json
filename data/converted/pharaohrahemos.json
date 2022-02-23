@@ -37,7 +37,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -56,15 +56,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.03
+        "chance": 0.03,
+        "closest": 80.0,
+        "weakest": 10.0,
+        "strongest": 10.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 80.0,
-      "weakest": 10.0,
-      "strongest": 10.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -105,7 +105,7 @@
             "type": "damage",
             "base": 400,
             "variation": 350,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -120,7 +120,7 @@
             "type": "damage",
             "base": 400,
             "variation": 200,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -135,7 +135,7 @@
             "type": "damage",
             "base": 400,
             "variation": 200,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       },
@@ -204,67 +204,67 @@
   "inventory": [
     {
       "id": "3235",
-      "name": "placeholder",
+      "name": "ancient rune",
       "maximumCount": 1,
       "chance": 1.0
     },
     {
       "id": "3068",
-      "name": "placeholder",
+      "name": "crystal wand",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 80,
       "chance": 0.7
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 85,
       "chance": 0.5
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 95,
       "chance": 0.35
     },
     {
       "id": "3573",
-      "name": "placeholder",
+      "name": "magician hat",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3060",
-      "name": "placeholder",
+      "name": "orb",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "3098",
-      "name": "placeholder",
+      "name": "ring of healing",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3033",
-      "name": "placeholder",
+      "name": "small amethyst",
       "maximumCount": 3,
       "chance": 0.1
     },
     {
       "id": "3335",
-      "name": "placeholder",
+      "name": "twin axe",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "3036",
-      "name": "placeholder",
+      "name": "violet gem",
       "maximumCount": 1,
       "chance": 0.01
     }

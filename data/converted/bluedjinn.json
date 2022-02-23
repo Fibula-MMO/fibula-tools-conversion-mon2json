@@ -36,7 +36,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -55,15 +55,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -77,7 +77,7 @@
             "type": "damage",
             "base": 60,
             "variation": 15,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       },
@@ -92,7 +92,7 @@
             "type": "damage",
             "base": 70,
             "variation": 20,
-            "kind": "EnergyCondition"
+            "kind": "energized"
           }
         ]
       },
@@ -107,7 +107,7 @@
             "type": "damage",
             "base": 80,
             "variation": 25,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -148,43 +148,43 @@
   "inventory": [
     {
       "id": "3659",
-      "name": "placeholder",
+      "name": "blue rose",
       "maximumCount": 1,
       "chance": 0.005
     },
     {
       "id": "2844",
-      "name": "placeholder",
+      "name": "book",
       "maximumCount": 1,
       "chance": 0.025
     },
     {
       "id": "3595",
-      "name": "placeholder",
+      "name": "carrot",
       "maximumCount": 1,
       "chance": 0.25
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 50,
       "chance": 0.7
     },
     {
       "id": "3574",
-      "name": "placeholder",
+      "name": "mystic turban",
       "maximumCount": 1,
       "chance": 0.001
     },
     {
       "id": "2933",
-      "name": "placeholder",
+      "name": "small oil lamp",
       "maximumCount": 1,
       "chance": 0.075
     },
     {
       "id": "3029",
-      "name": "placeholder",
+      "name": "small sapphire",
       "maximumCount": 4,
       "chance": 0.025
     }

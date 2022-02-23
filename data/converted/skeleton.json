@@ -25,7 +25,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       }
     ],
@@ -40,15 +40,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -62,7 +62,7 @@
             "type": "damage",
             "base": 10,
             "variation": 3,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       }
@@ -71,49 +71,49 @@
   "inventory": [
     {
       "id": "3115",
-      "name": "placeholder",
+      "name": "bone",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3411",
-      "name": "placeholder",
+      "name": "brass shield",
       "maximumCount": 1,
       "chance": 0.12
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 10,
       "chance": 0.45
     },
     {
       "id": "3276",
-      "name": "placeholder",
+      "name": "hatchet",
       "maximumCount": 1,
       "chance": 0.25
     },
     {
       "id": "3286",
-      "name": "placeholder",
+      "name": "mace",
       "maximumCount": 1,
       "chance": 0.2
     },
     {
       "id": "3264",
-      "name": "placeholder",
+      "name": "sword",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "2920",
-      "name": "placeholder",
+      "name": "torch",
       "maximumCount": 1,
       "chance": 0.5
     },
     {
       "id": "3367",
-      "name": "placeholder",
+      "name": "viking helmet",
       "maximumCount": 1,
       "chance": 0.08
     }

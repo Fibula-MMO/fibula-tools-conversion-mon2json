@@ -38,7 +38,7 @@
         "modifier": 1.0
       },
       {
-        "type": "lifeDrain",
+        "type": "lifedrain",
         "modifier": 1.0
       },
       {
@@ -57,15 +57,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.0
+        "chance": 0.0,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 20
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -91,7 +91,7 @@
             "type": "damage",
             "base": 2000,
             "variation": 150,
-            "kind": "LifeDrain"
+            "kind": "lifedrain"
           }
         ]
       },
@@ -106,7 +106,7 @@
             "type": "damage",
             "base": 999,
             "variation": 30,
-            "kind": "ManaDrain"
+            "kind": "manadrain"
           }
         ]
       },
@@ -121,7 +121,7 @@
             "type": "damage",
             "base": 2000,
             "variation": 250,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       }

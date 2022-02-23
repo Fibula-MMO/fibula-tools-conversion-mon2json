@@ -43,15 +43,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 15
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -77,7 +77,7 @@
             "type": "damage",
             "base": 25,
             "variation": 5,
-            "kind": "Energy"
+            "kind": "energy"
           }
         ]
       },
@@ -106,7 +106,7 @@
             "type": "damage",
             "base": 25,
             "variation": 20,
-            "kind": "Fire"
+            "kind": "fire"
           }
         ]
       }
@@ -115,55 +115,55 @@
   "inventory": [
     {
       "id": "2839",
-      "name": "placeholder",
+      "name": "book",
       "maximumCount": 1,
       "chance": 0.045
     },
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3352",
-      "name": "placeholder",
+      "name": "chain helmet",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "2853",
-      "name": "placeholder",
+      "name": "bag",
       "maximumCount": 1,
       "chance": 0.11
     },
     {
       "id": "3597",
-      "name": "placeholder",
+      "name": "corncob",
       "maximumCount": 2,
       "chance": 0.11
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 5,
       "chance": 0.9
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3289",
-      "name": "placeholder",
+      "name": "staff",
       "maximumCount": 1,
       "chance": 0.07
     },
     {
       "id": "3072",
-      "name": "placeholder",
+      "name": "wand of plague",
       "maximumCount": 1,
       "chance": 0.01
     }

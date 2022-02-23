@@ -33,15 +33,15 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.5
+        "chance": 0.5,
+        "closest": 100.0,
+        "weakest": 0.0,
+        "strongest": 0.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 10
-      },
-      "closest": 100.0,
-      "weakest": 0.0,
-      "strongest": 0.0,
-      "random": 0.0
+      }
     },
     "abilities": [
       {
@@ -55,7 +55,7 @@
             "type": "damage",
             "base": 28,
             "variation": 12,
-            "kind": "Physical"
+            "kind": "physical"
           }
         ]
       }
@@ -64,43 +64,43 @@
   "inventory": [
     {
       "id": "3105",
-      "name": "placeholder",
+      "name": "dirty fur",
       "maximumCount": 1,
       "chance": 0.077
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 7,
       "chance": 0.22
     },
     {
       "id": "3308",
-      "name": "placeholder",
+      "name": "machete",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.3
     },
     {
       "id": "3277",
-      "name": "placeholder",
+      "name": "spear",
       "maximumCount": 1,
       "chance": 0.23
     },
     {
       "id": "3376",
-      "name": "placeholder",
+      "name": "studded helmet",
       "maximumCount": 1,
       "chance": 0.09
     },
     {
       "id": "3362",
-      "name": "placeholder",
+      "name": "studded legs",
       "maximumCount": 1,
       "chance": 0.1
     }

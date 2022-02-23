@@ -35,76 +35,76 @@
     ],
     "strategy": {
       "changeTarget": {
-        "chance": 0.05
+        "chance": 0.05,
+        "closest": 70.0,
+        "weakest": 10.0,
+        "strongest": 20.0,
+        "random": 0.0
       },
       "flee": {
         "hitpointThreshold": 0
-      },
-      "closest": 70.0,
-      "weakest": 10.0,
-      "strongest": 20.0,
-      "random": 0.0
+      }
     },
     "abilities": []
   },
   "inventory": [
     {
       "id": "3413",
-      "name": "placeholder",
+      "name": "battle shield",
       "maximumCount": 1,
       "chance": 0.02
     },
     {
       "id": "3359",
-      "name": "placeholder",
+      "name": "brass armor",
       "maximumCount": 1,
       "chance": 0.04
     },
     {
       "id": "3358",
-      "name": "placeholder",
+      "name": "chain armor",
       "maximumCount": 1,
       "chance": 0.03
     },
     {
       "id": "3558",
-      "name": "placeholder",
+      "name": "chain legs",
       "maximumCount": 1,
       "chance": 0.01
     },
     {
       "id": "3275",
-      "name": "placeholder",
+      "name": "double axe",
       "maximumCount": 1,
       "chance": 0.004
     },
     {
       "id": "3483",
-      "name": "placeholder",
+      "name": "fishing rod",
       "maximumCount": 1,
       "chance": 0.05
     },
     {
       "id": "3031",
-      "name": "placeholder",
+      "name": "gold coin",
       "maximumCount": 20,
       "chance": 0.6
     },
     {
       "id": "3276",
-      "name": "placeholder",
+      "name": "hatchet",
       "maximumCount": 1,
       "chance": 0.1
     },
     {
       "id": "3559",
-      "name": "placeholder",
+      "name": "leather legs",
       "maximumCount": 1,
       "chance": 0.15
     },
     {
       "id": "3577",
-      "name": "placeholder",
+      "name": "meat",
       "maximumCount": 1,
       "chance": 0.1
     }
