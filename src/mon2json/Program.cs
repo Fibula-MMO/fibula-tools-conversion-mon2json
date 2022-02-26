@@ -77,30 +77,34 @@ namespace Fibula.Tools.Mon2Json.Standalone
             var inputListener = host.Services.GetService(typeof(InputStreamReaderListener)) as IInputListener;
             var converter = host.Services.GetService(typeof(MonsterFilesConverter)) as MonsterFilesConverter;
 
-            var monDirArg = new Argument<string>("from", "The directory that contains the .mon files.");
-            var outDirArg = new Argument<string>("to", "The directory in which to put the converted files.");
-            var overwriteOp = new Option<bool>("overwrite", "A value indicating whether to overwrite files.");
-            var convertCommand = new Command("convert", "Converts CipSoft .mon monster files to Fibula's .json monster files.");
+            var monDirArg = new Argument<string>("from", description: "The directory that contains the .mon files.");
+            var outDirArg = new Argument<string>("to", description: "The directory in which to put the converted files.");
+            var overwriteOp = new Option<bool>("overwrite", description: "A value indicating whether to overwrite files.", getDefaultValue: () => false);
+            var convertCommand = new Command("convert", "Converts CipSoft's .mon monster files to Fibula's .json monster files.");
 
             convertCommand.AddArgument(monDirArg);
             convertCommand.AddArgument(outDirArg);
             convertCommand.AddOption(overwriteOp);
 
             convertCommand.SetHandler(
-                (string monDir, string outDir, bool overwrite) => converter.Convert(monDir, outDir, overwrite),
+                (string monDir, string outDir, bool overwrite) =>
+                {
+                    converter.Convert(monDir, outDir, overwrite);
+
+                    Console.WriteLine("Command completed.");
+                },
                 monDirArg,
                 outDirArg,
                 overwriteOp);
 
-            var rootCommand = new RootCommand("A tool to convert .mon files to .json files.");
+            var rootCommand = new RootCommand("A tool to convert or verify monster files.");
 
+            rootCommand.AddAlias("mon2json");
             rootCommand.AddCommand(convertCommand);
 
             inputListener.NewLineRead += (line) =>
             {
                 rootCommand.Invoke(line);
-
-                Console.WriteLine("Command completed.");
             };
 
             await host.RunAsync(Program.MasterCancellationTokenSource.Token).ConfigureAwait(false);

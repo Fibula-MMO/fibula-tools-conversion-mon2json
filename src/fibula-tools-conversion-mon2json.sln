@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibula.Tools.Mon2Json.Standalone", "Fibula.Tools.Mon2Json.Standalone\Fibula.Tools.Mon2Json.Standalone.csproj", "{BC6275F5-5726-41EC-8BAD-2168B79F0FCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mon2json", "mon2json\mon2json.csproj", "{BC6275F5-5726-41EC-8BAD-2168B79F0FCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibula.Tools.Mon2Json", "Fibula.Tools.Mon2Json\Fibula.Tools.Mon2Json.csproj", "{AF4917CC-E72A-4530-AD26-DAB970C7532F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibula.Tools.Mon2Json", "Fibula.Tools.Mon2Json\Fibula.Tools.Mon2Json.csproj", "{AF4917CC-E72A-4530-AD26-DAB970C7532F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

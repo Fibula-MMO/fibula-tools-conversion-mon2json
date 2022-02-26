@@ -16,6 +16,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<DebugType>full</DebugType>
+		<AssemblyName>mon2json</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
