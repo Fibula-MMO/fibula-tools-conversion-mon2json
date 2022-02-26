@@ -14,6 +14,7 @@ namespace Fibula.Tools.Mon2Json
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
     using System.Text.RegularExpressions;
     using Fibula.Data.Contracts.Abstractions;
     using Fibula.Definitions.Data.Entities;
@@ -29,6 +30,9 @@ namespace Fibula.Tools.Mon2Json
     /// </summary>
     public class MonsterFilesConverter
     {
+        private const string MonExtension = ".mon";
+        private const string JsonExtension = ".json";
+
         private readonly MonsterFilesConverterOptions options;
         private readonly IItemTypesLoader itemTypesLoader;
 
@@ -80,8 +84,12 @@ namespace Fibula.Tools.Mon2Json
                 }
             }
 
+            var existingFiles = monDirectoryInfo.GetFiles($"*{MonExtension}");
+            var modelMap = new Dictionary<string, MonsterModel>();
+            var raceMap = new Dictionary<uint, string>();
+
             // Now that both directories exist, start processing files serially.
-            foreach (var monFileInfo in monDirectoryInfo.GetFiles($"*.mon"))
+            foreach (var monFileInfo in existingFiles)
             {
                 var parsedMonsterModel = CipFileParser.ParseMonsterFile(monFileInfo);
 
@@ -91,22 +99,51 @@ namespace Fibula.Tools.Mon2Json
                 }
 
                 var targetModel = parsedMonsterModel.ToSerializableModel();
+                var fileNameWithoutExt = monFileInfo.Name.Replace(MonExtension, string.Empty);
 
-                this.AmmendInventoryItemNames(itemDictionary, targetModel);
+                modelMap.Add(fileNameWithoutExt, targetModel);
+                raceMap.Add(parsedMonsterModel.RaceId, fileNameWithoutExt);
+            }
 
+            // Ammend item names and summon references
+            foreach (var convertedModel in modelMap.Values)
+            {
+                this.AmmendInventoryItemNames(itemDictionary, convertedModel);
+                this.AmmendSummonReferences(raceMap, convertedModel);
+            }
+
+            // Output converted models
+            foreach (var (fileNameWithoutExt, convertedModel) in modelMap)
+            {
                 var convertedFilePath = Path.Combine(jsonDirectoryInfo.FullName, Path.GetTempFileName());
+                var targetFilePath = $"{Path.Combine(jsonDirectoryInfo.FullName, fileNameWithoutExt)}{JsonExtension}";
                 var tempFileSream = File.Create(convertedFilePath);
 
                 using (var fw = new StreamWriter(tempFileSream))
                 {
-                    var serializedMonster = JsonConvert.SerializeObject(targetModel, Formatting.Indented);
+                    var serializedMonster = JsonConvert.SerializeObject(convertedModel, Formatting.Indented);
 
                     fw.Write(serializedMonster);
                     fw.Flush();
                     fw.Close();
                 }
 
-                File.Move(convertedFilePath, Path.Combine(jsonDirectoryInfo.FullName, monFileInfo.Name).Replace(".mon", ".json"), overwriteFiles ?? false);
+                File.Move(convertedFilePath, targetFilePath, overwriteFiles ?? false);
+            }
+        }
+
+        private void AmmendSummonReferences(Dictionary<uint, string> raceMap, MonsterModel convertedModel)
+        {
+            // HACK: hardcoded ability action type here.
+            foreach (var abilityActionModel in convertedModel.Combat.Abilities.SelectMany(a => a.Actions.Where(action => action.Type == "summon")))
+            {
+                if (!uint.TryParse(abilityActionModel.MonsterFile, out var referencedMonsterRaceId) || !raceMap.ContainsKey(referencedMonsterRaceId))
+                {
+                    // TODO: logging?
+                    continue;
+                }
+
+                abilityActionModel.MonsterFile = raceMap[referencedMonsterRaceId];
             }
         }
 
@@ -122,7 +159,7 @@ namespace Fibula.Tools.Mon2Json
 
                 var match = Regex.Match(itemDictionary[inventoryModel.Id].Name, "^(?'article'an?)?\\s?(?'itemName'.*)$");
 
-                match.Groups.TryGetValue("article", out Group articleGrp);
+                match.Groups.TryGetValue("article", out _);
                 match.Groups.TryGetValue("itemName", out Group nameGrp);
 
                 inventoryModel.Name = nameGrp.Value;

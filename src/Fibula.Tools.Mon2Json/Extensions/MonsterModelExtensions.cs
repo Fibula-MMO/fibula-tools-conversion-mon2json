@@ -462,7 +462,7 @@ namespace Fibula.Tools.Mon2Json.Extensions
             return new MonsterAbilityActionModel()
             {
                 Type = ActionType,
-                MonsterFile = $"filename for race {values[0]}",
+                MonsterFile = values[0].ToString(),
                 MaximumCount = Convert.ToByte(values[1]),
             };
         }

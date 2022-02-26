@@ -169,7 +169,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 72",
+            "monsterFile": "stalker",
             "maximumCount": 4
           }
         ]

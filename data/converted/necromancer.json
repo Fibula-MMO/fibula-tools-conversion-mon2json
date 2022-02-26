@@ -106,7 +106,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 18",
+            "monsterFile": "ghoul",
             "maximumCount": 2
           }
         ]
@@ -119,7 +119,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 48",
+            "monsterFile": "ghost",
             "maximumCount": 1
           }
         ]
@@ -132,7 +132,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 65",
+            "monsterFile": "mummy",
             "maximumCount": 1
           }
         ]

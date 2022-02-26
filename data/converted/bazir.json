@@ -290,7 +290,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 230",
+            "monsterFile": "bazir",
             "maximumCount": 1
           }
         ]

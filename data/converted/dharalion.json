@@ -150,7 +150,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 37",
+            "monsterFile": "demonskeleton",
             "maximumCount": 2
           }
         ]

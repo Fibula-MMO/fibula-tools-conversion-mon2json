@@ -192,7 +192,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 80",
+            "monsterFile": "bluedjinn",
             "maximumCount": 2
           }
         ]

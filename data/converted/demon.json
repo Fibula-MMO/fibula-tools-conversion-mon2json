@@ -102,7 +102,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 49",
+            "monsterFile": "fireelemental",
             "maximumCount": 1
           }
         ]

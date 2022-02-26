@@ -183,7 +183,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 109",
+            "monsterFile": "gazer",
             "maximumCount": 6
           }
         ]
@@ -196,7 +196,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 100",
+            "monsterFile": "cryptshambler",
             "maximumCount": 6
           }
         ]

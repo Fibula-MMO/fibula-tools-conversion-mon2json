@@ -163,7 +163,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 3",
+            "monsterFile": "warwolf",
             "maximumCount": 4
           }
         ]

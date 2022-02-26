@@ -80,7 +80,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 36",
+            "monsterFile": "poisonspider",
             "maximumCount": 2
           }
         ]

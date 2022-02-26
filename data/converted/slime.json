@@ -58,7 +58,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 20",
+            "monsterFile": "slime2",
             "maximumCount": 3
           }
         ]

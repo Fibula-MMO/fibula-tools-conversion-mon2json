@@ -168,7 +168,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 79",
+            "monsterFile": "ancientscarab",
             "maximumCount": 2
           }
         ]
@@ -181,7 +181,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 51",
+            "monsterFile": "greendjinn",
             "maximumCount": 4
           }
         ]

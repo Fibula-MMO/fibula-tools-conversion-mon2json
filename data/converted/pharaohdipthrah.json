@@ -158,7 +158,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 58",
+            "monsterFile": "priestess",
             "maximumCount": 4
           }
         ]

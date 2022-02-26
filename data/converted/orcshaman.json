@@ -89,7 +89,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 28",
+            "monsterFile": "snake",
             "maximumCount": 4
           }
         ]

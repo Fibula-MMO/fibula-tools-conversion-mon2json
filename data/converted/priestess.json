@@ -110,7 +110,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 18",
+            "monsterFile": "ghoul",
             "maximumCount": 2
           }
         ]

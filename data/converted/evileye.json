@@ -169,7 +169,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 37",
+            "monsterFile": "demonskeleton",
             "maximumCount": 6
           }
         ]
@@ -182,7 +182,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 48",
+            "monsterFile": "ghost",
             "maximumCount": 6
           }
         ]

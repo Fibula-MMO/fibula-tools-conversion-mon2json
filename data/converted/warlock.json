@@ -147,7 +147,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 67",
+            "monsterFile": "stonegolem",
             "maximumCount": 1
           }
         ]

@@ -127,7 +127,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 101",
+            "monsterFile": "bonebeast",
             "maximumCount": 4
           }
         ]

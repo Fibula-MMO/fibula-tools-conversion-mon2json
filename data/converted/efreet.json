@@ -192,7 +192,7 @@
         "actions": [
           {
             "type": "summon",
-            "monsterFile": "filename for race 51",
+            "monsterFile": "greendjinn",
             "maximumCount": 2
           }
         ]
