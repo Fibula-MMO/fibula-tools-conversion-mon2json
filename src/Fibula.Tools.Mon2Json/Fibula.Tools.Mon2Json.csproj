@@ -20,7 +20,7 @@
 		<PackageProjectUrl>https://fibula-mmo.github.io/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Fibula-MMO/fibula-tools-conversion-mon2json</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
-		<Version>0.1.1-pre</Version>
+		<Version>0.1.2-pre</Version>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Description>A tool that converts monster files from the Cip format to Fibula's JSON format.</Description>
 	</PropertyGroup>
