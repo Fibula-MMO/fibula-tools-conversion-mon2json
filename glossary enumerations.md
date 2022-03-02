@@ -1,6 +1,8 @@
 # Enumerations glossary
 
-## enum_animatedEffect
+> NOTE: These enums come from the original Cipsoft files. Fibula's friendly names for these vary slightly.
+
+## `enum_animatedEffect`
 
 |numeric value|use|
 |--|--|
@@ -31,7 +33,7 @@
 |24|SoundBlue|
 |25|SoundWhite|
 	
-## enum_projectileEffects
+## `enum_projectileEffects`
 
 |numeric value|use|
 |--|--|
@@ -52,30 +54,30 @@
 |14|PowerBolt|
 |15|Poison|
 
-## enum_damageKinds
+## `enum_damageKinds`
 
 |numeric value|use|
 |--|--|
-|1|Physical|
-|2|Poison|
-|4|Fire|
-|8|Energy|
-|16|Unknown|
-|32|PoisonCondition|
-|64|FireCondition|
-|128|EnergyCondition|
-|256|LifeDrain|
-|512|ManaDrain|
+|1|physical|
+|2|poison|
+|4|fire|
+|8|energy|
+|16| `not in use` |
+|32|poisoned|
+|64|burning|
+|128|energized|
+|256|lifedrain|
+|512|manadrain|
 
-## enum_magicFieldKinds
+## `enum_magicFieldKinds`
 
 |numeric value|use|
 |--|--|
-|1|Fire|
-|2|Poison|
-|3|Energy|
+|1|fire|
+|2|poison|
+|3|energy|
 
-## enum_flags
+## `enum_flags`
 
 |use|
 |--|
@@ -84,7 +86,7 @@
 |CanPushCreatures|
 |CanSeeInvisible|
 
-## enum_bloodTypes
+## `enum_bloodTypes`
 |use|
 |--|
 |blood|

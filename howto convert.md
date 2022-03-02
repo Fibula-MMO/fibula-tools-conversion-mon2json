@@ -1,6 +1,10 @@
-# How to convert from .mon files:
+# How conversion from .mon to .json file works:
 
-> Using `warlock.mon` as an example.
+> NOTE: This is not a guide on how to use the tool, just the draft made before actually making the tool. Instructions to use the tool are actually on the main README.
+
+---
+#### Using `warlock.mon` as an example throughout this whole file.
+---
 
 |Field|Convert as|Example|
 |--|--|--|
@@ -82,10 +86,10 @@ For example:
 
 |Strategy value| Converts as|
 |--|--|
-|Strategy = (`x`, x, x, x)| combat.strategy.closest |
-|Strategy = ( x, `x`, x, x)| combat.strategy.weakest |
-|Strategy = ( x, x, `x`, x)| combat.strategy.strongest |
-|Strategy = ( x, x, x, `x`)| combat.strategy.random |
+|Strategy = (`x`, x, x, x)| combat.strategy.changeTarget.closest |
+|Strategy = ( x, `x`, x, x)| combat.strategy.changeTarget.weakest |
+|Strategy = ( x, x, `x`, x)| combat.strategy.changeTarget.strongest |
+|Strategy = ( x, x, x, `x`)| combat.strategy.changeTarget.random |
 
 `FleeThreshold` is converted as `combat.strategy.flee.hitpointThreshold`, such as:
 
@@ -95,14 +99,14 @@ For example:
 "combat": {
   	...
     "strategy": {
-      "closest": 100,
-      "weakest": 0,
-      "strongest": 0,
-      "random": 0,
       "flee": {
         "hitpointThreshold": 6
       },
       "changeTarget": {
+		"closest": 100,
+		"weakest": 0,
+		"strongest": 0,
+		"random": 0,
         "chance": 0.5
       }
     }
@@ -143,11 +147,11 @@ However these other flags:
 |Flag| Converts as|
 |--|--|
 |DistanceFighting | `combat.distance = 4`|
-|NoBurning | `combat.immunities.poison = 1.00`|
-|NoPoison |` combat.immunities.fire = 1.00`|
-|NoEnergy | `combat.immunities.energy = 1.00`|
-|NoParalyze | `combat.immunities.paralysis = 1.00`|
-|NoLifeDrain | `combat.immunities.lifeDrain = 1.00`|
+|NoBurning | `combat.immunities[]: { type: "poison", modifier: 1.0 }`|
+|NoPoison |` combat.immunities[]: { type: fire", modifier: 1.0 }`|
+|NoEnergy | `combat.immunities[]: { type: energy", modifier: 1.0 }`|
+|NoParalyze | `combat.immunities[]: { type: paralysis", modifier: 1.0 }`|
+|NoLifeDrain | `combat.immunities[]: { type: lifeDrain", modifier: 1.0 }`|
 
 end up being like this:
 
@@ -155,13 +159,29 @@ end up being like this:
 "combat": {
     ...
     "distance": 4,
-    "immunities": {
-      "poison": 1.00,
-      "fire": 1.00,
-      "energy": 1.00,
-      "lifeDrain": 1.00,
-      "paralysis": 1.00
-    },
+	...
+    "immunities": [
+      {
+        "type": "poison",
+        "modifier": 1.0
+      },
+      {
+        "type": "fire",
+        "modifier": 1.0
+      },
+      {
+        "type": "energy",
+        "modifier": 1.0
+      },
+      {
+        "type": "lifedrain",
+        "modifier": 1.0
+      },
+      {
+        "type": "paralysis",
+        "modifier": 1.0
+      }
+    ],
     ...
   },
 ```
